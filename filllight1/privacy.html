@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="喵星补光灯 - 隐私政策">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>喵星补光灯 - 隐私政策</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            line-height: 1.8;
+            color: #1d1d1f;
+            background-color: #f5f5f7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 22px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #7B2CBF 0%, #5a1d8f 100%);
+            color: white;
+            padding: 60px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.1)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 26px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            font-size: 21px;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+
+        .privacy-badge {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 8px 20px;
+            background: rgba(255,255,255,0.25);
+            border-radius: 24px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .content-wrapper {
+            background: white;
+            border-radius: 20px 20px 0 0;
+            margin-top: -40px;
+            position: relative;
+            box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.08);
+            padding-bottom: 60px;
+        }
+
+        .effective-date {
+            text-align: center;
+            padding: 40px 0 30px;
+            color: #86868b;
+            font-size: 15px;
+            border-bottom: 1px solid #e5e5e7;
+        }
+
+        .effective-date strong {
+            color: #7B2CBF;
+            font-weight: 600;
+        }
+
+        .policy-content {
+            padding: 50px 60px;
+        }
+
+        .policy-content h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 50px 0 24px;
+            color: #1d1d1f;
+            letter-spacing: -0.3px;
+        }
+
+        .policy-content h2:first-child {
+            margin-top: 0;
+        }
+
+        .policy-content h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 28px 0 16px;
+            color: #1d1d1f;
+        }
+
+        .policy-content p {
+            margin-bottom: 16px;
+            color: #424245;
+            font-size: 17px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .policy-content ul, .policy-content ol {
+            margin: 16px 0 24px 24px;
+            color: #424245;
+        }
+
+        .policy-content li {
+            margin-bottom: 12px;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .policy-content strong {
+            color: #1d1d1f;
+            font-weight: 600;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #f5f0ff 0%, #ede8ff 100%);
+            border-left: 4px solid #7B2CBF;
+            padding: 24px;
+            border-radius: 12px;
+            margin: 28px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+        }
+
+        .contact-card {
+            background: #f5f5f7;
+            border-radius: 16px;
+            padding: 28px;
+            margin: 28px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .contact-card .icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, #7B2CBF 0%, #5a1d8f 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-card .icon svg {
+            width: 28px;
+            height: 28px;
+            fill: white;
+        }
+
+        .contact-card .info {
+            flex: 1;
+        }
+
+        .contact-card .info p {
+            margin: 0;
+            font-size: 16px;
+            color: #1d1d1f;
+        }
+
+        .contact-card .info a {
+            color: #7B2CBF;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #86868b;
+            font-size: 14px;
+            border-top: 1px solid #e5e5e7;
+            margin-top: 40px;
+        }
+
+        .back-to-top {
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .back-to-top button {
+            background: white;
+            border: 1px solid #d2d2d7;
+            color: #7B2CBF;
+            padding: 12px 28px;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .back-to-top button:hover {
+            background: #f5f5f7;
+            border-color: #7B2CBF;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .subtitle {
+                font-size: 17px;
+            }
+
+            .app-icon {
+                width: 90px;
+                height: 90px;
+                font-size: 36px;
+            }
+
+            .policy-content {
+                padding: 30px 24px;
+            }
+
+            .policy-content h2 {
+                font-size: 24px;
+                margin: 36px 0 20px;
+            }
+
+            .policy-content h3 {
+                font-size: 18px;
+            }
+
+            .policy-content p,
+            .policy-content li {
+                font-size: 16px;
+            }
+
+            .contact-card {
+                flex-direction: column;
+                text-align: center;
+                padding: 24px;
+            }
+
+            header {
+                padding: 40px 0 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="app-icon">💡</div>
+            <h1>喵星补光灯</h1>
+            <p class="subtitle">隐私政策</p>
+            <span class="privacy-badge">🔒 隐私优先 · 本地运行</span>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="effective-date">
+                生效日期：<strong>2026年2月3日</strong>
+            </div>
+
+            <article class="policy-content">
+                <h2>一、引言</h2>
+                <p><strong>喵星补光灯</strong>（以下简称"本App"）是一款专注自拍补光的工具类应用，提供补光、拍照、Live Photo、录像等功能。</p>
+                <p>本隐私政策旨在向您说明，本App在使用过程中<strong>不收集、不存储、不上传、不共享</strong>任何您的个人信息及用户数据，切实保护您的隐私安全。请您在使用本App前，仔细阅读并理解本隐私政策，您的使用行为即视为对本政策内容的认可和接受。</p>
+
+                <h2>二、信息收集与使用</h2>
+                <p>本App为<strong>纯本地工具类应用</strong>，所有功能均在您的设备本地运行，不收集任何形式的用户数据，包括但不限于：</p>
+
+                <div class="highlight-box">
+                    <h3>我们不收集以下信息：</h3>
+                    <ol>
+                        <li><strong>个人身份信息：</strong>如姓名、手机号、邮箱、头像、昵称等；</li>
+                        <li><strong>设备信息：</strong>如设备型号、操作系统版本、设备ID、IP地址、地理位置、网络状态等；</li>
+                        <li><strong>使用行为信息：</strong>如使用时长、操作记录、功能使用偏好、点击记录等；</li>
+                        <li><strong>拍摄内容：</strong>您使用本App拍摄的照片、Live Photo、视频仅保存在您的设备相册中，<strong>我们不会收集或上传</strong>；</li>
+                        <li><strong>人脸数据：</strong>智能推荐功能中的人脸检测与肤色分析均在设备本地实时处理，<strong>不存储、不上传</strong>任何图像或人脸数据；</li>
+                        <li><strong>本地设置：</strong>语言、主题、取景框形状等偏好仅存储在您的设备本地，卸载App后将自动清除。</li>
+                    </ol>
+                </div>
+
+                <h2>三、权限说明</h2>
+                <p>本App仅申请实现核心功能所必需的权限，且所有数据均在本地处理：</p>
+                <ul>
+                    <li><strong>相机权限：</strong>用于拍照、拍 Live Photo、录像及补光预览，所有画面仅在您设备上显示，不上传；</li>
+                    <li><strong>相册写入权限：</strong>用于将您拍摄的照片/视频保存到系统相册，数据仅存储在您的设备；</li>
+                    <li><strong>麦克风权限（如适用）：</strong>仅用于录像时录制声音，音视频均保存在本地，不上传。</li>
+                </ul>
+
+                <h2>四、数据存储与安全</h2>
+                <h3>1. 数据存储</h3>
+                <p>本App不涉及任何用户数据的服务器存储。您在使用过程中产生的所有数据（如设置偏好、拍摄内容），仅存储在您的个人设备本地，完全由您自行掌控。</p>
+
+                <h3>2. 数据安全</h3>
+                <p>因本App不收集、不上传任何用户数据，不存在数据泄露、篡改、滥用、共享等风险；您设备上的本地数据安全，由您自行通过设备密码、指纹、面容识别等方式保护。</p>
+
+                <h2>五、数据共享与披露</h2>
+                <p>由于本App不收集任何用户数据，因此<strong>不会向任何第三方</strong>（包括开发者）共享、披露、转让、出售任何您的个人信息或使用数据，也不会与第三方合作进行数据收集、分析等行为。</p>
+
+                <h2>六、第三方服务</h2>
+                <p>本App<strong>不集成任何第三方服务</strong>：</p>
+                <ul>
+                    <li>无广告、无追踪</li>
+                    <li>无数据分析工具</li>
+                    <li>无社交分享、无第三方登录</li>
+                    <li>无网络请求（除您主动访问本隐私政策链接外）</li>
+                </ul>
+
+                <h2>七、用户权利</h2>
+                <p>鉴于本App不收集任何用户数据，您无需行使数据查询、更正、删除、撤回同意等权利；若您希望清除本App在您设备上的本地数据，直接卸载本App即可完全清除，无任何残留。</p>
+
+                <h2>八、隐私政策的更新</h2>
+                <ol>
+                    <li>本App运营方可能会根据App功能更新、法律法规变化等情况，对本隐私政策进行修改和完善，更新后的隐私政策将在本App内显著位置公示，或通过其他合理方式通知您。</li>
+                    <li>若您在隐私政策更新后继续使用本App，即视为您接受更新后的政策内容；若您不接受，可随时卸载本App，停止使用相关服务。</li>
+                </ol>
+
+                <h2>九、联系方式</h2>
+                <p>若您对本隐私政策有任何疑问、建议或投诉，可通过以下方式联系本App运营方，我们将在合理时间内予以回复：</p>
+
+                <div class="contact-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </div>
+                    <div class="info">
+                        <p>联系邮箱：<a href="mailto:nickgao1986@users.noreply.github.com">nickgao1986@users.noreply.github.com</a></p>
+                    </div>
+                </div>
+
+                <h2>十、技术支持</h2>
+                <p>我们致力于为用户提供优质的产品体验和技术支持服务。如果您在使用喵星补光灯过程中遇到任何问题或需要帮助，请通过上述邮箱联系我们，我们将在<strong>1-3个工作日内</strong>予以回复。</p>
+
+                <h2>十一、免责声明</h2>
+                <ol>
+                    <li>本App仅提供工具服务，不承担因您使用本App产生的任何直接或间接责任；</li>
+                    <li>您应妥善保管自己的设备及相关密码，因设备丢失、密码泄露等非本App原因导致的任何风险，由您自行承担；</li>
+                    <li>本隐私政策仅适用于本App，若您通过本App跳转至其他第三方应用或网页，相关隐私保护由第三方管辖，与本App无关。</li>
+                </ol>
+
+                <div style="margin-top: 40px; padding: 24px; background: linear-gradient(135deg, #f5f0ff 0%, #ede8ff 100%); border-radius: 16px; border-left: 4px solid #7B2CBF;">
+                    <h3 style="margin: 0 0 12px 0; font-size: 18px; color: #7B2CBF;">App Store 隐私承诺</h3>
+                    <p style="margin: 0; font-size: 15px; color: #424245; line-height: 1.6;">
+                        本App为隐私优先应用，不收集、不上传任何用户数据。用户可通过邮箱 <a href="mailto:nickgao1986@users.noreply.github.com" style="color: #7B2CBF; font-weight: 500;">nickgao1986@users.noreply.github.com</a> 联系我们获取技术支持，符合 Apple App Store 审核指南中关于隐私及技术支持的要求。
+                    </p>
+                </div>
+
+                <p style="margin-top: 40px; padding: 20px; background: #f5f5f7; border-radius: 12px; font-size: 15px; color: #86868b;">
+                    本隐私政策符合《中华人民共和国网络安全法》《个人信息保护法》及 Apple App Store 隐私审核相关要求，专注保护用户隐私，不涉及任何数据收集行为。
+                </p>
+            </article>
+
+            <div class="back-to-top">
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})">返回顶部</button>
+            </div>
+
+            <footer>
+                <p>&copy; 2026 喵星补光灯 保留所有权利</p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
