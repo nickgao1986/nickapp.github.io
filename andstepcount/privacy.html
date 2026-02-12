@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="每日计步 - 隐私政策">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>每日计步 - 隐私政策</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            line-height: 1.8;
+            color: #1d1d1f;
+            background-color: #f5f5f7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 22px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4CAF50 0%, #388E3C 100%);
+            color: white;
+            padding: 60px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.1)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 26px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            font-size: 21px;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+
+        .privacy-badge {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 8px 20px;
+            background: rgba(255,255,255,0.25);
+            border-radius: 24px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .content-wrapper {
+            background: white;
+            border-radius: 20px 20px 0 0;
+            margin-top: -40px;
+            position: relative;
+            box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.08);
+            padding-bottom: 60px;
+        }
+
+        .effective-date {
+            text-align: center;
+            padding: 40px 0 30px;
+            color: #86868b;
+            font-size: 15px;
+            border-bottom: 1px solid #e5e5e7;
+        }
+
+        .effective-date strong {
+            color: #4CAF50;
+            font-weight: 600;
+        }
+
+        .policy-content {
+            padding: 50px 60px;
+        }
+
+        .policy-content h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 50px 0 24px;
+            color: #1d1d1f;
+            letter-spacing: -0.3px;
+        }
+
+        .policy-content h2:first-child {
+            margin-top: 0;
+        }
+
+        .policy-content h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 28px 0 16px;
+            color: #1d1d1f;
+        }
+
+        .policy-content p {
+            margin-bottom: 16px;
+            color: #424245;
+            font-size: 17px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .policy-content ul, .policy-content ol {
+            margin: 16px 0 24px 24px;
+            color: #424245;
+        }
+
+        .policy-content li {
+            margin-bottom: 12px;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .policy-content strong {
+            color: #1d1d1f;
+            font-weight: 600;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+            border-left: 4px solid #4CAF50;
+            padding: 24px;
+            border-radius: 12px;
+            margin: 28px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+        }
+
+        .contact-card {
+            background: #f5f5f7;
+            border-radius: 16px;
+            padding: 28px;
+            margin: 28px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .contact-card .icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, #4CAF50 0%, #388E3C 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-card .icon svg {
+            width: 28px;
+            height: 28px;
+            fill: white;
+        }
+
+        .contact-card .info {
+            flex: 1;
+        }
+
+        .contact-card .info p {
+            margin: 0;
+            font-size: 16px;
+            color: #1d1d1f;
+        }
+
+        .contact-card .info a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #86868b;
+            font-size: 14px;
+            border-top: 1px solid #e5e5e7;
+            margin-top: 40px;
+        }
+
+        .back-to-top {
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .back-to-top button {
+            background: white;
+            border: 1px solid #d2d2d7;
+            color: #4CAF50;
+            padding: 12px 28px;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .back-to-top button:hover {
+            background: #f5f5f7;
+            border-color: #4CAF50;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 32px; }
+            .subtitle { font-size: 17px; }
+            .app-icon { width: 90px; height: 90px; font-size: 36px; }
+            .policy-content { padding: 30px 24px; }
+            .policy-content h2 { font-size: 24px; margin: 36px 0 20px; }
+            .policy-content h3 { font-size: 18px; }
+            .policy-content p, .policy-content li { font-size: 16px; }
+            .contact-card { flex-direction: column; text-align: center; padding: 24px; }
+            header { padding: 40px 0 60px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="app-icon">💚</div>
+            <h1>每日计步</h1>
+            <p class="subtitle">隐私政策</p>
+            <span class="privacy-badge">🔒 隐私优先 · 数据仅存设备本地 · 不上传</span>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="effective-date">
+                最后更新：<strong>2025年2月</strong> · 生效日期：<strong>2025年2月</strong>
+            </div>
+
+            <article class="policy-content">
+                <h2>1. 引言</h2>
+                <p><strong>每日计步</strong>（以下简称「本应用」）是一款 Android 计步与运动统计应用，提供每日步数记录、距离与卡路里估算、运动分析及个人资料管理等功能。本隐私政策说明我们如何在您的设备上处理数据，以及我们<strong>不会</strong>如何对待您的数据（例如：不会上传、不会出售、不会与第三方共享）。</p>
+                <p>请您在使用本应用前阅读本政策。使用本应用即表示您同意本政策。我们承诺：<strong>所有数据仅存储在您的设备本地，不会上传到我们的服务器或任何第三方。</strong></p>
+
+                <h2>2. 信息收集与使用</h2>
+                <p>本应用在您的设备上会收集或使用以下信息，<strong>仅用于在您设备本地提供计步与统计功能</strong>，不会上传或传输到任何服务器。</p>
+
+                <h3>2.1 传感器与运动数据</h3>
+                <ul>
+                    <li><strong>步数数据：</strong>通过设备的步数传感器（运动识别与步数传感器，Android 10+ 为 ACTIVITY_RECOGNITION）在本地收集；</li>
+                    <li><strong>运动距离：</strong>基于您设置的身高和步数在本地计算；</li>
+                    <li><strong>卡路里消耗：</strong>基于您的体重和运动数据在本地计算；</li>
+                    <li><strong>活动时间：</strong>基于运动数据在本地统计。</li>
+                </ul>
+
+                <h3>2.2 您主动提供的信息（仅存于设备本地）</h3>
+                <ul>
+                    <li><strong>身高、体重：</strong>用于计算运动指标；</li>
+                    <li><strong>出生日期：</strong>用于统计和个性化建议；</li>
+                    <li><strong>头像：</strong>可选，仅保存在您设备本地，用于个性化显示；</li>
+                    <li><strong>每日目标步数：</strong>用于目标与进度展示。</li>
+                </ul>
+
+                <h3>2.3 数据用途（仅限本地）</h3>
+                <p>上述数据仅用于：显示每日、每周、每月运动统计；计算距离与卡路里；提供运动建议与目标管理。我们<strong>不会</strong>将您的数据出售给第三方、用于广告、或与第三方共享（法律另有要求除外）。</p>
+
+                <h2>3. 应用权限说明</h2>
+                <p>本应用仅申请与计步及后台运行相关的必要权限，不申请定位、通讯录、相机、麦克风等与功能无关的权限。具体包括：</p>
+                <ul>
+                    <li><strong>ACTIVITY_RECOGNITION：</strong>识别运动状态、访问步数（Android 10 及以上）；</li>
+                    <li><strong>WAKE_LOCK：</strong>保持后台计步时设备可运行；</li>
+                    <li><strong>FOREGROUND_SERVICE / FOREGROUND_SERVICE_HEALTH：</strong>提供持续计步的前台服务；</li>
+                    <li><strong>VIBRATE：</strong>用于提示反馈（如需要）。</li>
+                </ul>
+                <p>本应用<strong>不声明 INTERNET 权限</strong>，核心功能无需联网；所有数据处理均在您设备本地完成。</p>
+
+                <h2>4. 数据存储与保留</h2>
+                <h3>4.1 本地存储</h3>
+                <p>所有数据均存储在您的设备上，使用应用私有存储（如 SharedPreferences）保存，受 Android 系统沙盒保护。数据<strong>不会上传到我们的服务器</strong>。</p>
+                <h3>4.2 数据保留</h3>
+                <p>应用默认保留最近约 30 天的历史记录供您查看。您可随时在应用内清除数据，或通过卸载本应用完全删除所有本地数据。</p>
+
+                <h2>5. 数据安全</h2>
+                <p>我们采取以下方式保护您的数据：所有数据仅存储在本地设备；不进行网络传输；依赖 Android 沙盒机制隔离数据。您可随时在系统设置中撤销应用权限、清除应用数据或卸载应用以删除所有数据。</p>
+
+                <h2>6. 数据共享与披露</h2>
+                <p>由于本应用不上传任何用户数据，我们<strong>不会向任何第三方</strong>共享、披露、转让或出售您的个人信息或运动健康数据。除法律明确要求外，我们不会将您的数据提供给任何第三方。</p>
+
+                <h2>7. 第三方服务与广告</h2>
+                <p>本应用<strong>不集成</strong>任何第三方广告、数据分析、社交登录或追踪 SDK。应用内无广告、无行为追踪，无第三方网络请求（您通过浏览器访问本隐私政策页面除外）。</p>
+
+                <h2>8. 儿童隐私</h2>
+                <p>本应用不面向 13 岁以下儿童。我们不会故意收集儿童个人信息。若我们发现无意中收集了儿童的个人信息，将尽快删除。</p>
+
+                <h2>9. 隐私政策更新</h2>
+                <p>我们可能会因功能更新或法律法规变化而修订本隐私政策。更新后的政策将在本页面及应用内公布。若您在更新后继续使用本应用，即视为接受更新后的政策；您也可选择停止使用或卸载应用。</p>
+
+                <h2>10. 联系我们</h2>
+                <p>如您对本隐私政策有任何疑问、建议或投诉，请通过以下方式联系我们，我们将在合理时间内回复：</p>
+                <div class="contact-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </div>
+                    <div class="info">
+                        <p>邮箱：<a href="mailto:youjiancau@gmail.com">youjiancau@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <h2>11. 免责声明</h2>
+                <ul>
+                    <li>本应用仅提供运动记录与统计工具，不提供医疗诊断或治疗建议；如有健康问题请咨询专业医疗机构。</li>
+                    <li>请妥善保管您的设备与账户；因设备丢失、未授权访问等非本应用原因造成的风险由您自行承担。</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <h3>Google Play 与数据安全承诺</h3>
+                    <p>本应用符合 Google Play 用户数据政策要求：仅请求与计步功能相关的权限；所有运动与个人数据仅保存在用户设备本地，不上传、不共享、不用于广告。数据安全表单中关于「收集 / 不收集 / 是否共享」的声明与本隐私政策一致。如有疑问请联系 <a href="mailto:youjiancau@gmail.com" style="color: #388E3C; font-weight: 500;">youjiancau@gmail.com</a>。</p>
+                </div>
+
+                <p style="margin-top: 32px; padding: 20px; background: #f5f5f7; border-radius: 12px; font-size: 15px; color: #86868b;">
+                    感谢您信任并使用每日计步。本隐私政策旨在清晰、真实地说明我们的数据处理方式，并符合常见隐私法规及 Google Play 政策对隐私政策与数据披露的要求。
+                </p>
+            </article>
+
+            <div class="back-to-top">
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})">返回顶部</button>
+            </div>
+
+            <footer>
+                <p>&copy; 2025 每日计步. 保留所有权利。</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
