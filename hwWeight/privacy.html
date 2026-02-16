@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="轻记 - 隐私政策">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>轻记 - 隐私政策</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            line-height: 1.8;
+            color: #1d1d1f;
+            background-color: #f5f5f7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 22px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #00897B 0%, #00695C 100%);
+            color: white;
+            padding: 60px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.1)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 26px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            font-size: 21px;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+
+        .privacy-badge {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 8px 20px;
+            background: rgba(255,255,255,0.25);
+            border-radius: 24px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .content-wrapper {
+            background: white;
+            border-radius: 20px 20px 0 0;
+            margin-top: -40px;
+            position: relative;
+            box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.08);
+            padding-bottom: 60px;
+        }
+
+        .effective-date {
+            text-align: center;
+            padding: 40px 0 30px;
+            color: #86868b;
+            font-size: 15px;
+            border-bottom: 1px solid #e5e5e7;
+        }
+
+        .effective-date strong {
+            color: #00897B;
+            font-weight: 600;
+        }
+
+        .policy-content {
+            padding: 50px 60px;
+        }
+
+        .policy-content h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 50px 0 24px;
+            color: #1d1d1f;
+            letter-spacing: -0.3px;
+        }
+
+        .policy-content h2:first-child {
+            margin-top: 0;
+        }
+
+        .policy-content h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 28px 0 16px;
+            color: #1d1d1f;
+        }
+
+        .policy-content p {
+            margin-bottom: 16px;
+            color: #424245;
+            font-size: 17px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .policy-content ul, .policy-content ol {
+            margin: 16px 0 24px 24px;
+            color: #424245;
+        }
+
+        .policy-content li {
+            margin-bottom: 12px;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .policy-content strong {
+            color: #1d1d1f;
+            font-weight: 600;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #E0F2F1 0%, #B2DFDB 100%);
+            border-left: 4px solid #00897B;
+            padding: 24px;
+            border-radius: 12px;
+            margin: 28px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+        }
+
+        .contact-card {
+            background: #f5f5f7;
+            border-radius: 16px;
+            padding: 28px;
+            margin: 28px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .contact-card .icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, #00897B 0%, #00695C 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-card .icon svg {
+            width: 28px;
+            height: 28px;
+            fill: white;
+        }
+
+        .contact-card .info {
+            flex: 1;
+        }
+
+        .contact-card .info p {
+            margin: 0;
+            font-size: 16px;
+            color: #1d1d1f;
+        }
+
+        .contact-card .info a {
+            color: #00897B;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #86868b;
+            font-size: 14px;
+            border-top: 1px solid #e5e5e7;
+            margin-top: 40px;
+        }
+
+        .back-to-top {
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .back-to-top button {
+            background: white;
+            border: 1px solid #d2d2d7;
+            color: #00897B;
+            padding: 12px 28px;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .back-to-top button:hover {
+            background: #f5f5f7;
+            border-color: #00897B;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .subtitle {
+                font-size: 17px;
+            }
+
+            .app-icon {
+                width: 90px;
+                height: 90px;
+                font-size: 36px;
+            }
+
+            .policy-content {
+                padding: 30px 24px;
+            }
+
+            .policy-content h2 {
+                font-size: 24px;
+                margin: 36px 0 20px;
+            }
+
+            .policy-content h3 {
+                font-size: 18px;
+            }
+
+            .policy-content p,
+            .policy-content li {
+                font-size: 16px;
+            }
+
+            .contact-card {
+                flex-direction: column;
+                text-align: center;
+                padding: 24px;
+            }
+
+            header {
+                padding: 40px 0 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="app-icon">📋</div>
+            <h1>轻记</h1>
+            <p class="subtitle">隐私政策</p>
+            <span class="privacy-badge">🔒 零权限 · 数据仅存本地</span>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="effective-date">
+                最后更新：<strong>2025年2月</strong>
+            </div>
+
+            <article class="policy-content">
+                <h2>一、引言</h2>
+                <p><strong>轻记</strong>（以下简称「本应用」）是一款专注记录与管理体重的健康工具，提供体重记录、BMI 参考、趋势图表、目标体重等功能，帮助您养成记录习惯、关注身体变化。</p>
+                <p>本隐私政策旨在向您说明：本应用<strong>不收集、不上传、不共享</strong>您的任何个人或健康数据。您录入的所有数据仅保存在您的设备本地，我们不会访问或传输这些数据。请您在使用前阅读并理解本政策，使用本应用即视为同意本政策。</p>
+
+                <h2>二、我们收集的信息</h2>
+                <p>本应用仅在使用您设备本地功能时处理您<strong>主动输入</strong>的数据，且<strong>全部保存在您的设备本地</strong>，不会上传到任何服务器。</p>
+
+                <h3>1.1 体重数据（核心功能）</h3>
+                <ul>
+                    <li><strong>用途：</strong>记录、展示和管理您的体重数据</li>
+                    <li><strong>内容：</strong>您主动输入的体重数值、记录时间及可选备注、体脂率等</li>
+                    <li><strong>处理方式：</strong>所有体重数据仅存储在您设备本地（HarmonyOS Preferences 轻量存储），不会上传到任何服务器</li>
+                    <li><strong>备份：</strong>您可选择通过 HarmonyOS 系统备份功能备份应用数据</li>
+                </ul>
+
+                <h2>三、我们如何使用您的信息</h2>
+                <p>我们使用上述信息<strong>仅用于</strong>：</p>
+                <ul>
+                    <li>在您设备上记录、展示和统计您的体重数据</li>
+                    <li>计算 BMI、展示趋势图表、目标进度等，均在本地完成</li>
+                </ul>
+                <p>我们不会将您的数据用于分析、广告、追踪或任何其他目的。</p>
+
+                <h2>四、本地数据存储说明</h2>
+                <p>本应用在您设备本地使用 <strong>HarmonyOS Preferences 轻量级存储</strong>存储以下数据，仅供本应用在您设备上使用，不会上传至任何服务器：</p>
+                <ul>
+                    <li><strong>体重记录：</strong>日期、体重、备注、体脂率、笔记等（以 JSON 格式存储）</li>
+                    <li><strong>应用设置：</strong>身高、目标体重、语言、主题等偏好</li>
+                    <li><strong>徽章数据：</strong>已解锁徽章、习惯追踪计数</li>
+                </ul>
+                <p>上述数据仅存储在您设备的本地存储空间中。您可通过应用内「清除所有数据」功能随时删除，或通过卸载本应用完全清除。</p>
+
+                <h2>五、权限说明</h2>
+                <div class="highlight-box">
+                    <p><strong>本应用不申请任何敏感权限。</strong>我们不在应用中声明或请求以下权限：</p>
+                    <ul style="margin: 12px 0 0 20px;">
+                        <li>不申请网络权限（ohos.permission.INTERNET）</li>
+                        <li>不申请存储权限（READ_PERSISTENCE、WRITE_PERSISTENCE）</li>
+                        <li>不申请相机、麦克风、位置、通讯录等权限</li>
+                    </ul>
+                    <p style="margin-top: 12px;">所有功能均在本地完成，不依赖上述权限。本应用使用 HarmonyOS 系统提供的 Preferences 轻量存储，无需申请存储权限。若您通过应用内链接打开本隐私政策页面，将由系统默认浏览器加载网页，由浏览器使用网络，本应用本身不声明网络权限。</p>
+                </div>
+
+                <h2>六、数据存储与安全</h2>
+                <p>本应用不涉及任何用户数据的服务器存储。您在使用过程中产生的所有数据仅存储在您的个人设备本地，完全由您自行掌控。因本应用不收集、不上传任何用户数据，不存在将您数据泄露、共享给第三方的风险；您设备上的本地数据安全由您通过设备密码、指纹等方式保护。</p>
+
+                <h2>七、数据共享与披露</h2>
+                <p>我们<strong>不会向任何第三方</strong>共享、披露、转让或出售您的个人信息或健康数据。本应用不与任何第三方进行数据收集、分析等合作。</p>
+
+                <h2>八、第三方服务</h2>
+                <p>本应用<strong>不集成任何第三方服务</strong>：无广告、无追踪、无数据分析工具、无社交分享、无第三方登录。应用内不发起网络请求（您通过浏览器打开本隐私政策页面除外）。</p>
+
+                <h2>九、您的权利</h2>
+                <p>您随时可以：</p>
+                <ul>
+                    <li>在应用内删除体重记录或使用「清除所有数据」</li>
+                    <li>卸载本应用以清除所有本地数据</li>
+                </ul>
+                <p>鉴于本应用不收集任何用户数据，无需行使数据查询、更正、撤回同意等权利；清除本地数据即可完全移除本应用在您设备上的数据。</p>
+
+                <h2>十、隐私政策的变更</h2>
+                <p>我们可能会根据功能更新或法律法规变化对本隐私政策进行修改，更新后的政策将在本页面及应用内公布。若您继续使用本应用，即视为接受更新后的政策；若您不接受，可随时卸载本应用。</p>
+
+                <h2>十一、联系我们</h2>
+                <p>若您对本隐私政策有任何疑问、建议或投诉，可通过以下方式联系我们：</p>
+
+                <div class="contact-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </div>
+                    <div class="info">
+                        <p>电子邮箱：<a href="mailto:nickgao1986@163.com">nickgao1986@163.com</a></p>
+                    </div>
+                </div>
+
+                <h2>十二、免责声明</h2>
+                <ol>
+                    <li>本应用仅供健康记录与参考，不构成医疗诊断、治疗建议或替代专业医疗意见。如有健康或减重需求，请咨询专业医疗机构或医生。</li>
+                    <li>您应妥善保管自己的设备及相关密码，因设备丢失、密码泄露等非本应用原因导致的任何风险，由您自行承担。</li>
+                    <li>本隐私政策仅适用于本应用；若您通过本应用跳转至其他网页或应用，相关隐私保护由该第三方管辖。</li>
+                </ol>
+
+                <div style="margin-top: 40px; padding: 24px; background: linear-gradient(135deg, #E0F2F1 0%, #B2DFDB 100%); border-radius: 16px; border-left: 4px solid #00897B;">
+                    <h3 style="margin: 0 0 12px 0; font-size: 18px; color: #00695C;">应用商店隐私承诺</h3>
+                    <p style="margin: 0; font-size: 15px; color: #424245; line-height: 1.6;">
+                        本应用为隐私优先应用，不申请任何敏感权限，不收集、不上传任何用户数据。所有体重记录与设置仅保存在用户设备本地（HarmonyOS Preferences）。您可通过邮箱 <a href="mailto:nickgao1986@163.com" style="color: #00897B; font-weight: 500;">nickgao1986@163.com</a> 联系我们，符合华为应用市场及主流应用商店关于隐私与技术支持的要求。
+                    </p>
+                </div>
+
+                <p style="margin-top: 40px; padding: 20px; background: #f5f5f7; border-radius: 12px; font-size: 15px; color: #86868b;">
+                    本隐私政策符合《中华人民共和国网络安全法》《个人信息保护法》及 Google Play、应用商店隐私审核相关要求，专注保护用户隐私，不涉及任何数据收集或上传行为。
+                </p>
+            </article>
+
+            <div class="back-to-top">
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})">返回顶部</button>
+            </div>
+
+            <footer>
+                <p>&copy; 2025 轻记 保留所有权利</p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
