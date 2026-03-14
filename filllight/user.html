@@ -322,6 +322,16 @@
                     </ol>
                 </div>
 
+                <h2 id="face-data">二（A）、人脸数据的处理（Face Data）</h2>
+                <p>为满足 App Store 审核指南对敏感数据处理说明的要求，以下专门说明本应用与人脸数据相关的处理方式。</p>
+                <ul>
+                    <li><strong>本应用不收集、不存储、不上传、不共享任何人脸数据或生物识别数据。</strong></li>
+                    <li><strong>涉及人脸的功能与数据范围：</strong>仅在「智能补光推荐」与「相机预览人脸框」功能中，使用 Apple Vision 框架（VNDetectFaceRectanglesRequest）在设备本地实时检测人脸在画面中的矩形位置（bounding box）。该结果仅用于：(1) 在设备本地进行肤色分析以推荐补光颜色；(2) 可选地在相机界面上显示人脸区域框以辅助构图。我们不会提取、存储或上传人脸图像、人脸特征、或任何生物识别标识符。</li>
+                    <li><strong>存储与保留：</strong>所有人脸相关处理均在您设备本地、实时、仅在内存中完成，处理完成后即丢弃。<strong>人脸数据保留期限：零</strong>（不保留任何人脸数据）。</li>
+                    <li><strong>共享与披露：</strong>人脸数据不会与任何第三方共享，也不会存储于任何服务器或第三方服务。</li>
+                </ul>
+                <p>以上内容在隐私政策中的位置：<strong>「二（A）、人脸数据的处理（Face Data）」</strong>。本政策全文链接：<a href="https://nickgao1986.github.io/nickapp.github.io/filllight/user.html">隐私政策与服务协议</a>。</p>
+
                 <h2>三、权限说明</h2>
                 <p>本App仅申请实现核心功能所必需的权限，且所有数据均在本地处理：</p>
                 <ul>
