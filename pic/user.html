@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="补光相机 - 用户协议与订阅条款">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>补光相机 - 用户协议</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            line-height: 1.8;
+            color: #1d1d1f;
+            background-color: #f5f5f7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 22px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #FF69B4 0%, #FF1493 100%);
+            color: white;
+            padding: 60px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.1)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 26px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            font-size: 21px;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+
+        .badge {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 8px 20px;
+            background: rgba(255,255,255,0.25);
+            border-radius: 24px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .content-wrapper {
+            background: white;
+            border-radius: 20px 20px 0 0;
+            margin-top: -40px;
+            position: relative;
+            box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.08);
+            padding-bottom: 60px;
+        }
+
+        .effective-date {
+            text-align: center;
+            padding: 40px 0 30px;
+            color: #86868b;
+            font-size: 15px;
+            border-bottom: 1px solid #e5e5e7;
+        }
+
+        .effective-date strong {
+            color: #FF69B4;
+            font-weight: 600;
+        }
+
+        .policy-content {
+            padding: 50px 60px;
+        }
+
+        .policy-content h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 50px 0 24px;
+            color: #1d1d1f;
+            letter-spacing: -0.3px;
+        }
+
+        .policy-content h2:first-child {
+            margin-top: 0;
+        }
+
+        .policy-content h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 28px 0 16px;
+            color: #1d1d1f;
+        }
+
+        .policy-content p {
+            margin-bottom: 16px;
+            color: #424245;
+            font-size: 17px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .policy-content ul, .policy-content ol {
+            margin: 16px 0 24px 24px;
+            color: #424245;
+        }
+
+        .policy-content li {
+            margin-bottom: 12px;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .policy-content strong {
+            color: #1d1d1f;
+            font-weight: 600;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #fff0f5 0%, #ffe4ec 100%);
+            border-left: 4px solid #FF69B4;
+            padding: 24px;
+            border-radius: 12px;
+            margin: 28px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+        }
+
+        .contact-card {
+            background: #f5f5f7;
+            border-radius: 16px;
+            padding: 28px;
+            margin: 28px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .contact-card .icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, #FF69B4 0%, #FF1493 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-card .icon svg {
+            width: 28px;
+            height: 28px;
+            fill: white;
+        }
+
+        .contact-card .info {
+            flex: 1;
+        }
+
+        .contact-card .info p {
+            margin: 0;
+            font-size: 16px;
+            color: #1d1d1f;
+        }
+
+        .contact-card .info a {
+            color: #FF69B4;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #86868b;
+            font-size: 14px;
+            border-top: 1px solid #e5e5e7;
+            margin-top: 40px;
+        }
+
+        .back-to-top {
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .back-to-top button {
+            background: white;
+            border: 1px solid #d2d2d7;
+            color: #FF69B4;
+            padding: 12px 28px;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .back-to-top button:hover {
+            background: #f5f5f7;
+            border-color: #FF69B4;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .subtitle {
+                font-size: 17px;
+            }
+
+            .app-icon {
+                width: 90px;
+                height: 90px;
+                font-size: 36px;
+            }
+
+            .policy-content {
+                padding: 30px 24px;
+            }
+
+            .policy-content h2 {
+                font-size: 24px;
+                margin: 36px 0 20px;
+            }
+
+            .policy-content h3 {
+                font-size: 18px;
+            }
+
+            .policy-content p,
+            .policy-content li {
+                font-size: 16px;
+            }
+
+            .contact-card {
+                flex-direction: column;
+                text-align: center;
+                padding: 24px;
+            }
+
+            header {
+                padding: 40px 0 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="app-icon">💡</div>
+            <h1>补光相机</h1>
+            <p class="subtitle">用户协议 · 订阅条款</p>
+            <span class="badge">一键补光 · 自拍神器</span>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="effective-date">
+                生效日期：<strong>2026年3月14日</strong>
+            </div>
+
+            <article class="policy-content">
+                <h2>一、协议接受与适用范围</h2>
+                <p><strong>补光相机</strong>（以下简称「本应用」）是一款面向自拍补光、美颜与照片编辑的 iOS 应用。在使用本应用及其高级会员订阅服务前，请您仔细阅读本用户协议（以下简称「本协议」）。<strong>您下载、安装、使用本应用或勾选「同意并继续」订阅即视为您已阅读、理解并接受本协议全部内容。</strong></p>
+                <p>本协议适用于补光相机应用内提供的全部服务，包括但不限于：补光、拍照、Live Photo、录像、美颜、滤镜、智能编辑、取景框形状、高级场景与颜色、光效模式等；以及通过 Apple App Store 提供的<strong>自动续期订阅</strong>服务（高级会员）。</p>
+
+                <h2>二、服务说明</h2>
+                <p>本应用提供免费功能与高级会员功能。高级会员通过<strong>自动续期订阅</strong>方式提供，具体价格、试用期与计费周期以应用内及 App Store 展示为准（当前为周订阅，含 3 天免费试用，试用结束后按周自动续费）。订阅由 Apple 处理，您同意遵守 Apple 的条款与条件及本协议。</p>
+                <p>本应用为工具类应用，主要功能在您设备本地运行。我们不会收集、上传您的照片、人脸数据或使用内容；隐私相关事宜请参见我们另行提供的<strong>隐私政策</strong>。</p>
+
+                <h2>三、自动续期会员协议</h2>
+
+                <h3>1. 协议说明</h3>
+                <p>本条款约定关于自动续费服务的权利与义务。请您务必审慎阅读、充分理解各条款内容，<strong>特别是免除或限制责任的相应条款</strong>。您勾选同意订阅的行为将被视为接受本协议。</p>
+
+                <h3>2. 服务说明</h3>
+                <p>自动续费服务用于在高级会员即将过期时，由支付渠道（Apple）在不再次验证您的账户密码、支付密码等的情况下，从您绑定的 Apple 支付方式中代扣下一计费周期的费用。计费周期以应用内及 App Store 展示为准（如周、月、年）。如因余额不足等原因导致续费失败，我们有权中断或终止相应的高级会员权益；除法律另有规定外，已支付费用不予退还。</p>
+
+                <h3>3. 双方权利与义务</h3>
+                <p><strong>3.1 自动续费：</strong>我们将在订阅周期到期前 24 小时内及到期后，通过 Apple 从您的支付方式扣除下一周期费用，并相应延长高级会员有效期。扣款成功后，我们即时收取该费用，且不提供退费服务。扣款时间以 Apple 实际扣款为准，请您关注账户与订阅状态。</p>
+                <p><strong>3.2 协议修改：</strong>我们可根据业务或法律要求修改本协议，并在本页面或应用内公布修订后的内容。若您不同意修改后的协议，可取消自动续费；若您继续使用订阅服务，即视为接受修订后的协议。</p>
+
+                <h3>4. 取消订阅步骤</h3>
+                <p>若您需要取消自动续费，请按以下步骤操作：</p>
+                <ol>
+                    <li>打开 iPhone <strong>设置</strong> → <strong>Apple ID</strong>（顶部您的姓名）→ <strong>订阅</strong></li>
+                    <li>在订阅列表中找到「<strong>补光相机</strong>」</li>
+                    <li>点击进入后选择「<strong>取消订阅</strong>」即可</li>
+                </ol>
+                <p>取消后，当前计费周期结束前您仍可继续使用高级会员权益，到期后将不再自动扣费。</p>
+
+                <h2>四、使用规范与免责</h2>
+                <ol>
+                    <li>您应合法、合规使用本应用，不得利用本应用从事违法违规或侵害他人权益的行为。</li>
+                    <li>本应用仅提供工具与服务，因您使用本应用（包括但不限于拍摄、编辑、保存内容）所产生的任何直接或间接责任，在法律允许范围内由您自行承担。</li>
+                    <li>您应妥善保管设备及账户信息；因设备丢失、账户泄露等非本应用原因导致的损失，与本应用无关。</li>
+                    <li>通过本应用跳转至的第三方应用或网页，其服务与隐私政策由该第三方负责，与本应用无关。</li>
+                </ol>
+
+                <h2>五、知识产权</h2>
+                <p>本应用（包括但不限于界面、文案、图标、逻辑与设计）的知识产权归本应用运营方所有。未经授权，您不得复制、修改、传播或用于商业目的。</p>
+
+                <h2>六、联系方式</h2>
+                <p>若您对本用户协议或订阅服务有任何疑问、建议或投诉，可通过以下方式联系我们，我们将在合理时间内予以回复：</p>
+
+                <div class="contact-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </div>
+                    <div class="info">
+                        <p>联系邮箱：<a href="mailto:nickgao1986@users.noreply.github.com">nickgao1986@users.noreply.github.com</a></p>
+                    </div>
+                </div>
+
+                <p style="margin-top: 24px; padding: 20px; background: #f5f5f7; border-radius: 12px; font-size: 15px; color: #86868b;">
+                    感谢您使用补光相机。使用本应用即表示您同意本用户协议；若您不同意，请勿使用本应用及订阅服务。
+                </p>
+            </article>
+
+            <div class="back-to-top">
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})">返回顶部</button>
+            </div>
+
+            <footer>
+                <p>&copy; 2026 补光相机 保留所有权利</p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
