@@ -299,7 +299,7 @@
     <div class="content-wrapper">
         <div class="container">
             <div class="effective-date">
-                生效日期：<strong>2026年3月22日</strong>
+                生效日期：<strong>2026年3月23日</strong>（含人脸数据专章更新）
             </div>
 
             <article class="policy-content">
@@ -323,27 +323,46 @@
                 </div>
 
                 <h2 id="face-data">二（补充）、人脸数据说明（Face Data）</h2>
-                <p>为满足 App Store 审核指南 2.1 关于面部数据的要求，本小节专门说明本 App 对人脸相关数据的处理方式。</p>
+                <p>为满足 Apple App Store 审核指南 <strong>2.1</strong> 与 <strong>5.1.1</strong> 对敏感信息及面部相关处理的要求，本小节专门、完整地说明本 App 对人脸相关信息的处理方式。本 App 在 iPhone 与 iPad 上行为一致，均在设备本地完成与人脸有关的计算，不向开发者服务器传输人脸数据。</p>
+
                 <h3>1. 本 App 收集哪些人脸数据？</h3>
-                <p><strong>本 App 不收集、不存储任何人脸数据。</strong>在实现以下功能时，我们仅使用 Apple 系统框架（Vision）在设备内存中临时计算人脸位置（矩形坐标）或人脸区域，用于当帧的实时处理，处理完成后即丢弃，<strong>不写入磁盘、不上传、不与任何第三方共享</strong>。</p>
-                <h3>2. 人脸相关数据的用途</h3>
+                <p><strong>本 App 不以「可识别个人身份的人脸档案」形式收集、持久化存储或上传任何人脸数据。</strong>为实现智能抠图、人像分割、美颜（如祛斑、磨皮、瘦脸等）、可选取景辅助等功能，我们可能调用 Apple 提供的系统框架（例如 Vision 等）在<strong>当前设备的内存（RAM）</strong>中<strong>临时</strong>计算人脸或头部的<strong>几何信息</strong>（例如人脸矩形 bounding box、人脸区域掩码等），仅用于<strong>当前这一帧相机画面</strong>或<strong>当前正在编辑的这一张图片</strong>的实时处理。</p>
+                <p>上述几何信息<strong>处理完毕后即从内存中丢弃</strong>，<strong>不写入</strong>本 App 的本地数据库，<strong>不保存</strong>为独立的人脸数据文件，<strong>不上传</strong>至互联网或开发者服务器。<strong>我们不会</strong>构建或保存用于核验身份的「人脸模板」「人脸特征向量」等生物识别标识；所涉处理仅为图像编辑与预览辅助目的，而非身份识别服务。</p>
+
+                <h3>2. 人脸相关数据的计划用途（全部用途说明）</h3>
+                <p>与人脸相关的处理<strong>仅限于</strong>下列用途，且均在用户设备上完成：</p>
                 <ul>
-                    <li><strong>人脸矩形（bounding box）：</strong>用于相机或编辑流程中的取景辅助、可选的智能分析（如在检测到的人脸或人体区域内辅助抠图、美颜或色彩相关建议）以及可选的人脸取景框显示，均在当前相机画面或当前图片下实时计算，结果不保存。</li>
-                    <li><strong>人脸区域处理：</strong>美颜等功能中的祛斑、磨皮、瘦脸等，仅在当前照片或预览帧的人脸区域内进行图像处理，处理结果仅用于显示或由您保存到相册，我们不会保存任何人脸图像或特征。</li>
+                    <li><strong>智能抠图与人像分割：</strong>在检测到的人脸或人体区域内辅助区分主体与背景，生成透明背景或便于换底的图像结果；</li>
+                    <li><strong>美颜与局部修饰：</strong>在预览或静态图上对人脸区域内的像素进行祛斑、磨皮、瘦脸等效果处理，处理结果仅用于屏幕显示或经您确认后保存到系统相册；</li>
+                    <li><strong>可选取景辅助：</strong>在相机流程中显示可选的人脸取景框或类似提示，帮助构图；</li>
+                    <li><strong>与上述功能直接相关的实时分析：</strong>例如在当前画面内做与美颜或抠图相关的局部判断，<strong>不会</strong>用于广告投放、用户画像、第三方分析或与无关功能联动。</li>
                 </ul>
-                <h3>3. 人脸数据是否与第三方共享？存储在哪里？</h3>
-                <p><strong>不会。</strong>本 App 不将任何人脸数据共享给任何第三方。所有人脸相关计算均在您设备本地内存中完成，<strong>不存储在服务器、不存储在 App 本地数据库、不写入持久化文件</strong>。</p>
-                <h3>4. 人脸数据保留期限</h3>
-                <p><strong>不保留。</strong>人脸位置等数据仅在单次实时处理或单张图片编辑时存在于内存中，处理完成后即被释放，无任何保留期限。</p>
-                <h3>5. 隐私政策中与人脸数据相关的条款位置</h3>
-                <p>本 App 对人脸数据的收集、使用、披露、共享与保留的说明，位于本隐私政策中的以下位置：</p>
+                <p>除上述用途外，<strong>不存在</strong>其他人脸数据使用计划。您主动保存到相册的内容为普通照片文件，由您自行管理；我们不会从中单独提取人脸数据库。</p>
+
+                <h3>3. 人脸数据是否与第三方共享？存储在何处？</h3>
+                <p><strong>不会与任何第三方共享。</strong>人脸相关的中间计算结果仅存在于您设备的本进程内存中，<strong>不存储</strong>在开发者或任何第三方的服务器，<strong>不存储</strong>于云端，<strong>不通过</strong>本 App 向第三方 SDK 或分析服务传输。本 App <strong>不集成</strong>用于收集人脸数据的第三方广告或统计 SDK（详见本政策「六、第三方服务」）。</p>
+
+                <h3>4. 人脸数据的「披露」说明</h3>
+                <p>由于本 App <strong>不持久化收集</strong>人脸数据，因此<strong>不存在</strong>向第三方「披露」可识别的人脸档案的行为。如因法律法规强制性要求需配合有权机关的，将以适用法律为准；在日常产品功能范围内，<strong>我们不会主动披露</strong>任何人脸数据。</p>
+
+                <h3>5. 人脸数据保留期限</h3>
+                <p><strong>不保留。</strong>与人脸相关的临时几何信息仅在<strong>单次</strong>实时预览或<strong>单次</strong>图片编辑会话的处理周期内存在于内存中，处理完成或您离开相关界面后即被系统回收，<strong>无固定保留期限</strong>，亦<strong>无备份副本</strong>由本 App 保存。</p>
+
+                <h3>6. 隐私政策中与人脸数据相关的条款位置（便于查阅与审核对照）</h3>
+                <p>本 App 对与人脸有关信息的<strong>收集、使用、披露、共享与保留</strong>的说明，分布于以下位置，您与审核方可据此全文核对：</p>
                 <ul>
-                    <li><strong>第二节「二、信息收集与使用」</strong>中列表第 5 条「人脸与图像数据」；</li>
-                    <li><strong>本节「二（补充）、人脸数据说明（Face Data）」</strong>全文。</li>
+                    <li><strong>第二节「二、信息收集与使用」</strong>中编号列表第 <strong>5</strong> 条「人脸与图像数据」；</li>
+                    <li><strong>本节「二（补充）、人脸数据说明（Face Data）」</strong>自标题起的<strong>全部条文</strong>（含下列中文节选与英文摘要）。</li>
                 </ul>
-                <p><strong>节选引用（可直接用于回复审核）：</strong></p>
+
+                <h3>7. 节选引用（中文原文，可直接用于 App 审核回复或用户问询）</h3>
                 <div class="highlight-box">
                     <p>「本 App 不收集、不存储任何人脸数据。在实现智能抠图、美颜、祛斑等功能时，仅使用 Apple Vision 等系统框架在设备本地内存中临时计算人脸位置或人脸区域，用于当帧或当张图片的实时处理，处理完成后即丢弃，不写入磁盘、不上传、不与任何第三方共享。人脸数据不与任何第三方共享，不存储在服务器或本地持久化存储中，无保留期限。」</p>
+                </div>
+
+                <h3>8. English summary for App Store Review (Face Data)</h3>
+                <div class="highlight-box">
+                    <p style="font-size: 16px; line-height: 1.75;"><strong>Collection:</strong> We do not collect, persist, or upload face data to our servers. Apple frameworks (e.g., Vision) may compute transient face geometry in device RAM for the current frame or current photo only, then discard it. <strong>Use:</strong> Solely for on-device cutout, beauty retouching, and optional camera framing—no advertising, profiling, or third-party analytics. <strong>Sharing / storage:</strong> No sharing with third parties; nothing stored on developer servers; not written to app databases or face-data files. <strong>Retention:</strong> None; data exists only for the duration of the single processing pass. <strong>Policy location:</strong> Section II item 5 (face and image data) and this entire Face Data section, including the quoted Chinese paragraph above.</p>
                 </div>
 
                 <h2>三、权限说明</h2>
