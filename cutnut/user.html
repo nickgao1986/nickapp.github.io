@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="AI智能抠图 - 用户协议">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>AI智能抠图 - 用户协议</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            line-height: 1.8;
+            color: #1d1d1f;
+            background-color: #f5f5f7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .container { max-width: 980px; margin: 0 auto; padding: 0 22px; }
+        header {
+            background: linear-gradient(135deg, #7B2CBF 0%, #5a1d8f 100%);
+            color: white;
+            padding: 60px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.1)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+        }
+        .app-icon {
+            width: 120px; height: 120px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 26px;
+            margin: 0 auto 30px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 48px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+        h1 { font-size: 48px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 12px; }
+        .subtitle { font-size: 21px; opacity: 0.9; font-weight: 400; }
+        .privacy-badge {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 8px 20px;
+            background: rgba(255,255,255,0.25);
+            border-radius: 24px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .content-wrapper {
+            background: white;
+            border-radius: 20px 20px 0 0;
+            margin-top: -40px;
+            position: relative;
+            box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.08);
+            padding-bottom: 60px;
+        }
+        .effective-date {
+            text-align: center;
+            padding: 40px 0 30px;
+            color: #86868b;
+            font-size: 15px;
+            border-bottom: 1px solid #e5e5e7;
+        }
+        .effective-date strong { color: #7B2CBF; font-weight: 600; }
+        .policy-content { padding: 50px 60px; }
+        .policy-content h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 50px 0 24px;
+            color: #1d1d1f;
+            letter-spacing: -0.3px;
+        }
+        .policy-content h2:first-child { margin-top: 0; }
+        .policy-content h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 28px 0 16px;
+            color: #1d1d1f;
+        }
+        .policy-content p {
+            margin-bottom: 16px;
+            color: #424245;
+            font-size: 17px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+        .policy-content ul, .policy-content ol {
+            margin: 16px 0 24px 24px;
+            color: #424245;
+        }
+        .policy-content li { margin-bottom: 12px; font-size: 17px; line-height: 1.8; }
+        .policy-content strong { color: #1d1d1f; font-weight: 600; }
+        .highlight-box {
+            background: linear-gradient(135deg, #f5f0ff 0%, #ede8ff 100%);
+            border-left: 4px solid #7B2CBF;
+            padding: 24px;
+            border-radius: 12px;
+            margin: 28px 0;
+        }
+        .highlight-box p { margin-bottom: 0; }
+        .contact-card {
+            background: #f5f5f7;
+            border-radius: 16px;
+            padding: 28px;
+            margin: 28px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .contact-card .icon {
+            width: 56px; height: 56px;
+            background: linear-gradient(135deg, #7B2CBF 0%, #5a1d8f 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .contact-card .icon svg { width: 28px; height: 28px; fill: white; }
+        .contact-card .info { flex: 1; }
+        .contact-card .info p { margin: 0; font-size: 16px; color: #1d1d1f; }
+        .contact-card .info a { color: #7B2CBF; text-decoration: none; font-weight: 500; }
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #86868b;
+            font-size: 14px;
+            border-top: 1px solid #e5e5e7;
+            margin-top: 40px;
+        }
+        .back-to-top { text-align: center; padding: 30px 0; }
+        .back-to-top button {
+            background: white;
+            border: 1px solid #d2d2d7;
+            color: #7B2CBF;
+            padding: 12px 28px;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .back-to-top button:hover {
+            background: #f5f5f7;
+            border-color: #7B2CBF;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 32px; }
+            .subtitle { font-size: 17px; }
+            .app-icon { width: 90px; height: 90px; font-size: 36px; }
+            .policy-content { padding: 30px 24px; }
+            .policy-content h2 { font-size: 24px; margin: 36px 0 20px; }
+            .policy-content h3 { font-size: 18px; }
+            .policy-content p, .policy-content li { font-size: 16px; }
+            .contact-card { flex-direction: column; text-align: center; padding: 24px; }
+            header { padding: 40px 0 60px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="app-icon">📷</div>
+            <h1>AI智能抠图</h1>
+            <p class="subtitle">用户协议</p>
+            <span class="privacy-badge">📋 使用须知 · 本地处理</span>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="effective-date">
+                生效日期：<strong>2026年3月22日</strong>
+            </div>
+
+            <article class="policy-content">
+                <h2>一、协议的接受与修改</h2>
+                <p>欢迎使用<strong>AI智能抠图</strong>（以下简称「本 App」）。本协议是您与本 App 运营方之间关于下载、安装、使用本 App 及相关服务的法律协议。</p>
+                <p>当您安装或使用本 App，即表示您已阅读并同意受本协议约束。若您不同意，请停止使用本 App。运营方有权根据法律法规或产品更新需要修订本协议；修订后将在 App 内或本页面公示，您继续使用即视为接受修订后的协议。</p>
+
+                <h2>二、服务说明</h2>
+                <p>本 App 向用户提供以设备端为主的图像处理能力，包括但不限于：AI 辅助的智能抠图、去除背景、导出透明 PNG、图片美化与编辑、拍照与录像等。具体功能以您安装的版本实际提供的界面为准。</p>
+                <div class="highlight-box">
+                    <p><strong>重要说明：</strong>本 App 强调在您的设备本地完成图像处理；不涉及将您的照片、视频上传至运营方服务器进行分析或存储（详见《隐私政策》）。网络连接可能仅用于您主动打开本协议或隐私政策网页等情形。</p>
+                </div>
+
+                <h2>三、使用规范</h2>
+                <p>您承诺在使用本 App 时遵守中华人民共和国相关法律法规及您所在司法辖区的适用规定，并同意：</p>
+                <ul>
+                    <li>不利用本 App 制作、传播违法、侵权、淫秽、暴力、歧视性或其他有害内容；</li>
+                    <li>不对本 App 进行反向工程、破解、篡改或干扰其正常运行；</li>
+                    <li>不将本 App 用于任何可能损害第三方合法权益或公共利益的用途；</li>
+                    <li>对使用本 App 处理与输出的内容自行承担合法性与合规责任。</li>
+                </ul>
+
+                <h2>四、知识产权</h2>
+                <p>本 App 的软件界面、标识、文案及运营方提供的素材（如有）的知识产权归运营方或合法权利人所有。未经书面许可，您不得复制、传播或用于商业目的。</p>
+                <p>您使用本 App 对自有图片进行处理后生成的成果，其权利归属与使用范围由您自行依法享有并负责；运营方不对您输出内容主张所有权。</p>
+
+                <h2>五、应用内购买（如适用）</h2>
+                <p>本 App 可能提供一次性非消耗型内购（例如 Pro 永久解锁等），用于解锁额外功能或额度，具体以 App 内展示及 Apple 内购说明为准。</p>
+                <ul>
+                    <li>购买通过 Apple 的 App Store 完成，适用 Apple 的付款与退款政策；</li>
+                    <li>内购与您的 Apple ID 绑定，请在购买前确认 Apple 账户与设备环境；</li>
+                    <li>运营方不提供与 Apple 官方政策相冲突的退款承诺，如有疑问可联系 Apple 支持或本协议末尾邮箱。</li>
+                </ul>
+
+                <h2>六、免责声明与责任限制</h2>
+                <p>本 App 按「现状」提供，运营方尽力保证功能稳定与体验，但不对下列情形承担责任：</p>
+                <ul>
+                    <li>因设备兼容性、系统版本、存储空间、权限未授权等用户侧原因导致的功能异常或数据丢失；</li>
+                    <li>因不可抗力、网络故障、第三方服务中断等非运营方可控原因造成的损失；</li>
+                    <li>AI 或算法辅助处理结果与您的预期存在差异，您应自行判断是否满足使用场景（如印刷、商用等）。</li>
+                </ul>
+                <p>在法律允许的最大范围内，运营方对任何间接、附带、特殊或后果性损害不承担责任。</p>
+
+                <h2>七、协议终止</h2>
+                <p>您可随时停止使用并卸载本 App。若您严重违反本协议，运营方有权中止或终止您对相关功能的使用（在技术与法律允许范围内）。</p>
+
+                <h2>八、适用法律与争议解决</h2>
+                <p>本协议的订立、效力与解释适用中华人民共和国法律（冲突法规则除外）。因本协议引起的争议，双方应友好协商；协商不成的，提交运营方所在地有管辖权的人民法院诉讼解决。</p>
+
+                <h2>九、联系方式</h2>
+                <p>若您对本协议有任何疑问，可通过以下方式联系：</p>
+                <div class="contact-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </div>
+                    <div class="info">
+                        <p>联系邮箱：<a href="mailto:nickgao1986@users.noreply.github.com">nickgao1986@users.noreply.github.com</a></p>
+                    </div>
+                </div>
+
+                <p style="margin-top: 32px; padding: 20px; background: #f5f5f7; border-radius: 12px; font-size: 15px; color: #86868b;">
+                    使用本 App 同时适用《隐私政策》。请一并阅读：<strong>AI智能抠图 - 隐私政策</strong>（以 App 内链接地址为准）。
+                </p>
+            </article>
+
+            <div class="back-to-top">
+                <button type="button" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">返回顶部</button>
+            </div>
+
+            <footer>
+                <p>&copy; 2026 AI智能抠图 保留所有权利</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
