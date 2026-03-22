@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="滤镜大师-一键氛围感 - 用户协议">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>滤镜大师-一键氛围感 - 用户协议</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            line-height: 1.8;
+            color: #1d1d1f;
+            background-color: #f5f5f7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 22px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #7B2CBF 0%, #5a1d8f 100%);
+            color: white;
+            padding: 60px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.1)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 26px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            font-size: 21px;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+
+        .privacy-badge {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 8px 20px;
+            background: rgba(255,255,255,0.25);
+            border-radius: 24px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .content-wrapper {
+            background: white;
+            border-radius: 20px 20px 0 0;
+            margin-top: -40px;
+            position: relative;
+            box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.08);
+            padding-bottom: 60px;
+        }
+
+        .effective-date {
+            text-align: center;
+            padding: 40px 0 30px;
+            color: #86868b;
+            font-size: 15px;
+            border-bottom: 1px solid #e5e5e7;
+        }
+
+        .effective-date strong {
+            color: #7B2CBF;
+            font-weight: 600;
+        }
+
+        .policy-content {
+            padding: 50px 60px;
+        }
+
+        .policy-content h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 50px 0 24px;
+            color: #1d1d1f;
+            letter-spacing: -0.3px;
+        }
+
+        .policy-content h2:first-child {
+            margin-top: 0;
+        }
+
+        .policy-content h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 28px 0 16px;
+            color: #1d1d1f;
+        }
+
+        .policy-content p {
+            margin-bottom: 16px;
+            color: #424245;
+            font-size: 17px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .policy-content ul, .policy-content ol {
+            margin: 16px 0 24px 24px;
+            color: #424245;
+        }
+
+        .policy-content li {
+            margin-bottom: 12px;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .policy-content strong {
+            color: #1d1d1f;
+            font-weight: 600;
+        }
+
+        .policy-content a {
+            color: #7B2CBF;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .policy-content a:hover {
+            text-decoration: underline;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #f5f0ff 0%, #ede8ff 100%);
+            border-left: 4px solid #7B2CBF;
+            padding: 24px;
+            border-radius: 12px;
+            margin: 28px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+        }
+
+        .contact-card {
+            background: #f5f5f7;
+            border-radius: 16px;
+            padding: 28px;
+            margin: 28px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .contact-card .icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, #7B2CBF 0%, #5a1d8f 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-card .icon svg {
+            width: 28px;
+            height: 28px;
+            fill: white;
+        }
+
+        .contact-card .info {
+            flex: 1;
+        }
+
+        .contact-card .info p {
+            margin: 0;
+            font-size: 16px;
+            color: #1d1d1f;
+        }
+
+        .contact-card .info a {
+            color: #7B2CBF;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #86868b;
+            font-size: 14px;
+            border-top: 1px solid #e5e5e7;
+            margin-top: 40px;
+        }
+
+        .back-to-top {
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .back-to-top button {
+            background: white;
+            border: 1px solid #d2d2d7;
+            color: #7B2CBF;
+            padding: 12px 28px;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .back-to-top button:hover {
+            background: #f5f5f7;
+            border-color: #7B2CBF;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 32px; }
+            .subtitle { font-size: 17px; }
+            .app-icon { width: 90px; height: 90px; font-size: 36px; }
+            .policy-content { padding: 30px 24px; }
+            .policy-content h2 { font-size: 24px; margin: 36px 0 20px; }
+            .policy-content h3 { font-size: 18px; }
+            .policy-content p, .policy-content li { font-size: 16px; }
+            .contact-card { flex-direction: column; text-align: center; padding: 24px; }
+            header { padding: 40px 0 60px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="app-icon">📷</div>
+            <h1>滤镜大师-一键氛围感</h1>
+            <p class="subtitle">用户协议</p>
+            <span class="privacy-badge">实时滤镜 · 氛围自拍</span>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="effective-date">
+                生效日期：<strong>2026年3月22日</strong>
+            </div>
+
+            <article class="policy-content">
+                <h2>一、服务说明</h2>
+                <p><strong>滤镜大师-一键氛围感</strong>（以下简称「本 App」）是一款以<strong>实时滤镜</strong>与<strong>相册修图</strong>为主的影像工具，提供拍照/录像、屏幕补光、氛围滤镜、美颜与局部修图、调整图片尺寸、智能抠图、图片修复、证件照相关能力、社交发图模板等功能（以您设备上实际安装的版本为准）。</p>
+                <p>本 App 可选提供 <strong>「滤镜大师 Pro」</strong>一次性内购，用于解锁高级滤镜、场景预设、编辑工具与模板等扩展能力，具体以 App 内说明及 Apple 内购页面展示为准。</p>
+                <p>使用本 App 即表示您已阅读并同意本协议及<a href="https://nickgao1986.github.io/nickapp.github.io/pic/privacy.html">《隐私政策》</a>。若不同意，请勿使用本 App。</p>
+
+                <h2>二、用户行为规范</h2>
+                <p>您在使用本 App 时，应遵守法律法规及公序良俗，不得利用本 App 从事违法违规、侵犯他人权益或干扰服务正常运行的行为。您对使用本 App 拍摄、导入、编辑、生成、保存或分享的内容自行承担责任；请尊重他人肖像权与著作权。</p>
+
+                <h2>三、知识产权</h2>
+                <p>本 App 的界面、标识、文案、滤镜方案、模板资源及技术实现等知识产权归运营方或合法权利人所有。未经授权，不得复制、修改、反向工程或用于超出个人合理使用范围的商业目的。</p>
+
+                <h2>四、内购与「滤镜大师 Pro」（一次性购买）</h2>
+
+                <div class="highlight-box">
+                    <p><strong>重要提示：</strong>当前版本通过 Apple App 内购买提供的 Pro 权益为<strong>非消耗型、一次性付费</strong>，<strong>不会自动续费</strong>，与「订阅 / 自动续期会员」不同。若未来新增订阅类商品，我们将在 App 内与本页面另行说明并取得您的确认。</p>
+                </div>
+
+                <h3>1. 商品类型与标识</h3>
+                <p>Pro 解锁为 Apple 非消耗型内购（Non-Consumable）。当前与本 App 对应的主要商品标识符（Product ID）为：<strong>com.nickgao.filter.upgrade</strong>（以 App Store Connect 与 App 内实际展示为准）。</p>
+
+                <h3>2. 价格与支付</h3>
+                <p>具体价格、币种与税费以您 Apple ID 所在地区的 App Store 结算页面为准。App 内辅助展示价格（例如约 <strong>¥12</strong>）仅供参考，如与 Store 页面不一致，以 Store 页面为准。</p>
+                <p>付款通过 Apple 账户完成，适用 Apple 的付款与收据规则。</p>
+
+                <h3>3. 权益范围</h3>
+                <p>购买成功后，在您合法使用本 App 的前提下，可按 App 内说明使用已解锁的 Pro 功能。部分能力可能受系统版本、设备性能或 Apple 政策调整影响；我们会尽力在合理范围内保持体验一致。</p>
+
+                <h3>4. 恢复购买</h3>
+                <p>您可在本 App 内使用「恢复购买」功能，也可在 iPhone <strong>设置</strong> → <strong>Apple ID</strong> → <strong>媒体与购买项目</strong> 中查看与恢复符合条件的购买记录。恢复成功与否以 Apple 账户与交易记录为准。</p>
+
+                <h3>5. 退款与争议</h3>
+                <p>如因误购等原因需要退款，请通过 Apple 官方渠道申请，处理结果以 Apple 政策为准。我们对 Apple 已确认的退款结果予以配合，并可能相应调整本机 Pro 状态。</p>
+
+                <h2>五、免责声明</h2>
+                <ol>
+                    <li>本 App 按「现状」提供，我们不对因网络、设备故障、系统更新或不可抗力导致的服务中断承担责任；</li>
+                    <li>您应妥善保管设备及 Apple 账户，因设备丢失、账户泄露等非本 App 可控原因导致的风险由您自行承担；</li>
+                    <li>证件照、合规类用途仅为辅助工具，不保证通过任何官方审核；</li>
+                    <li>通过本 App 跳转至的第三方应用或网页，其服务与条款由第三方负责。</li>
+                </ol>
+
+                <h2>六、协议变更</h2>
+                <p>我们可能根据产品更新或法律法规变化修订本协议，修订后将在本页面或 App 内公示。若您在修订后继续使用本 App，即视为接受修订内容；若不同意，请停止使用并可根据 Apple 规则处理已购内购相关事宜。</p>
+
+                <h2>七、联系方式</h2>
+                <p>若对本用户协议或 Pro 内购有任何疑问、建议或投诉，可通过以下方式联系我们：</p>
+                <div class="contact-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </div>
+                    <div class="info">
+                        <p>联系邮箱：<a href="mailto:nickgao1986@users.noreply.github.com">nickgao1986@users.noreply.github.com</a></p>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <p>隐私与数据收集说明请参阅<a href="https://nickgao1986.github.io/nickapp.github.io/pic/privacy.html">《滤镜大师-一键氛围感 - 隐私政策》</a>。</p>
+                </div>
+            </article>
+
+            <div class="back-to-top">
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})">返回顶部</button>
+            </div>
+
+            <footer>
+                <p>&copy; 2026 滤镜大师-一键氛围感 保留所有权利</p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    </script>
+</body>
+</html>
