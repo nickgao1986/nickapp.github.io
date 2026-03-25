@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="手机清理大师 - 使用协议">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>手机清理大师 - 使用协议</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            line-height: 1.8;
+            color: #1d1d1f;
+            background-color: #f5f5f7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 22px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #007AFF 0%, #5856D6 100%);
+            color: white;
+            padding: 60px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.1)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 26px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            font-size: 21px;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+
+        .terms-badge {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 8px 20px;
+            background: rgba(255, 255, 255, 0.25);
+            border-radius: 24px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .content-wrapper {
+            background: white;
+            border-radius: 20px 20px 0 0;
+            margin-top: -40px;
+            position: relative;
+            box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.08);
+            padding-bottom: 60px;
+        }
+
+        .effective-date {
+            text-align: center;
+            padding: 40px 0 30px;
+            color: #86868b;
+            font-size: 15px;
+            border-bottom: 1px solid #e5e5e7;
+        }
+
+        .effective-date strong {
+            color: #007AFF;
+            font-weight: 600;
+        }
+
+        .policy-content {
+            padding: 50px 60px;
+        }
+
+        .policy-content h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 50px 0 24px;
+            color: #1d1d1f;
+            letter-spacing: -0.3px;
+        }
+
+        .policy-content h2:first-child {
+            margin-top: 0;
+        }
+
+        .policy-content h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 28px 0 16px;
+            color: #1d1d1f;
+        }
+
+        .policy-content p {
+            margin-bottom: 16px;
+            color: #424245;
+            font-size: 17px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .policy-content ul, .policy-content ol {
+            margin: 16px 0 24px 24px;
+            color: #424245;
+        }
+
+        .policy-content li {
+            margin-bottom: 12px;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .policy-content strong {
+            color: #1d1d1f;
+            font-weight: 600;
+        }
+
+        .policy-content a {
+            color: #007AFF;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .policy-content a:hover {
+            text-decoration: underline;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #f0f4ff 0%, #e8eeff 100%);
+            border-left: 4px solid #007AFF;
+            padding: 24px;
+            border-radius: 12px;
+            margin: 28px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+        }
+
+        .contact-card {
+            background: #f5f5f7;
+            border-radius: 16px;
+            padding: 28px;
+            margin: 28px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .contact-card .icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, #007AFF 0%, #5856D6 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-card .icon svg {
+            width: 28px;
+            height: 28px;
+            fill: white;
+        }
+
+        .contact-card .info {
+            flex: 1;
+        }
+
+        .contact-card .info p {
+            margin: 0;
+            font-size: 16px;
+            color: #1d1d1f;
+        }
+
+        .contact-card .info a {
+            color: #007AFF;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #86868b;
+            font-size: 14px;
+            border-top: 1px solid #e5e5e7;
+            margin-top: 40px;
+        }
+
+        .back-to-top {
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .back-to-top button {
+            background: white;
+            border: 1px solid #d2d2d7;
+            color: #007AFF;
+            padding: 12px 28px;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .back-to-top button:hover {
+            background: #f5f5f7;
+            border-color: #007AFF;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .subtitle {
+                font-size: 17px;
+            }
+
+            .app-icon {
+                width: 90px;
+                height: 90px;
+                font-size: 36px;
+            }
+
+            .policy-content {
+                padding: 30px 24px;
+            }
+
+            .policy-content h2 {
+                font-size: 24px;
+                margin: 36px 0 20px;
+            }
+
+            .policy-content h3 {
+                font-size: 18px;
+            }
+
+            .policy-content p,
+            .policy-content li {
+                font-size: 16px;
+            }
+
+            .contact-card {
+                flex-direction: column;
+                text-align: center;
+                padding: 24px;
+            }
+
+            header {
+                padding: 40px 0 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="app-icon">🧹</div>
+            <h1>手机清理大师</h1>
+            <p class="subtitle">使用协议</p>
+            <span class="terms-badge">订阅与会员 · 本地处理</span>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="effective-date">
+                生效日期：<strong>2026年3月25日</strong>
+            </div>
+
+            <article class="policy-content">
+                <h2>一、协议接受与适用范围</h2>
+                <p><strong>手机清理大师</strong>（以下简称"本App"）是一款帮助您<strong>管理存储空间与相册</strong>的工具类应用，主要能力包括图片压缩、相册与存储相关整理、以及应用内提供的其他本地工具（具体以实际版本界面为准）。请您在下载、安装、使用本App及购买或订阅会员服务前，仔细阅读并理解本使用协议（以下简称"本协议"）。</p>
+                <p>您一旦下载、安装、启动、使用本App或完成购买，即视为您已阅读、理解并同意接受本协议的全部内容。若您不同意本协议，请立即停止使用本App。</p>
+
+                <h2>二、服务内容说明</h2>
+                <p>本App主要为您提供以下类型的服务（具体入口与名称以应用内为准）：</p>
+                <ul>
+                    <li><strong>存储与相册辅助：</strong>展示或分析设备存储与相册使用情况，并提供整理、优化相关工具；</li>
+                    <li><strong>图片压缩：</strong>对您从相册或文件中选择的图片进行本地压缩，减小体积、节省空间；</li>
+                    <li><strong>批量与智能处理：</strong>支持多张照片连续处理、压缩质量与尺寸等参数设置，以及设备端智能压缩建议；</li>
+                    <li><strong>加密相册（如提供）：</strong>在设备本地对选定内容进行保护与访问控制，需您妥善保管访问方式；</li>
+                    <li><strong>会员与专业版（Pro）能力：</strong>可通过<strong>自动续期订阅</strong>和/或<strong>一次性购买</strong>等方式解锁无限次压缩、批量能力、智能算法等增强功能，具体权益、价格与周期以应用内及 App Store 展示为准。</li>
+                </ul>
+                <p>本App为工具类应用，核心媒体处理默认在您的设备本地完成。关于数据与隐私处理方式，请参阅<a href="https://nickgao1986.github.io/nickapp.github.io/compress/privacy.html">《手机清理大师隐私政策》</a>。</p>
+
+                <h2>三、使用规则</h2>
+                <ol>
+                    <li>您应确保对所处理的图片拥有合法使用权，不得利用本App处理、传播违法违规或侵害他人合法权益的内容；</li>
+                    <li>您应按照应用界面与系统权限提示，合理使用相册读取、保存等功能；</li>
+                    <li>您不得以任何方式干扰本App的正常运行，不得对本App进行恶意破解、篡改、反编译、批量滥用或利用漏洞牟利；</li>
+                    <li>因您自行导入、导出、删除或覆盖图片而产生的风险，由您自行承担。</li>
+                </ol>
+
+                <h2>四、权限与本地处理说明</h2>
+                <p>为实现相关功能，本App可能向您申请以下系统权限（以系统弹窗与实际版本为准）：</p>
+                <ul>
+                    <li><strong>相册读取权限：</strong>用于选择待压缩或待整理的图片、视频等；</li>
+                    <li><strong>相册写入权限：</strong>用于将处理结果保存到系统相册；</li>
+                    <li><strong>相机、麦克风（如适用）：</strong>用于拍照、录像等与存储管理相关的采集功能；</li>
+                    <li><strong>面容 ID / 触控 ID（如适用）：</strong>用于加密相册等场景的本地身份验证。</li>
+                </ul>
+                <div class="highlight-box">
+                    <p><strong>特别说明：</strong>您选择的媒体内容、压缩或整理结果及相关设备端分析过程，默认仅在本地处理；开发者不以提供服务为目的将您的照片、视频内容上传至自有服务器。</p>
+                </div>
+
+                <h2>五、订阅与自动续期</h2>
+
+                <h3>1. 协议说明</h3>
+                <p>手机清理大师高级会员采用<strong>自动续期订阅</strong>方式（如周订阅，含试用期以应用内展示为准）。请您务必审慎阅读、充分理解本条款，特别是<strong>自动续费、扣款与取消方式</strong>。您勾选同意或完成订阅购买的行为将被视为接受本条款。</p>
+
+                <h3>2. Apple 自动续期订阅须知（符合 App Store 审核要求）</h3>
+                <p>通过本 App 购买的手机清理大师高级会员为 <strong>Apple 自动续期订阅</strong>。您理解并同意以下内容：</p>
+                <ul>
+                    <li><strong>扣款方式：</strong>订阅费用将在您确认购买时从与您的 Apple ID 关联的支付方式（如信用卡、借记卡等）中扣取。</li>
+                    <li><strong>自动续期：</strong>除非您在当前订阅周期结束至少 24 小时前关闭自动续期，否则订阅将自动续期。</li>
+                    <li><strong>续期扣款时间：</strong>您的账户将在当前周期结束前 24 小时内被收取下一周期的费用，具体金额以订阅确认页面或 App Store 订阅页面显示为准。</li>
+                    <li><strong>管理与取消：</strong>您可随时在 iPhone <strong>设置 → Apple ID（您的姓名）→ 订阅</strong> 中查看、管理您的订阅，并关闭自动续期。关闭后，当前已付费周期结束前您仍可继续使用会员权益，到期后将不再扣费。</li>
+                    <li><strong>免费试用：</strong>若订阅包含免费试用期，在您购买该订阅时，任何未使用的试用期将自动失效。</li>
+                </ul>
+                <p>订阅的计费周期（如周、月、年）与价格以应用内订阅页面及 App Store 展示为准。我们不会对已扣款项进行退款，法律另有规定的除外。</p>
+
+                <h3>3. 服务说明</h3>
+                <p>自动续费服务用于在您当前订阅周期即将结束时，由 Apple 从您绑定的支付方式（如 Apple ID 绑定的支付方式）中自动扣缴下一周期的费用，以延续手机清理大师高级会员权益。计费周期（如每周、每月等）及价格以应用内或 App Store 订阅页面显示为准。若因余额不足等原因导致扣款失败，我们有权在当周期结束后中止您的会员权益；除法律另有规定外，已扣款项不予退还。</p>
+
+                <h3>4. 双方权利与义务</h3>
+                <p><strong>4.1 扣款与生效：</strong>Apple 将在当前订阅期结束前 24 小时内或结束时尝试扣缴下一周期费用。扣款成功后，会员有效期将相应延长。通过 iOS 渠道的扣款时间以 Apple 实际扣款为准。</p>
+                <p><strong>4.2 协议变更：</strong>我们可根据业务或法律要求修订本协议，并在本页面或应用内公布修订内容。若您不同意修订后的协议，可取消订阅；若您继续使用订阅服务，则视为接受修订后的协议。</p>
+
+                <h3>5. 取消订阅步骤</h3>
+                <p>若您需要取消自动续费，请按以下步骤操作：</p>
+                <ol>
+                    <li>打开 iPhone <strong>设置</strong> → 顶部 <strong>Apple ID</strong>（您的姓名）→ <strong>订阅</strong></li>
+                    <li>在订阅列表中找到「<strong>手机清理大师</strong>」</li>
+                    <li>点击进入后选择「<strong>取消订阅</strong>」</li>
+                </ol>
+                <p>取消后，当前已付费周期结束前您仍可继续使用会员权益，到期后将不再自动扣费。</p>
+
+                <h3>6. 恢复购买</h3>
+                <p>如您更换设备、重装应用或因其他原因导致已购权益未显示，可在本App内使用"恢复购买"功能，由 Apple 根据您的购买记录恢复对应权益。</p>
+
+                <h2>六、知识产权</h2>
+                <p>本App的软件代码、界面设计、图标、文案、商标及相关内容的知识产权归开发者或合法权利人所有。未经授权，任何个人或组织不得复制、传播、出售、出租、改编或用于其他商业用途。</p>
+
+                <h2>七、免责声明</h2>
+                <ol>
+                    <li>本App仅作为存储与相册类工具使用，压缩效果、扫描或统计结果可能因图片内容、分辨率、格式、设备环境等而不同；</li>
+                    <li>我们建议您在处理重要照片前先自行备份原图，避免因误删、覆盖或设备异常带来损失；</li>
+                    <li>因设备故障、系统限制、Apple 服务异常、存储空间不足、权限关闭或不可抗力等原因导致的功能中断、保存失败或数据异常，我们将在法律允许范围内不承担责任；</li>
+                    <li>若您通过本App访问第三方页面或服务，其内容与规则由第三方负责。</li>
+                </ol>
+
+                <h2>八、协议更新</h2>
+                <p>我们可能根据产品功能、法律法规或运营需要对本协议进行更新。更新后的内容将通过本页面或应用内适当方式公布。若您在更新后继续使用本App，即视为您接受更新后的协议内容。</p>
+
+                <h2>九、适用法律与争议解决</h2>
+                <p>本协议的订立、执行、解释及争议解决均适用中华人民共和国法律。若因本协议或本App使用产生争议，双方应先友好协商；协商不成的，提交有管辖权的人民法院处理。</p>
+
+                <h2>十、联系我们</h2>
+                <p>若您对本协议、购买权益或使用过程中遇到的问题有任何疑问，可通过以下方式联系开发者：</p>
+
+                <div class="contact-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </div>
+                    <div class="info">
+                        <p>联系邮箱：<a href="mailto:nickgao1986@users.noreply.github.com">nickgao1986@users.noreply.github.com</a></p>
+                    </div>
+                </div>
+
+                <p style="margin-top: 40px; padding: 20px; background: #f5f5f7; border-radius: 12px; font-size: 15px; color: #86868b;">
+                    本使用协议与《手机清理大师隐私政策》共同构成您使用本App及会员/专业版（Pro）服务的完整约定。
+                </p>
+            </article>
+
+            <div class="back-to-top">
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})">返回顶部</button>
+            </div>
+
+            <footer>
+                <p>&copy; 2026 手机清理大师 保留所有权利</p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
