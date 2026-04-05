@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="智扫大师 - 隐私政策">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>智扫大师 - 隐私政策</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            line-height: 1.8;
+            color: #1d1d1f;
+            background-color: #f5f5f7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 22px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #7B2CBF 0%, #5a1d8f 100%);
+            color: white;
+            padding: 60px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.1)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 26px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            font-size: 21px;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+
+        .privacy-badge {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 8px 20px;
+            background: rgba(255,255,255,0.25);
+            border-radius: 24px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .content-wrapper {
+            background: white;
+            border-radius: 20px 20px 0 0;
+            margin-top: -40px;
+            position: relative;
+            box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.08);
+            padding-bottom: 60px;
+        }
+
+        .effective-date {
+            text-align: center;
+            padding: 40px 0 30px;
+            color: #86868b;
+            font-size: 15px;
+            border-bottom: 1px solid #e5e5e7;
+        }
+
+        .effective-date strong {
+            color: #7B2CBF;
+            font-weight: 600;
+        }
+
+        .policy-content {
+            padding: 50px 60px;
+        }
+
+        .policy-content h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 50px 0 24px;
+            color: #1d1d1f;
+            letter-spacing: -0.3px;
+        }
+
+        .policy-content h2:first-child {
+            margin-top: 0;
+        }
+
+        .policy-content h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 28px 0 16px;
+            color: #1d1d1f;
+        }
+
+        .policy-content p {
+            margin-bottom: 16px;
+            color: #424245;
+            font-size: 17px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .policy-content ul, .policy-content ol {
+            margin: 16px 0 24px 24px;
+            color: #424245;
+        }
+
+        .policy-content li {
+            margin-bottom: 12px;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .policy-content strong {
+            color: #1d1d1f;
+            font-weight: 600;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #f5f0ff 0%, #ede8ff 100%);
+            border-left: 4px solid #7B2CBF;
+            padding: 24px;
+            border-radius: 12px;
+            margin: 28px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+        }
+
+        .contact-card {
+            background: #f5f5f7;
+            border-radius: 16px;
+            padding: 28px;
+            margin: 28px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .contact-card .icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, #7B2CBF 0%, #5a1d8f 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-card .icon svg {
+            width: 28px;
+            height: 28px;
+            fill: white;
+        }
+
+        .contact-card .info {
+            flex: 1;
+        }
+
+        .contact-card .info p {
+            margin: 0;
+            font-size: 16px;
+            color: #1d1d1f;
+        }
+
+        .contact-card .info a {
+            color: #7B2CBF;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #86868b;
+            font-size: 14px;
+            border-top: 1px solid #e5e5e7;
+            margin-top: 40px;
+        }
+
+        .back-to-top {
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .back-to-top button {
+            background: white;
+            border: 1px solid #d2d2d7;
+            color: #7B2CBF;
+            padding: 12px 28px;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .back-to-top button:hover {
+            background: #f5f5f7;
+            border-color: #7B2CBF;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .subtitle {
+                font-size: 17px;
+            }
+
+            .app-icon {
+                width: 90px;
+                height: 90px;
+                font-size: 36px;
+            }
+
+            .policy-content {
+                padding: 30px 24px;
+            }
+
+            .policy-content h2 {
+                font-size: 24px;
+                margin: 36px 0 20px;
+            }
+
+            .policy-content h3 {
+                font-size: 18px;
+            }
+
+            .policy-content p,
+            .policy-content li {
+                font-size: 16px;
+            }
+
+            .contact-card {
+                flex-direction: column;
+                text-align: center;
+                padding: 24px;
+            }
+
+            header {
+                padding: 40px 0 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="app-icon">📷</div>
+            <h1>智扫大师</h1>
+            <p class="subtitle">隐私政策</p>
+            <span class="privacy-badge">🔒 本地处理为主 · 不上传扫描内容</span>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="effective-date">
+                生效日期：<strong>2026年4月5日</strong>
+            </div>
+
+            <article class="policy-content">
+                <h2>一、引言</h2>
+                <p><strong>智扫大师</strong>（以下简称「本 App」；在 App Store 等部分场景可能以英文名 Filllight 展示）是一款在 iPhone 上使用的条码与二维码工具类应用，主要能力包括：相机扫码与相册识码、批量连续扫码与导出、扫描历史、二维码生成与样式编辑、通用文字识别（OCR）、身份证信息识别与展示（基于本地视觉识别，非联网核验）、图片编辑与调色、文档库（本地汇总 OCR/证件/笔记类条目）、URL 本地安全检测、在系统允许范围内辅助连接 Wi‑Fi（如适用）、主屏幕小组件快捷入口等。</p>
+                <p>本政策说明我们如何对待与您相关的信息。<strong>本 App 以设备端处理为主</strong>：您的扫码内容、OCR 与证件识别结果、编辑后的图片、历史与文档库数据等<strong>默认仅保存在您的设备上</strong>，<strong>我们不会运营用于存储用户内容的后台服务器</strong>，也不会将上述内容作为「用户画像」上传用于广告或追踪。使用本 App 即表示您知悉并同意本政策。</p>
+
+                <h2>二、我们收集哪些信息</h2>
+                <p><strong>本 App 不向开发者自有服务器上传您的个人身份标识、扫描原文、证件照片或 OCR 全文用于识别您是谁。</strong>在正常使用下，下列数据<strong>仅存在于您的设备本地</strong>（或通过 Apple 提供的 App Group 在您设备上在主 App 与小组件之间共享，仍不经过我们服务器）：</p>
+                <ul>
+                    <li><strong>扫描记录与历史：</strong>条码内容、类型、时间等，便于您回看与再次使用。</li>
+                    <li><strong>批量扫码与导出：</strong>导出文件在您确认分享前生成于本地临时目录；是否通过系统分享面板发出由您操作决定。</li>
+                    <li><strong>OCR 与证件识别：</strong>识别过程在设备上完成；您选择保存或加入文档库的内容仅存本地。</li>
+                    <li><strong>图片编辑与 PDF 相关工具：</strong>处理均在设备端进行；除非您主动导出或分享，相关内容不会发送给我们。</li>
+                    <li><strong>文档库与设置：</strong>如语言、主题、会员状态缓存键、小组件所需配置等，使用系统提供的本地存储（含 UserDefaults、App Group）。</li>
+                    <li><strong>安全检测：</strong>您输入或检测的网址仅在设备上按本地规则分析，<strong>不会上传到我们的服务器</strong>。</li>
+                </ul>
+                <p>我们<strong>不主动收集</strong>可用于跨 App 追踪您的广告标识、精确位置、通讯录等内容；亦<strong>不集成</strong>第三方广告或统计分析 SDK。</p>
+
+                <h2>三、系统权限说明</h2>
+                <p>本 App 仅在实现功能所必要时请求系统权限，您可随时在「设置 → 智扫大师」中调整：</p>
+                <ul>
+                    <li><strong>相机：</strong>用于实时扫描二维码/条形码、拍照取字、身份证拍摄、智能拍摄、图片编辑等。不用于人脸识别以外的监控用途。</li>
+                    <li><strong>照片图库：</strong>用于从相册选取图片进行识码、OCR、编辑或导入；仅在您主动选择时访问对应资源。</li>
+                    <li><strong>日历（如使用）：</strong>若您从扫码结果中选择「添加到日历」，本 App 仅在您确认时向系统日历写入事件，不会上传日历内容。</li>
+                    <li><strong>本地网络 / Wi‑Fi 配置（如使用）：</strong>在您使用「连接 Wi‑Fi」等能力时，可能通过系统接口配置网络；<strong>不会</strong>因此向我们回传您的 Wi‑Fi 密码或上网记录。</li>
+                </ul>
+                <p>拒绝某项权限可能导致对应功能不可用，其余功能仍可正常使用。</p>
+
+                <h2>四、Apple 应用内购买（高级会员）</h2>
+                <p>本 App 提供可选的<strong>高级会员（Pro）</strong>，为通过 <strong>App Store</strong> 购买的<strong>非消耗型、一次性买断</strong>商品（当前产品标识为 <code>com.nick.quanneng.upgrade1</code>，以 App Store Connect 配置为准）。价格、税费与展示文案以您所在地区 App Store 为准。</p>
+                <p>支付与收据由 <strong>Apple</strong> 处理；我们不会收到您的银行卡号或完整支付凭证。购买与恢复依赖 Apple 账户与 StoreKit，我们会在设备上根据 Apple 提供的交易/权益信息更新本地会员状态。<strong>若您曾购买过历史订阅类商品</strong>，在符合 Apple 规则的前提下，本 App 可能仍识别该历史权益以保障老用户可用性，具体以实际交易记录为准。</p>
+                <p>退款、账单与家庭共享等问题请通过 Apple 支持或账户设置处理。</p>
+
+                <h2>五、小组件（Widget）</h2>
+                <p>若您添加本 App 提供的主屏幕小组件，小组件与主 App 可能通过 Apple 的 <strong>App Group</strong> 在<strong>您的设备本地</strong>读取少量配置或快捷数据（例如与扫码入口相关的非敏感配置），以便展示快捷入口。<strong>该数据不会上传至开发者服务器。</strong></p>
+
+                <h2>六、安全检测功能</h2>
+                <p>「URL 安全检测」等功能在<strong>设备本地</strong>依据内置规则（如可疑域名特征、短链、HTTPS、异常端口等）给出风险提示，<strong>不会将您输入的网址发送到我们的服务器或第三方</strong>。结果仅供辅助参考，不构成安全或法律保证。</p>
+
+                <h2>七、数据存储与安全</h2>
+                <p>用户内容与历史记录主要保存在设备存储中；卸载本 App 将清除应用沙盒内数据（除非系统另有保留策略）。请妥善保管设备与系统密码。我们无法远程访问您设备内的上述数据。</p>
+
+                <h2>八、数据共享与披露</h2>
+                <p>除法律法规要求或司法/监管机关依法提出的合法请求外，我们<strong>不会出售、出租</strong>您的个人信息。因本 App 不收集可识别身份的中心化用户档案，通常也不存在向第三方「共享用户数据库」的情形。</p>
+                <p>当您使用系统<strong>分享</strong>面板、隔空投送、邮件、第三方 App 打开链接等功能时，内容由<strong>您主动操作</strong>离开本 App，由相应接收方按其隐私政策处理。</p>
+
+                <h2>九、第三方与网络访问</h2>
+                <p>本 App 不以广告或追踪为目的集成第三方 SDK。与 Apple 相关的网络交互主要包括：<strong>StoreKit</strong>（内购验证/恢复）、以及您主动打开的链接（如本隐私政策、用户协议网页）。除上述情形外，本 App 核心识别与编辑功能<strong>可在离线环境下使用</strong>（内购验证等仍可能需网络）。</p>
+
+                <h2>十、儿童隐私</h2>
+                <p>本 App 不面向 13 岁以下儿童专门设计，也不会故意收集儿童个人信息。若监护人发现儿童在未经同意的情况下提供了信息，请通过下方方式联系我们，我们将协助处理。</p>
+
+                <h2>十一、您的权利</h2>
+                <p>您可通过删除应用内数据、卸载本 App、关闭系统权限等方式自主控制本地数据。若您对本政策有疑问，或需要 App Store 审核相关说明，欢迎联系我们。</p>
+
+                <h2>十二、政策更新</h2>
+                <p>我们可能因功能或法规变化更新本政策，并在本页面更新生效日期。若变更重大，我们将通过合理方式提示。继续使用即视为知悉更新内容。</p>
+
+                <h2>十三、联系我们</h2>
+                <p>如对本隐私政策有任何疑问、建议或投诉，请通过以下方式联系：</p>
+
+                <div class="contact-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </div>
+                    <div class="info">
+                        <p>联系邮箱：<a href="mailto:nickgao1986@users.noreply.github.com">nickgao1986@users.noreply.github.com</a></p>
+                    </div>
+                </div>
+
+                <h2>十四、免责声明</h2>
+                <ol>
+                    <li>本 App 提供的扫码、OCR、证件字段提取、安全检测等均为工具性辅助，识别结果可能存在误差；身份证等证件信息<strong>不构成官方核验</strong>，请以发证机关或法定渠道为准。</li>
+                    <li>因设备丢失、越狱、恶意软件或您主动分享导致的风险，非本 App 可控范围。</li>
+                    <li>跳转至第三方网站或 App 后的行为由其各自服务条款与隐私政策约束。</li>
+                </ol>
+
+                <div class="highlight-box">
+                    <h3>与 App Store「App 隐私」填写建议</h3>
+                    <p>本 App 以设备端处理为主：相机/相册用于扫码与图像相关功能；日历仅在用户主动添加事件时使用；内购通过 Apple 处理。若 Connect 中需声明数据类型，请以<strong>实际收集与关联方式</strong>为准——在「不将数据用于追踪、不上传用户内容至开发者服务器」的前提下，多数场景可对应「未用于追踪」或「仅设备端」类说明。本政策供审核与用户查阅，与产品实际行为一致。</p>
+                </div>
+            </article>
+
+            <div class="back-to-top">
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})">返回顶部</button>
+            </div>
+
+            <footer>
+                <p>&copy; 2026 智扫大师 保留所有权利</p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

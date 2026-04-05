@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="智扫大师 - 用户协议">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>智扫大师 - 用户协议</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            line-height: 1.8;
+            color: #1d1d1f;
+            background-color: #f5f5f7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 22px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #7B2CBF 0%, #5a1d8f 100%);
+            color: white;
+            padding: 60px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.1)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 26px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            font-size: 21px;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+
+        .privacy-badge {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 8px 20px;
+            background: rgba(255,255,255,0.25);
+            border-radius: 24px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .content-wrapper {
+            background: white;
+            border-radius: 20px 20px 0 0;
+            margin-top: -40px;
+            position: relative;
+            box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.08);
+            padding-bottom: 60px;
+        }
+
+        .effective-date {
+            text-align: center;
+            padding: 40px 0 30px;
+            color: #86868b;
+            font-size: 15px;
+            border-bottom: 1px solid #e5e5e7;
+        }
+
+        .effective-date strong {
+            color: #7B2CBF;
+            font-weight: 600;
+        }
+
+        .policy-content {
+            padding: 50px 60px;
+        }
+
+        .policy-content h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 50px 0 24px;
+            color: #1d1d1f;
+            letter-spacing: -0.3px;
+        }
+
+        .policy-content h2:first-child {
+            margin-top: 0;
+        }
+
+        .policy-content h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 28px 0 16px;
+            color: #1d1d1f;
+        }
+
+        .policy-content p {
+            margin-bottom: 16px;
+            color: #424245;
+            font-size: 17px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .policy-content ul, .policy-content ol {
+            margin: 16px 0 24px 24px;
+            color: #424245;
+        }
+
+        .policy-content li {
+            margin-bottom: 12px;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .policy-content strong {
+            color: #1d1d1f;
+            font-weight: 600;
+        }
+
+        .policy-content a {
+            color: #7B2CBF;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .policy-content a:hover {
+            text-decoration: underline;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #f5f0ff 0%, #ede8ff 100%);
+            border-left: 4px solid #7B2CBF;
+            padding: 24px;
+            border-radius: 12px;
+            margin: 28px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+        }
+
+        .contact-card {
+            background: #f5f5f7;
+            border-radius: 16px;
+            padding: 28px;
+            margin: 28px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .contact-card .icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, #7B2CBF 0%, #5a1d8f 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-card .icon svg {
+            width: 28px;
+            height: 28px;
+            fill: white;
+        }
+
+        .contact-card .info {
+            flex: 1;
+        }
+
+        .contact-card .info p {
+            margin: 0;
+            font-size: 16px;
+            color: #1d1d1f;
+        }
+
+        .contact-card .info a {
+            color: #7B2CBF;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #86868b;
+            font-size: 14px;
+            border-top: 1px solid #e5e5e7;
+            margin-top: 40px;
+        }
+
+        .back-to-top {
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .back-to-top button {
+            background: white;
+            border: 1px solid #d2d2d7;
+            color: #7B2CBF;
+            padding: 12px 28px;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .back-to-top button:hover {
+            background: #f5f5f7;
+            border-color: #7B2CBF;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 32px; }
+            .subtitle { font-size: 17px; }
+            .app-icon { width: 90px; height: 90px; font-size: 36px; }
+            .policy-content { padding: 30px 24px; }
+            .policy-content h2 { font-size: 24px; margin: 36px 0 20px; }
+            .policy-content h3 { font-size: 18px; }
+            .policy-content p, .policy-content li { font-size: 16px; }
+            .contact-card { flex-direction: column; text-align: center; padding: 24px; }
+            header { padding: 40px 0 60px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="app-icon">📱</div>
+            <h1>智扫大师</h1>
+            <p class="subtitle">用户协议</p>
+            <span class="privacy-badge">智能扫描 · 轻便好用</span>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="effective-date">
+                生效日期：<strong>2026年3月15日</strong>
+            </div>
+
+            <article class="policy-content">
+                <h2>一、服务说明</h2>
+                <p><strong>智扫大师</strong>（以下简称「本 App」；部分渠道可能显示英文名 Filllight）是一款二维码与条形码扫描、生成及安全检测工具，主要功能包括：扫一扫、批量扫码、生成二维码（文本/网址/WiFi）、拍照取字与 OCR、身份证识别、图片编辑、文档库、安全检测、扫描历史、桌面小组件等。本用户协议适用于您使用本 App 的全部行为，包括可选的<strong>高级会员</strong>服务（以 App Store 展示为准：当前为一次性买断；若您曾购买历史自动续费订阅，亦适用本节及下文中与订阅管理相关的说明）。</p>
+                <p>使用本 App 即表示您已阅读并同意本协议及<a href="https://nickgao1986.github.io/nickapp.github.io/scan/privacy.html">《隐私政策》</a>。若不同意，请勿使用本 App。</p>
+
+                <h2>二、用户行为规范</h2>
+                <p>您在使用本 App 时，应遵守法律法规及公序良俗，不得利用本 App 从事违法违规、侵犯他人权益或干扰服务正常运行的行为。您对通过本 App 扫描、生成、保存或分享的内容自行承担责任。</p>
+
+                <h2>三、知识产权</h2>
+                <p>本 App 的界面、 logo、文案、技术实现等知识产权归运营方所有。未经授权，不得复制、修改、反向工程或用于商业目的。</p>
+
+                <h2>四、高级会员与自动续费（历史订阅用户）</h2>
+                <p>当前版本的高级会员以 <strong>App Store 一次性买断（非消耗型）</strong>为主。若您的 Apple ID 下仍存在<strong>历史自动续费订阅</strong>，下列条款适用于该订阅关系；新用户请以 App 内购买页及 App Store 商品说明为准。</p>
+
+                <h3>1. 协议说明</h3>
+                <p>本协议约定关于自动续费服务的权利和义务。请您务必审慎阅读、充分理解本协议各条款内容，<strong>特别是免除或限制责任的相应条款</strong>，以加粗或斜体加粗等形式提示您注意限制、免责条款。您勾选同意的行为将被视为接受本协议的各项条款。</p>
+
+                <h3>2. 服务说明</h3>
+                <p>自动续费服务是为避免您因疏忽或其他原因导致未能及时续费而推出的服务。您授权高级会员即将过期时，委托支付渠道在不验证您的账户密码、支付密码、短信校验码等信息的情况下，从您绑定的第三方支付账户、银行卡、通信账户（以下统称「账户」）余额中代扣下一个计费周期的费用。</p>
+                <p>计费周期包括周、月度、年度等，您可根据页面提示自行选择。如因上述账户中可扣款余额不足导致续费失败，有权中断/终止相应的高级会员权益和服务。除法律另有规定外，不以任何方式对您已经支付的费用予以退还。</p>
+
+                <h3>3. 双方的权利和义务</h3>
+                <p><strong>3.1 自动续费服务条款：</strong>将在自动续费服务期限到期前24小时和到期后，通过您的上述账户扣除下一计费周期费用，会将扣划款项记入高级会员支付记录，并同时相应延长高级会员有效期。一旦扣款成功，有权即时收取该费用并不提供退费服务。如在扣费过程中出现差错应密切配合查明原因，各自承担己方过错造成的损失。通过 iOS 渠道进行购买，前述自动续费服务的扣款时间以 iOS 渠道实际扣款时间为准，请您关注。</p>
+                <p><strong>3.2 协议修改条款：</strong>可根据业务情况修改本协议，并在本页面公布、告知您修订后的协议内容。如果您不同意修改后的协议，可以取消自动续费服务；如果您继续使用本服务，则视为您已经知晓、同意并接受本协议修订后的内容。</p>
+
+                <h3>7. 取消订阅步骤</h3>
+                <p>若您需要取消自动续费，请按以下步骤操作：</p>
+                <ol>
+                    <li>打开 iPhone <strong>设置</strong> → <strong>Apple ID</strong>（顶部您的姓名）→ <strong>订阅</strong></li>
+                    <li>在订阅列表中找到「<strong>智扫大师</strong>」（或仍显示为历史应用名称时，以列表中实际条目为准）</li>
+                    <li>点击进入后选择「<strong>取消订阅</strong>」即可</li>
+                </ol>
+                <p>取消后，当前计费周期结束前您仍可继续使用高级会员权益，到期后将不再自动扣费。</p>
+
+                <h2>五、免责声明</h2>
+                <ol>
+                    <li>本 App 仅提供工具服务，对您使用本 App 产生的直接或间接损失不承担责任；</li>
+                    <li>您应妥善保管设备及账户，因设备丢失、账户泄露等非本 App 原因导致的风险由您自行承担；</li>
+                    <li>通过本 App 跳转至的第三方应用或网页，其隐私与条款由第三方负责，与本 App 无关。</li>
+                </ol>
+
+                <h2>六、协议变更</h2>
+                <p>我们可能根据产品更新或法律法规变化修订本协议，修订后将在本页面或 App 内公示。若您继续使用本 App 或订阅服务，即视为接受修订内容；若不同意，可停止使用并取消订阅。</p>
+
+                <h2>七、联系方式</h2>
+                <p>若对本用户协议或高级会员服务有任何疑问、建议或投诉，可通过以下方式联系我们：</p>
+                <div class="contact-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </div>
+                    <div class="info">
+                        <p>联系邮箱：<a href="mailto:nickgao1986@users.noreply.github.com">nickgao1986@users.noreply.github.com</a></p>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <p>我们将在合理时间内回复您的反馈。隐私与数据收集说明请参阅<a href="https://nickgao1986.github.io/nickapp.github.io/scan/privacy.html">《智扫大师 - 隐私政策》</a>。</p>
+                </div>
+            </article>
+
+            <div class="back-to-top">
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})">返回顶部</button>
+            </div>
+
+            <footer>
+                <p>&copy; 2026 智扫大师 保留所有权利</p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    </script>
+</body>
+</html>
