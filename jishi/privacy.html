@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="悬浮窗 - 隐私政策">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>悬浮窗 - 隐私政策</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            line-height: 1.8;
+            color: #1d1d1f;
+            background-color: #f5f5f7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container { max-width: 980px; margin: 0 auto; padding: 0 22px; }
+
+        header {
+            background: linear-gradient(135deg, #7EB6FF 0%, #4A90E8 50%, #5B7CFF 100%);
+            color: white;
+            padding: 56px 0 76px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.12)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+        }
+
+        .app-icon {
+            width: 112px;
+            height: 112px;
+            background: rgba(255, 255, 255, 0.22);
+            border-radius: 26px;
+            margin: 0 auto 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 52px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        h1 {
+            font-size: 44px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle { font-size: 20px; opacity: 0.95; font-weight: 400; }
+
+        .privacy-badge {
+            display: inline-block;
+            margin-top: 14px;
+            padding: 8px 20px;
+            background: rgba(255,255,255,0.28);
+            border-radius: 24px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .content-wrapper {
+            background: white;
+            border-radius: 20px 20px 0 0;
+            margin-top: -36px;
+            position: relative;
+            box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.06);
+            padding-bottom: 56px;
+        }
+
+        .effective-date {
+            text-align: center;
+            padding: 36px 0 26px;
+            color: #86868b;
+            font-size: 15px;
+            border-bottom: 1px solid #e5e5e7;
+        }
+
+        .effective-date strong { color: #007AFF; font-weight: 600; }
+
+        .policy-content { padding: 48px 56px; }
+
+        .policy-content h2 {
+            font-size: 26px;
+            font-weight: 700;
+            margin: 44px 0 22px;
+            color: #1d1d1f;
+            letter-spacing: -0.3px;
+        }
+
+        .policy-content h2:first-child { margin-top: 0; }
+
+        .policy-content h3 {
+            font-size: 19px;
+            font-weight: 600;
+            margin: 26px 0 14px;
+            color: #1d1d1f;
+        }
+
+        .policy-content p {
+            margin-bottom: 16px;
+            color: #424245;
+            font-size: 17px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .policy-content ul, .policy-content ol {
+            margin: 14px 0 22px 24px;
+            color: #424245;
+        }
+
+        .policy-content li { margin-bottom: 10px; font-size: 17px; line-height: 1.75; }
+
+        .policy-content strong { color: #1d1d1f; font-weight: 600; }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #E8F2FF 0%, #EEF4FF 100%);
+            border-left: 4px solid #007AFF;
+            padding: 22px 24px;
+            border-radius: 12px;
+            margin: 26px 0;
+        }
+
+        .highlight-box p:last-child { margin-bottom: 0; }
+
+        .contact-card {
+            background: #f5f5f7;
+            border-radius: 16px;
+            padding: 26px;
+            margin: 26px 0;
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .contact-card .icon {
+            width: 54px;
+            height: 54px;
+            background: linear-gradient(135deg, #7EB6FF 0%, #007AFF 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-card .icon svg { width: 26px; height: 26px; fill: white; }
+
+        .contact-card .info { flex: 1; }
+
+        .contact-card .info p { margin: 0; font-size: 16px; color: #1d1d1f; }
+
+        .contact-card .info a { color: #007AFF; text-decoration: none; font-weight: 500; }
+
+        footer {
+            text-align: center;
+            padding: 36px 0;
+            color: #86868b;
+            font-size: 14px;
+            border-top: 1px solid #e5e5e7;
+            margin-top: 36px;
+        }
+
+        .back-to-top { text-align: center; padding: 28px 0; }
+
+        .back-to-top button {
+            background: white;
+            border: 1px solid #d2d2d7;
+            color: #007AFF;
+            padding: 12px 26px;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .back-to-top button:hover { background: #fafafa; border-color: #7EB6FF; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 30px; }
+            .subtitle { font-size: 17px; }
+            .app-icon { width: 88px; height: 88px; font-size: 40px; }
+            .policy-content { padding: 28px 20px; }
+            .policy-content h2 { font-size: 22px; }
+            .policy-content p, .policy-content li { font-size: 16px; }
+            .contact-card { flex-direction: column; text-align: center; }
+            header { padding: 40px 0 58px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="app-icon">🪟</div>
+            <h1>悬浮窗</h1>
+            <p class="subtitle">隐私政策</p>
+            <span class="privacy-badge">本地数据 · 无账号 · 不上传个人内容</span>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="effective-date">
+                生效日期：<strong>2026年4月19日</strong>
+            </div>
+
+            <article class="policy-content">
+                <h2>一、引言</h2>
+                <p><strong>悬浮窗</strong>（以下简称「本 App」）是一款在 iPhone 上使用的<strong>时间工具与效率辅助应用</strong>，主要提供：悬浮窗/桌面时钟与快捷倒计时展示、系统画中画（PiP）小窗、智能闹钟（含法定工作日与节假日规则）、多计时器与秒表、番茄专注、桌面小组件等能力。</p>
+                <p>本隐私政策说明本 App 如何对待您的信息。本 App <strong>不要求注册或登录</strong>，<strong>不会将您的闹钟设置、专注记录、计时数据等个人使用内容上传至开发者自有服务器</strong>；核心数据保存在您的设备本地（及本说明所述的 Apple 系统机制范围内）。请您在使用前仔细阅读本政策。</p>
+
+                <h2>二、我们不做的数据收集</h2>
+                <p>本 App 为<strong>以本地功能为主的工具类应用</strong>，开发者<strong>不通过本 App 主动收集</strong>以下信息用于用户画像、广告推送或云端存档：</p>
+                <div class="highlight-box">
+                    <ol>
+                        <li><strong>身份与联系方式：</strong>不要求注册、登录，不收集姓名、手机号、邮箱等；</li>
+                        <li><strong>您的闹钟与提醒内容：</strong>闹钟名称、时间、重复规则、铃声与稍后提醒等<strong>仅用于在您设备上调度与展示</strong>；</li>
+                        <li><strong>计时器、秒表与历史记录：</strong>标签、时长、圈数等<strong>仅存本地</strong>；</li>
+                        <li><strong>番茄钟/专注会话：</strong>用于统计与展示的专注时长等<strong>仅存本地</strong>；</li>
+                        <li><strong>悬浮窗与画中画展示：</strong>时钟、倒计时、网速等展示所需数据在设备上计算与渲染，<strong>不上传至开发者服务器</strong>；</li>
+                        <li><strong>精确地理位置、通讯录、相机、麦克风：</strong>本 App 不因上述能力而采集此类信息（若系统版本或未来功能有变化，将以更新后的本政策为准）。</li>
+                    </ol>
+                </div>
+
+                <h2>三、本地与系统侧的数据说明</h2>
+                <p>为实现功能，以下数据会保存在<strong>您的设备</strong>上（例如通过 UserDefaults、本地文件或系统提供的存储方式），<strong>不会由开发者远程读取</strong>：</p>
+                <ul>
+                    <li><strong>闹钟与提醒：</strong>闹钟列表、重复规则（含法定工作日与内置节假日参考数据）、铃声与稍后提醒等；</li>
+                    <li><strong>计时与专注：</strong>多计时器、秒表、历史记录、番茄钟/专注时长与相关偏好设置；</li>
+                    <li><strong>悬浮窗相关：</strong>毫秒显示、网速行展示方式、快捷倒计时、画中画相关偏好等；</li>
+                    <li><strong>应用偏好：</strong>语言、浅色/深色显示、主题色、引导是否完成等；</li>
+                    <li><strong>为改善体验的本地计数：</strong>例如启动次数、上次请求系统评分提示的时间等（仅用于控制提示频率，不上传）。</li>
+                </ul>
+
+                <h3>1. 系统通知</h3>
+                <p>闹钟响铃、稍后提醒、专注结束等依赖 Apple <strong>UserNotifications</strong> 框架在本地调度通知。您可在系统「设置 → 通知」中管理权限。<strong>通知内容由本机在本地生成</strong>，开发者不接收通知内容副本。</p>
+
+                <h3>2. 画中画（Picture in Picture）与音频会话</h3>
+                <p>若您使用画中画展示倒计时或时钟画面，相关能力由系统与 Apple 提供的媒体框架在本地完成；为在退到后台时保持部分场景下的更新，本 App 可能使用<strong>静音音频保活</strong>等系统允许的方式（不涉及录制您的语音）。</p>
+
+                <h3>3. 桌面小组件（Widget）</h3>
+                <p>若您添加本 App 提供的小组件，小组件通过 Apple 提供的 <strong>App Group</strong> 等机制读取<strong>已在您设备上保存的闹钟摘要等信息</strong>，用于在桌面展示。<strong>该共享容器位于您的设备内</strong>，用于主 App 与扩展之间同步展示所需数据，开发者无法远程访问。</p>
+
+                <h3>4. 网速等网络状态展示</h3>
+                <p>若您开启与网速相关的展示，本 App 使用系统提供的网络路径与速率信息在<strong>设备本地</strong>计算并显示，<strong>不会将您的浏览记录或应用列表上传给开发者</strong>。</p>
+
+                <h3>5. 存储空间与缓存</h3>
+                <p>您可在应用相关设置内查看或清理缓存、临时文件等；操作均在本地完成。</p>
+
+                <h2>四、跳转与系统界面</h2>
+                <ul>
+                    <li><strong>App Store：</strong>「喜欢我们就给个好评」可能打开 App Store 评价页；「更多应用」可能打开 Apple 上的其他应用链接。上述跳转由系统浏览器或 App Store 处理，<strong>开发者不因此获知您的 Apple ID 或购买明细</strong>。</li>
+                    <li><strong>分享：</strong>使用系统分享面板时，由您选择分享对象与渠道，开发者不截获分享内容。</li>
+                </ul>
+
+                <h2>五、网络与第三方 SDK</h2>
+                <p>本 App <strong>不集成用于广告追踪、统计分析的用户行为 SDK</strong>。除您主动点击外链（如上述 App Store 页面）外，<strong>不因核心功能而向开发者服务器上传您的个人数据</strong>。</p>
+
+                <h2>六、未成年人</h2>
+                <p>本 App 面向普通用户。若您为未成年人，请在监护人指导下阅读本政策并使用。</p>
+
+                <h2>七、您的控制与删除</h2>
+                <p>您可随时在 App 内修改或删除闹钟、计时器、历史与专注相关数据；可清理缓存；亦可<strong>卸载本 App</strong>以移除主程序及其常规本地数据。小组件与 App Group 内数据将随系统与卸载策略由 Apple 环境处理；若需彻底清除，请结合系统说明操作。</p>
+
+                <h2>八、政策更新</h2>
+                <p>我们可能因功能或法规要求更新本政策。更新后的版本将发布于当前页面（以页首生效日期为准）。若您继续使用本 App，即视为知悉更新；若不同意，请停止使用并卸载。</p>
+
+                <h2>九、联系我们</h2>
+                <p>如对本政策有疑问或建议，可通过以下方式联系：</p>
+                <div class="contact-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </div>
+                    <div class="info">
+                        <p>联系邮箱：<a href="mailto:youjiancau@gmail.com">youjiancau@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 32px; padding: 22px; background: linear-gradient(135deg, #E8F2FF 0%, #EEF4FF 100%); border-radius: 14px; border-left: 4px solid #007AFF;">
+                    <h3 style="margin: 0 0 10px 0; font-size: 17px; color: #1d1d1f;">App Store 与合规说明</h3>
+                    <p style="margin: 0; font-size: 15px; color: #424245; line-height: 1.65;">
+                        本 App 以本地时间工具与提醒为核心，不收集用户账号与个人内容用于开发者侧服务器存储。隐私实践可与 Apple App Store 审核中的「App 隐私」问卷对照填写；若后续增加订阅或内购，交易与账单由 Apple 处理，开发者按 Apple 政策获知必要订单信息。技术支持可通过上述邮箱联系。
+                    </p>
+                </div>
+
+                <p style="margin-top: 32px; padding: 18px; background: #f5f5f7; border-radius: 12px; font-size: 15px; color: #86868b;">
+                    本政策旨在帮助您理解「悬浮窗」的数据处理方式。正文以中文为准。
+                </p>
+            </article>
+
+            <div class="back-to-top">
+                <button type="button" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">返回顶部</button>
+            </div>
+
+            <footer>
+                <p>&copy; 2026 悬浮窗</p>
+                <p style="margin-top:8px;font-size:13px;">本页公开地址：<a href="https://nickgao1986.github.io/nickapp.github.io/jishi/privacy.html" style="color:#007AFF;">nickapp.github.io/…/jishi/privacy.html</a></p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
