@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="录音专家 - 录音与转写 - 隐私政策">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>录音专家 - 隐私政策</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            line-height: 1.8;
+            color: #1d1d1f;
+            background-color: #f5f5f7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .container { max-width: 980px; margin: 0 auto; padding: 0 22px; }
+        header {
+            background: linear-gradient(135deg, #7B2CBF 0%, #5a1d8f 100%);
+            color: white;
+            padding: 60px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.1)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+        }
+        .app-icon {
+            width: 120px; height: 120px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 26px;
+            margin: 0 auto 30px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 48px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+        h1 { font-size: 48px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 12px; }
+        .subtitle { font-size: 21px; opacity: 0.9; font-weight: 400; }
+        .privacy-badge {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 8px 20px;
+            background: rgba(255,255,255,0.25);
+            border-radius: 24px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .content-wrapper {
+            background: white;
+            border-radius: 20px 20px 0 0;
+            margin-top: -40px;
+            position: relative;
+            box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.08);
+            padding-bottom: 60px;
+        }
+        .effective-date {
+            text-align: center;
+            padding: 40px 0 30px;
+            color: #86868b;
+            font-size: 15px;
+            border-bottom: 1px solid #e5e5e7;
+        }
+        .effective-date strong { color: #7B2CBF; font-weight: 600; }
+        .policy-content { padding: 50px 60px; }
+        .policy-content h2 {
+            font-size: 28px; font-weight: 700;
+            margin: 50px 0 24px;
+            color: #1d1d1f;
+            letter-spacing: -0.3px;
+        }
+        .policy-content h2:first-child { margin-top: 0; }
+        .policy-content h3 { font-size: 20px; font-weight: 600; margin: 28px 0 16px; color: #1d1d1f; }
+        .policy-content p {
+            margin-bottom: 16px;
+            color: #424245;
+            font-size: 17px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+        .policy-content ul, .policy-content ol { margin: 16px 0 24px 24px; color: #424245; }
+        .policy-content li { margin-bottom: 12px; font-size: 17px; line-height: 1.8; }
+        .policy-content strong { color: #1d1d1f; font-weight: 600; }
+        .highlight-box {
+            background: linear-gradient(135deg, #f5f0ff 0%, #ede8ff 100%);
+            border-left: 4px solid #7B2CBF;
+            padding: 24px;
+            border-radius: 12px;
+            margin: 28px 0;
+        }
+        .highlight-box p { margin-bottom: 0; }
+        .contact-card {
+            background: #f5f5f7;
+            border-radius: 16px;
+            padding: 28px;
+            margin: 28px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .contact-card .icon {
+            width: 56px; height: 56px;
+            background: linear-gradient(135deg, #7B2CBF 0%, #5a1d8f 100%);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+        }
+        .contact-card .icon svg { width: 28px; height: 28px; fill: white; }
+        .contact-card .info { flex: 1; }
+        .contact-card .info p { margin: 0; font-size: 16px; color: #1d1d1f; }
+        .contact-card .info a { color: #7B2CBF; text-decoration: none; font-weight: 500; }
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #86868b;
+            font-size: 14px;
+            border-top: 1px solid #e5e5e7;
+            margin-top: 40px;
+        }
+        .back-to-top { text-align: center; padding: 30px 0; }
+        .back-to-top button {
+            background: white;
+            border: 1px solid #d2d2d7;
+            color: #7B2CBF;
+            padding: 12px 28px;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .back-to-top button:hover { background: #f5f5f7; border-color: #7B2CBF; }
+        @media (max-width: 768px) {
+            h1 { font-size: 32px; }
+            .subtitle { font-size: 17px; }
+            .app-icon { width: 90px; height: 90px; font-size: 36px; }
+            .policy-content { padding: 30px 24px; }
+            .policy-content h2 { font-size: 24px; margin: 36px 0 20px; }
+            .policy-content h3 { font-size: 18px; }
+            .policy-content p, .policy-content li { font-size: 16px; }
+            .contact-card { flex-direction: column; text-align: center; padding: 24px; }
+            header { padding: 40px 0 60px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="app-icon">🎙</div>
+            <h1>录音专家</h1>
+            <p class="subtitle">隐私政策</p>
+            <span class="privacy-badge">录音与文本默认仅保存在本机 · 不上传录音内容</span>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="effective-date">
+                生效日期：<strong>2026年4月24日</strong>
+            </div>
+
+            <article class="policy-content">
+                <h2>一、引言</h2>
+                <p><strong>录音专家</strong>（以下简称「本 App」）是一款在 iPhone 上使用的<strong>录音与语音整理工具</strong>，核心能力包括高清录音、降噪处理、录音管理、语音转文字、文本整理、导出与分享等功能。</p>
+                <p>本政策用于说明我们如何处理与您相关的信息。<strong>本 App 以设备端处理为主</strong>：您的录音文件、转写文本、项目记录与设置等<strong>默认仅保存在您的设备上</strong>。我们不会运营用于长期存储用户录音内容的后台服务器，也不会将您的内容用于广告追踪或用户画像。</p>
+
+                <h2>二、我们收集哪些信息</h2>
+                <p><strong>本 App 不会将您的录音内容和转写内容上传到开发者自有服务器用于识别您的身份。</strong>在正常使用下，下列数据主要仅存在于您的设备本地：</p>
+                <ul>
+                    <li><strong>录音与音频片段：</strong>您主动创建的录音文件、裁剪结果和本地缓存，用于播放编辑与导出。</li>
+                    <li><strong>转写与笔记：</strong>由录音生成的文本内容、标题标签和整理记录，用于搜索与复盘。</li>
+                    <li><strong>设置与会员状态：</strong>如语言主题偏好和内购权益状态，使用系统本地存储保存。</li>
+                    <li><strong>共享数据：</strong>若启用小组件或扩展能力，主 App 与扩展可能通过 Apple App Group 在本机共享少量必要配置。</li>
+                </ul>
+                <p>我们<strong>不主动收集</strong>可用于跨 App 追踪的广告标识，也<strong>不集成</strong>第三方广告 SDK。</p>
+
+                <h2>三、系统权限说明</h2>
+                <p>本 App 仅在实现功能所必要时请求系统权限，您可随时在「设置 → 录音专家」中调整：</p>
+                <ul>
+                    <li><strong>麦克风：</strong>用于录制语音内容，是录音功能正常工作的必要权限。</li>
+                    <li><strong>通知（可选）：</strong>用于录音状态提醒、任务完成提醒等，不影响基础录音能力。</li>
+                    <li><strong>照片与文件（可选）：</strong>当您主动导出到相册或文件时用于写入目标位置。</li>
+                </ul>
+                <p>拒绝某项权限可能导致对应功能不可用，其余功能仍可正常使用。</p>
+
+                <h2>四、Apple 应用内购买（高级会员）</h2>
+                <p>本 App 可能提供可选的<strong>高级会员（Pro）</strong>，通过 <strong>App Store</strong> 购买（商品类型与标识以 App Store Connect 及 App 内展示为准，例如一次性非消耗型 <code>com.nick.pingjie.upgrade</code>）。价格、税费与展示文案以您所在地区 App Store 为准。</p>
+                <p>支付与收据由 <strong>Apple</strong> 处理；我们不会收到您的银行卡号或完整支付凭证。购买与恢复依赖 Apple 账户与 StoreKit，我们会在设备上根据 Apple 提供的交易/权益信息更新本地会员状态。若您曾购买过<strong>历史订阅类商品</strong>，在符合 Apple 规则的前提下，本 App 可能仍识别该历史权益，具体以实际交易记录为准。</p>
+                <p>退款、账单与家庭共享等问题请通过 Apple 支持或账户设置处理。</p>
+
+                <h2>五、小组件与扩展（若使用）</h2>
+                <p>若您使用小组件或相关扩展能力，主 App 与扩展可能通过 Apple 的 <strong>App Group</strong> 在<strong>您的设备本地</strong>共享少量必要数据，以支持快捷启动与状态展示。<strong>该数据不会上传至开发者服务器。</strong></p>
+
+                <h2>六、网络访问说明</h2>
+                <p>本 App 的核心录音和本地整理功能可在离线环境使用。涉及联网的场景通常包括 Apple 内购校验恢复或您主动访问外部链接页面。我们不会将您的录音内容用于建立个人画像。</p>
+
+                <h2>七、数据存储与安全</h2>
+                <p>用户内容与项目数据主要保存在设备存储中；卸载本 App 将清除应用沙盒内数据（除非系统另有保留策略）。请妥善保管设备与系统密码。我们无法远程访问您设备内的上述数据。</p>
+
+                <h2>八、数据共享与披露</h2>
+                <p>除法律法规要求或司法/监管机关依法提出的合法请求外，我们<strong>不会出售、出租</strong>您的个人信息。因本 App 不收集可识别身份的中心化用户档案，通常也不存在向第三方「共享用户数据库」的情形。</p>
+                <p>当您使用系统<strong>分享</strong>面板、隔空投送、邮件、第三方 App 打开链接等功能时，内容由<strong>您主动操作</strong>离开本 App，由相应接收方按其隐私政策处理。</p>
+
+                <h2>九、第三方与网络访问</h2>
+                <p>本 App 不以广告或追踪为目的集成第三方 SDK。与 Apple 相关的网络交互主要包括：<strong>StoreKit</strong>（内购验证/恢复）、以及您主动打开的链接（如本隐私政策、用户协议网页）。除上述情形外，核心拼接与导出功能<strong>可在离线环境下使用</strong>（内购验证等仍可能需网络）。</p>
+
+                <h2>十、儿童隐私</h2>
+                <p>本 App 不面向 13 岁以下儿童专门设计，也不会故意收集儿童个人信息。若监护人发现儿童在未经同意的情况下提供了信息，请通过下方方式联系我们，我们将协助处理。</p>
+
+                <h2>十一、您的权利</h2>
+                <p>您可通过删除应用内数据、卸载本 App、关闭系统权限等方式自主控制本地数据。若您对本政策有疑问，或需要 App Store 审核相关说明，欢迎联系我们。</p>
+
+                <h2>十二、政策更新</h2>
+                <p>我们可能因功能或法规变化更新本政策，并在本页面更新生效日期。若变更重大，我们将通过合理方式提示。继续使用即视为知悉更新内容。</p>
+
+                <h2>十三、联系我们</h2>
+                <p>如对本隐私政策有任何疑问、建议或投诉，请通过以下方式联系：</p>
+                <div class="contact-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </div>
+                    <div class="info">
+                        <p>联系邮箱：<a href="mailto:nickgao1986@users.noreply.github.com">nickgao1986@users.noreply.github.com</a></p>
+                    </div>
+                </div>
+
+                <h2>十四、免责声明</h2>
+                <ol>
+                    <li>本 App 提供的录音与转写能力为效率辅助工具，转写内容可能存在识别误差，请以实际语义校对为准。</li>
+                    <li>因设备丢失、越狱、恶意软件或您主动分享导致的风险，非本 App 可控范围。</li>
+                    <li>跳转至第三方网站或 App 后的行为由其各自服务条款与隐私政策约束。</li>
+                </ol>
+
+                <div class="highlight-box">
+                    <h3>与 App Store「App 隐私」填写建议</h3>
+                    <p>本 App 以设备端处理为主：录音和文本默认本地保存，内购由 Apple 处理。若 App Store Connect 需声明数据类型，请以<strong>实际收集与关联方式</strong>为准。本政策供审核与用户查阅，与产品实际行为一致。</p>
+                </div>
+            </article>
+
+            <div class="back-to-top">
+                <button type="button" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">返回顶部</button>
+            </div>
+
+            <footer>
+                <p>&copy; 2026 录音专家 保留所有权利</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
