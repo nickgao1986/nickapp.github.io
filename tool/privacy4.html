@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="帧境 - 多图拼长图与文档工具 - 隐私政策">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>帧境 - 隐私政策</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            line-height: 1.8;
+            color: #1d1d1f;
+            background-color: #f5f5f7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .container { max-width: 980px; margin: 0 auto; padding: 0 22px; }
+        header {
+            background: linear-gradient(135deg, #7B2CBF 0%, #5a1d8f 100%);
+            color: white;
+            padding: 60px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.1)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+        }
+        .app-icon {
+            width: 120px; height: 120px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 26px;
+            margin: 0 auto 30px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 48px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+        h1 { font-size: 48px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 12px; }
+        .subtitle { font-size: 21px; opacity: 0.9; font-weight: 400; }
+        .privacy-badge {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 8px 20px;
+            background: rgba(255,255,255,0.25);
+            border-radius: 24px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .content-wrapper {
+            background: white;
+            border-radius: 20px 20px 0 0;
+            margin-top: -40px;
+            position: relative;
+            box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.08);
+            padding-bottom: 60px;
+        }
+        .effective-date {
+            text-align: center;
+            padding: 40px 0 30px;
+            color: #86868b;
+            font-size: 15px;
+            border-bottom: 1px solid #e5e5e7;
+        }
+        .effective-date strong { color: #7B2CBF; font-weight: 600; }
+        .policy-content { padding: 50px 60px; }
+        .policy-content h2 {
+            font-size: 28px; font-weight: 700;
+            margin: 50px 0 24px;
+            color: #1d1d1f;
+            letter-spacing: -0.3px;
+        }
+        .policy-content h2:first-child { margin-top: 0; }
+        .policy-content h3 { font-size: 20px; font-weight: 600; margin: 28px 0 16px; color: #1d1d1f; }
+        .policy-content p {
+            margin-bottom: 16px;
+            color: #424245;
+            font-size: 17px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+        .policy-content ul, .policy-content ol { margin: 16px 0 24px 24px; color: #424245; }
+        .policy-content li { margin-bottom: 12px; font-size: 17px; line-height: 1.8; }
+        .policy-content strong { color: #1d1d1f; font-weight: 600; }
+        .policy-content code { font-size: 0.9em; background: #f5f5f7; padding: 2px 6px; border-radius: 4px; }
+        .highlight-box {
+            background: linear-gradient(135deg, #f5f0ff 0%, #ede8ff 100%);
+            border-left: 4px solid #7B2CBF;
+            padding: 24px;
+            border-radius: 12px;
+            margin: 28px 0;
+        }
+        .highlight-box p { margin-bottom: 0; }
+        .contact-card {
+            background: #f5f5f7;
+            border-radius: 16px;
+            padding: 28px;
+            margin: 28px 0;
+        }
+        .contact-card p { margin-bottom: 12px; font-size: 16px; color: #1d1d1f; }
+        .contact-card p:last-child { margin-bottom: 0; }
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #86868b;
+            font-size: 14px;
+            border-top: 1px solid #e5e5e7;
+            margin-top: 40px;
+        }
+        .back-to-top { text-align: center; padding: 30px 0; }
+        .back-to-top button {
+            background: white;
+            border: 1px solid #d2d2d7;
+            color: #7B2CBF;
+            padding: 12px 28px;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .back-to-top button:hover { background: #f5f5f7; border-color: #7B2CBF; }
+        @media (max-width: 768px) {
+            h1 { font-size: 32px; }
+            .subtitle { font-size: 17px; }
+            .app-icon { width: 90px; height: 90px; font-size: 36px; }
+            .policy-content { padding: 30px 24px; }
+            .policy-content h2 { font-size: 24px; margin: 36px 0 20px; }
+            .policy-content h3 { font-size: 18px; }
+            .policy-content p, .policy-content li { font-size: 16px; }
+            header { padding: 40px 0 60px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="app-icon">🖼</div>
+            <h1>帧境</h1>
+            <p class="subtitle">隐私政策</p>
+            <span class="privacy-badge">拼接与文档处理主要在设备本地 · 不向开发者服务器上传您的作品内容</span>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="effective-date">
+                生效日期：<strong>2026年4月24日</strong>
+            </div>
+
+            <article class="policy-content">
+                <h2>一、引言</h2>
+                <p><strong>帧境</strong>（以下简称「本 App」）是一款运行于 iPhone 的<strong>图片与文档工具</strong>，面向「多图拼长图、截图整理与导出」等场景，主要能力包括：</p>
+                <ul>
+                    <li><strong>长图拼接：</strong>将多张照片或截图按竖向/横向拼接为一张长图；支持重叠与间距、画布背景、边框与模板、文字标注与涂鸦等编辑；导出为图片并可通过系统分享或保存到相册。</li>
+                    <li><strong>网页长截图：</strong>在您主动输入或确认网址后，由系统在本地加载页面并生成可用于拼接的图像素材。</li>
+                    <li><strong>录屏素材导入（可选）：</strong>在您通过系统「屏幕录制 / 直播」界面<strong>主动选择</strong>本 App 提供的上传扩展时，从屏幕画面抽取的帧会以文件形式写入本 App 与扩展共享的本地容器，供您导入长图项目；详见下文专节说明。</li>
+                    <li><strong>拍照转 PDF 与 PDF 工具箱（可选）：</strong>连续或单张拍摄生成 PDF 文档、从相册建立文档，以及对 PDF 进行合并、拆分思路下的页面处理、水印、签名、加密等（以 App 内实际提供的功能为准），均在设备本地处理您选中的文件。</li>
+                </ul>
+                <p>本政策说明我们如何对待与您相关的信息。<strong>我们不会运营用于集中存储您相册或拼接成品的「用户内容云盘」</strong>；您的素材、项目与导出结果<strong>默认仅保存在您的设备上</strong>（或通过 Apple 提供的 <strong>App Group</strong> 在主 App、小组件与录屏扩展之间在<strong>本机</strong>共享数据），<strong>不会因此上传至开发者的自有服务器</strong>。使用本 App 即表示您知悉并同意本政策。</p>
+
+                <h2>二、我们收集哪些信息</h2>
+                <p><strong>在正常使用下，本 App 不向开发者自有服务器上传可识别您个人身份的信息、相册原图或拼接成品用于建立用户档案。</strong>下列数据<strong>仅存在于您的设备本地</strong>（含 App Group 容器内）：</p>
+                <ul>
+                    <li><strong>长图项目与素材：</strong>您参与拼接的图片副本、项目配置、重叠与样式参数、缩略图缓存等，用于编辑、预览与导出。</li>
+                    <li><strong>录屏扩展写入的数据：</strong>在您主动开启系统录屏并选择本扩展后，扩展将抽取的视频帧以图片等形式写入 App Group 目录下的收件箱；主 App 读取后用于导入项目。<strong>该过程不经过开发者控制的远程服务器。</strong></li>
+                    <li><strong>PDF 与拍照文档：</strong>您拍摄或导入的页面图像、生成的 PDF 及处理过程中的临时文件，存于应用沙盒或共享容器内。</li>
+                    <li><strong>应用设置与功能状态：</strong>例如语言、外观主题、是否完成引导、与内购相关的本地权益标记等，通过 UserDefaults 等机制存储。</li>
+                </ul>
+                <p>我们<strong>不集成</strong>用于广告定向或跨 App 追踪的第三方广告、统计分析 SDK；亦<strong>不主动收集</strong>广告标识符用于画像。</p>
+
+                <h2>三、系统屏幕录制与直播上传扩展</h2>
+                <p>若本 App 提供 <strong>ReplayKit 广播上传扩展</strong>（名称以系统设置与 App Store 展示为准）：</p>
+                <ul>
+                    <li>仅当您在系统的<strong>屏幕录制 / 直播</strong>界面中<strong>明确选择</strong>本扩展并开始录制后，扩展才会处理屏幕画面。</li>
+                    <li>扩展从画面中提取的信息用于生成<strong>静态图像帧</strong>并写入您设备上的 <strong>App Group</strong> 目录，供主 App 导入长图工作流；<strong>不会将屏幕内容上传至开发者服务器。</strong></li>
+                    <li>停止录制或卸载本 App 后，相关缓存文件将按系统与应用逻辑清理；请您勿在录屏中包含他人不愿被记录的敏感信息。</li>
+                </ul>
+
+                <h2>四、网络访问说明</h2>
+                <p><strong>网页长截图：</strong>当您使用该功能时，设备需通过网络加载您指定的网页内容以便渲染与截图；该请求由系统与 App 在本地完成展示与合成，<strong>我们不会将完整网页内容或浏览记录用于用户画像或出售给第三方。</strong></p>
+                <p><strong>内购与系统服务：</strong>若您购买可选会员或解锁项，交易由 <strong>Apple App Store / StoreKit</strong> 处理，可能产生与 Apple 之间的必要网络通信（详见下文）。</p>
+                <p>除上述及您主动打开的链接（如本隐私政策页面）外，核心拼接与本地 PDF 处理<strong>可在离线环境下使用</strong>（内购验证与网页加载除外）。</p>
+
+                <h2>五、系统权限说明</h2>
+                <p>本 App 仅在实现功能所必要时请求系统权限，您可随时在 iOS「设置 → 帧境」中查看或关闭：</p>
+                <ul>
+                    <li><strong>相机：</strong>用于拍照入库、文档拍摄、以及需要实时取景的相关工具。</li>
+                    <li><strong>照片图库：</strong>用于从相册多选图片参与拼接、选择 PDF 或图片素材、以及将导出结果保存到相册。</li>
+                    <li><strong>日历（若您使用相关能力）：</strong>仅在您从某些结构化结果中选择「添加到日历」并经您确认时，向系统日历写入事件。</li>
+                    <li><strong>无线局域网 / 热点配置（若您使用相关能力）：</strong>例如从二维码或系统接口连接 Wi‑Fi 时，由系统处理网络配置；<strong>不会</strong>因此向开发者回传您的 Wi‑Fi 密码或网页浏览历史。</li>
+                </ul>
+                <p>若拒绝某项权限，仅影响对应功能，其余功能在条件允许时仍可使用。</p>
+
+                <h2>六、Apple 应用内购买</h2>
+                <p>本 App 可能提供可选的<strong>一次性购买或功能解锁</strong>，通过 <strong>App Store</strong> 完成（商品标识以 App Store Connect 及 App 内展示为准，例如 <code>com.nick.pingjie.upgrade</code>）。价格与展示文案以您所在地区商店为准。</p>
+                <p>支付由 <strong>Apple</strong> 处理；我们不会收到您的完整银行卡号。购买与「恢复购买」依赖您的 Apple 账户与 StoreKit；我们会在设备上根据 Apple 提供的交易/权益信息更新本地状态。若存在<strong>历史商品</strong>（如曾上架的其它产品 ID），在符合 Apple 规则的前提下，本 App 可能仅用于识别您已享有的权益。<strong>退款与账单问题请通过 Apple 支持处理。</strong></p>
+
+                <h2>七、主屏幕小组件与 App Group</h2>
+                <p>若您添加本 App 提供的小组件，小组件与主 App 可能通过 <strong>App Group</strong> 在<strong>您的设备本地</strong>读取少量配置或快捷信息，用于展示入口或衔接录屏导入。<strong>该数据不会上传至开发者服务器。</strong></p>
+
+                <h2>八、其它本地工具（若提供）</h2>
+                <p>若 App 内还提供例如链接风险提示、文字或图像识别等辅助能力，在设计上以<strong>设备端处理</strong>为主：我们不会将您输入的内容用于建立可识别的远程用户档案。具体能力以版本为准。</p>
+
+                <h2>九、数据存储与安全</h2>
+                <p>用户内容与项目数据保存在设备存储（含 App Group）中；卸载本 App 将清除应用沙盒内数据（系统是否保留 iCloud 备份取决于您的设备与系统设置）。请妥善保管设备与密码。我们无法远程访问您设备内的上述文件。</p>
+
+                <h2>十、数据共享与披露</h2>
+                <p>除法律法规规定或有权机关依法提出的合法要求外，我们<strong>不出售、不出租</strong>您的个人信息。当您使用系统<strong>分享</strong>、隔空投送、邮件或其它 App 打开时，内容由<strong>您主动操作</strong>离开本 App，并由接收方按其政策处理。</p>
+
+                <h2>十一、第三方与儿童</h2>
+                <p>与 <strong>Apple</strong> 相关的处理主要包括 StoreKit、App Store 条款所涵盖的服务，以及您主动访问的网页。本 App 不以广告为目的集成第三方追踪 SDK。</p>
+                <p>本 App 不面向 13 岁以下儿童专门收集信息。若监护人认为存在不当收集，请通过下方方式联系我们。</p>
+
+                <h2>十二、您的权利与政策更新</h2>
+                <p>您可通过删除项目、清除应用数据、关闭系统权限或卸载本 App 等方式自主管理本地信息。我们可能因功能或法规变化更新本政策，并在本页更新生效日期；重大变更将通过合理方式提示。继续使用即视为知悉更新内容。</p>
+
+                <h2>十三、联系我们</h2>
+                <p>如对本隐私政策有疑问、建议或投诉，请通过 <strong>App Store</strong> 中「帧境」应用详情页所展示的<strong>开发者网站、App 支持或隐私问题</strong>入口与我们联系（以您设备上商店实际展示为准）。</p>
+                <div class="contact-card">
+                    <p>若您在 App Store Connect 中为应用填写了支持 URL 或联系邮箱，请将本页中的说明与之一致，以便用户与审核团队核对。</p>
+                </div>
+
+                <h2>十四、免责声明</h2>
+                <ol>
+                    <li>拼接、导出、PDF 处理、网页截图与识别类功能均为工具性辅助，输出结果可能受素材质量、系统版本等因素影响；请您自行核对重要用途下的准确性。</li>
+                    <li>因设备丢失、越狱、恶意软件或您主动分享导致的风险，非本 App 可控范围。</li>
+                    <li>通过本 App 跳转至第三方网站或服务后的行为，由该第三方条款与政策约束。</li>
+                </ol>
+
+                <div class="highlight-box">
+                    <h3>与 App Store「App 隐私」填写提示</h3>
+                    <p>请在 App Store Connect 的隐私问卷中，按<strong>本 App 当前版本实际收集、关联与使用数据的方式</strong>如实填写。本政策旨在与产品行为一致；若后续功能变更，请同步更新本页与商店声明。</p>
+                </div>
+            </article>
+
+            <div class="back-to-top">
+                <button type="button" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">返回顶部</button>
+            </div>
+
+            <footer>
+                <p>&copy; 2026 帧境 保留所有权利</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
