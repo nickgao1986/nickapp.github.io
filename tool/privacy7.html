@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="隐私打码大师 - 图片打码与马赛克模糊遮挡工具 - 隐私政策">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>隐私打码大师 - 隐私政策</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            line-height: 1.8;
+            color: #1d1d1f;
+            background-color: #f5f5f7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .container { max-width: 980px; margin: 0 auto; padding: 0 22px; }
+        header {
+            background: linear-gradient(135deg, #0d9488 0%, #2563eb 100%);
+            color: white;
+            padding: 60px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.1)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+        }
+        .app-icon {
+            width: 120px; height: 120px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 26px;
+            margin: 0 auto 30px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 42px;
+            font-weight: 700;
+            letter-spacing: -1px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+        h1 { font-size: 48px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 12px; }
+        .subtitle { font-size: 21px; opacity: 0.9; font-weight: 400; }
+        .privacy-badge {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 8px 20px;
+            background: rgba(255,255,255,0.25);
+            border-radius: 24px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .content-wrapper {
+            background: white;
+            border-radius: 20px 20px 0 0;
+            margin-top: -40px;
+            position: relative;
+            box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.08);
+            padding-bottom: 60px;
+        }
+        .effective-date {
+            text-align: center;
+            padding: 40px 0 30px;
+            color: #86868b;
+            font-size: 15px;
+            border-bottom: 1px solid #e5e5e7;
+        }
+        .effective-date strong { color: #0d9488; font-weight: 600; }
+        .policy-content { padding: 50px 60px; }
+        .policy-content h2 {
+            font-size: 28px; font-weight: 700;
+            margin: 50px 0 24px;
+            color: #1d1d1f;
+            letter-spacing: -0.3px;
+        }
+        .policy-content h2:first-child { margin-top: 0; }
+        .policy-content h3 { font-size: 20px; font-weight: 600; margin: 28px 0 16px; color: #1d1d1f; }
+        .policy-content p {
+            margin-bottom: 16px;
+            color: #424245;
+            font-size: 17px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+        .policy-content ul, .policy-content ol { margin: 16px 0 24px 24px; color: #424245; }
+        .policy-content li { margin-bottom: 12px; font-size: 17px; line-height: 1.8; }
+        .policy-content strong { color: #1d1d1f; font-weight: 600; }
+        .highlight-box {
+            background: linear-gradient(135deg, #ecfdf5 0%, #eff6ff 100%);
+            border-left: 4px solid #0d9488;
+            padding: 24px;
+            border-radius: 12px;
+            margin: 28px 0;
+        }
+        .highlight-box p { margin-bottom: 0; }
+        .contact-card {
+            background: #f5f5f7;
+            border-radius: 16px;
+            padding: 28px;
+            margin: 28px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .contact-card .icon {
+            width: 56px; height: 56px;
+            background: linear-gradient(135deg, #0d9488 0%, #2563eb 100%);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+        }
+        .contact-card .icon svg { width: 28px; height: 28px; fill: white; }
+        .contact-card .info { flex: 1; }
+        .contact-card .info p { margin: 0; font-size: 16px; color: #1d1d1f; }
+        .contact-card .info a { color: #0d9488; text-decoration: none; font-weight: 500; }
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #86868b;
+            font-size: 14px;
+            border-top: 1px solid #e5e5e7;
+            margin-top: 40px;
+        }
+        .back-to-top { text-align: center; padding: 30px 0; }
+        .back-to-top button {
+            background: white;
+            border: 1px solid #d2d2d7;
+            color: #0d9488;
+            padding: 12px 28px;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .back-to-top button:hover { background: #f5f5f7; border-color: #0d9488; }
+        @media (max-width: 768px) {
+            h1 { font-size: 32px; }
+            .subtitle { font-size: 17px; }
+            .app-icon { width: 90px; height: 90px; font-size: 32px; }
+            .policy-content { padding: 30px 24px; }
+            .policy-content h2 { font-size: 24px; margin: 36px 0 20px; }
+            .policy-content h3 { font-size: 18px; }
+            .policy-content p, .policy-content li { font-size: 16px; }
+            .contact-card { flex-direction: column; text-align: center; padding: 24px; }
+            header { padding: 40px 0 60px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="app-icon">隐</div>
+            <h1>隐私打码大师</h1>
+            <p class="subtitle">隐私政策</p>
+            <span class="privacy-badge">图片与打码编辑默认仅保存在本机 · 不向开发者服务器上传您的照片用于识别或画像</span>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="effective-date">
+                生效日期：<strong>2026年4月25日</strong>
+            </div>
+
+            <article class="policy-content">
+                <h2>一、引言</h2>
+                <p><strong>隐私打码大师</strong>（以下简称「本 App」）是一款在 iPhone 上使用的<strong>图片隐私打码与遮挡工具</strong>，核心能力包括：从相册选图或拍照导入、在画面上添加马赛克、高斯模糊、贴纸与色块等遮挡区域、调整位置与样式、批量处理多图、保存打码项目以便续编、通过系统分享或保存到「文件」/相册，以及打码模板等辅助能力。</p>
+                <p>本政策说明我们如何对待与您相关的信息。<strong>本 App 以设备端处理为主</strong>：您导入或拍摄的图片、打码项目、导出结果与相关设置等<strong>默认仅保存在您的设备上</strong>，<strong>我们不会运营用于集中存储用户照片内容的后台服务器</strong>，也不会将您的图片用于广告追踪或用户画像。若您通过设置等入口使用应用内<strong>音频、PDF 或扫码</strong>等其他工具，相关数据同样以设备本地处理为主，并按该功能实际所需权限执行。使用本 App 即表示您知悉并同意本政策。</p>
+
+                <h2>二、我们收集哪些信息</h2>
+                <p><strong>本 App 不向开发者自有服务器上传您的个人身份标识或照片成品用于识别您是谁。</strong>在正常使用下，下列数据<strong>仅存在于您的设备本地</strong>（或通过 Apple 提供的 App Group 在您设备上在主 App 与小组件等扩展之间共享，仍不经过我们服务器）：</p>
+                <ul>
+                    <li><strong>图片与打码项目：</strong>您选择或拍摄的图片、打码框位置与样式、批量编辑进度、模板布局等，用于编辑、预览与导出。</li>
+                    <li><strong>导出文件：</strong>在您主动导出时，由本 App 在本地生成图片或文档；除非您主动通过系统分享发送给第三方，相关内容不会发送给我们。</li>
+                    <li><strong>语音转文字（若您使用应用内相关音频工具）：</strong>转写依赖 Apple 系统提供的语音识别能力，处理在设备与 Apple 体系内进行；我们不会因此建立独立的「用户语音档案库」。</li>
+                    <li><strong>设置与会员状态：</strong>如语言、主题、内购权益缓存键等，使用系统提供的本地存储（含 UserDefaults、App Group）。</li>
+                </ul>
+                <p>我们<strong>不主动收集</strong>可用于跨 App 追踪您的广告标识；亦<strong>不集成</strong>第三方广告或统计分析 SDK。</p>
+
+                <h2>三、系统权限说明</h2>
+                <p>本 App 仅在实现功能所必要时请求系统权限，您可随时在「设置 → 隐私打码大师」中调整：</p>
+                <ul>
+                    <li><strong>照片图库：</strong>用于从相册选择待打码图片，或将导出结果保存到相册；仅在您主动选择时访问对应资源。</li>
+                    <li><strong>相机：</strong>用于现场拍摄待打码图片；仅在您主动使用拍照相关功能时访问。</li>
+                    <li><strong>文件：</strong>用于从「文件」App 导入素材或将导出结果保存到您指定的位置。</li>
+                    <li><strong>麦克风：</strong>若您使用应用内录音、合并或直播扩展等需要采集声音的功能，仅在您开始相关操作时采集。</li>
+                    <li><strong>语音识别：</strong>用于将录音转为文字（若您使用该功能）；按系统提示授权。</li>
+                    <li><strong>日历（如使用）：</strong>若模块向您提供「添加到日历」且您确认使用，仅在您确认时向系统日历写入事件。</li>
+                </ul>
+                <p>拒绝某项权限可能导致对应功能不可用，其余功能仍可正常使用。</p>
+
+                <h2>四、Apple 应用内购买（高级会员）</h2>
+                <p>本 App 可能提供可选的<strong>高级会员（Pro）</strong>，通过 <strong>App Store</strong> 购买（商品类型与标识以 App Store Connect 及 App 内展示为准）。价格、税费与展示文案以您所在地区 App Store 为准。</p>
+                <p>支付与收据由 <strong>Apple</strong> 处理；我们不会收到您的银行卡号或完整支付凭证。购买与恢复依赖 Apple 账户与 StoreKit，我们会在设备上根据 Apple 提供的交易/权益信息更新本地会员状态。若您曾购买过<strong>历史订阅或一次性商品</strong>，在符合 Apple 规则的前提下，本 App 可能仍识别该历史权益，具体以实际交易记录为准。</p>
+                <p>退款、账单与家庭共享等问题请通过 Apple 支持或账户设置处理。</p>
+
+                <h2>五、小组件与扩展（若使用）</h2>
+                <p>若您添加本 App 提供的主屏幕小组件或使用系统录屏广播等扩展，扩展与主 App 可能通过 Apple 的 <strong>App Group</strong> 在<strong>您的设备本地</strong>读取少量配置或快捷数据。<strong>该数据不会上传至开发者服务器。</strong></p>
+
+                <h2>六、数据存储与安全</h2>
+                <p>用户内容与项目数据主要保存在设备存储中；卸载本 App 将清除应用沙盒内数据（除非系统另有保留策略）。请妥善保管设备与系统密码。我们无法远程访问您设备内的上述数据。</p>
+
+                <h2>七、数据共享与披露</h2>
+                <p>除法律法规要求或司法/监管机关依法提出的合法请求外，我们<strong>不会出售、出租</strong>您的个人信息。因本 App 不收集可识别身份的中心化用户档案，通常也不存在向第三方「共享用户数据库」的情形。</p>
+                <p>当您使用系统<strong>分享</strong>面板、隔空投送、邮件、第三方 App 打开链接等功能时，内容由<strong>您主动操作</strong>离开本 App，由相应接收方按其隐私政策处理。</p>
+
+                <h2>八、第三方与网络访问</h2>
+                <p>本 App 不以广告或追踪为目的集成第三方 SDK。与 Apple 相关的网络交互主要包括：<strong>StoreKit</strong>（内购验证/恢复）、以及您主动打开的链接（如本隐私政策、用户协议网页）。除上述情形外，核心图片打码与编辑功能<strong>可在离线环境下使用</strong>（内购验证、语音识别等仍可能需网络，取决于系统行为）。</p>
+
+                <h2>九、儿童隐私</h2>
+                <p>本 App 不面向 13 岁以下儿童专门设计，也不会故意收集儿童个人信息。若监护人发现儿童在未经同意的情况下提供了信息，请通过下方方式联系我们，我们将协助处理。</p>
+
+                <h2>十、您的权利</h2>
+                <p>您可通过删除应用内数据、卸载本 App、关闭系统权限等方式自主控制本地数据。若您对本政策有疑问，或需要 App Store 审核相关说明，欢迎联系我们。</p>
+
+                <h2>十一、政策更新</h2>
+                <p>我们可能因功能或法规变化更新本政策，并在本页面更新生效日期。若变更重大，我们将通过合理方式提示。继续使用即视为知悉更新内容。</p>
+
+                <h2>十二、联系我们</h2>
+                <p>如对本隐私政策有任何疑问、建议或投诉，请通过以下方式联系：</p>
+                <div class="contact-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </div>
+                    <div class="info">
+                        <p>联系邮箱：<a href="mailto:nickgao1986@users.noreply.github.com">nickgao1986@users.noreply.github.com</a></p>
+                    </div>
+                </div>
+
+                <h2>十三、免责声明</h2>
+                <ol>
+                    <li>本 App 提供的打码、导出等功能均为工具性辅助，效果可能受原图分辨率、系统能力影响；请以实际用途为准。</li>
+                    <li>因设备丢失、越狱、恶意软件或您主动分享导致的风险，非本 App 可控范围。</li>
+                    <li>跳转至第三方网站或 App 后的行为由其各自服务条款与隐私政策约束。</li>
+                </ol>
+
+                <div class="highlight-box">
+                    <h3>与 App Store「App 隐私」填写建议</h3>
+                    <p>本 App 以设备端处理为主：照片图库与相机用于选图/拍照打码；文件用于导入/导出；若使用内购则通过 Apple 处理。若您还在 Connect 中声明麦克风、语音识别等，请与<strong>实际启用的模块</strong>一致。本政策供审核与用户查阅，与产品实际行为一致。</p>
+                </div>
+            </article>
+
+            <div class="back-to-top">
+                <button type="button" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">返回顶部</button>
+            </div>
+
+            <footer>
+                <p>&copy; 2026 隐私打码大师 保留所有权利</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
