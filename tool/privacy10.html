@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="小决定 - 隐私政策">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>小决定 - 隐私政策</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            line-height: 1.8;
+            color: #1d1d1f;
+            background-color: #f5f5f7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container { max-width: 980px; margin: 0 auto; padding: 0 22px; }
+
+        header {
+            background: linear-gradient(135deg, #FFE082 0%, #FFB300 48%, #FF8F00 100%);
+            color: #1a1a1a;
+            padding: 56px 0 76px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.2)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+        }
+
+        .app-icon {
+            width: 112px;
+            height: 112px;
+            background: rgba(255, 255, 255, 0.35);
+            border-radius: 26px;
+            margin: 0 auto 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 52px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 44px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .subtitle { font-size: 20px; opacity: 0.88; font-weight: 500; position: relative; }
+
+        .privacy-badge {
+            display: inline-block;
+            margin-top: 14px;
+            padding: 8px 20px;
+            background: rgba(255,255,255,0.45);
+            border-radius: 24px;
+            font-size: 15px;
+            font-weight: 600;
+            color: #3e2723;
+            position: relative;
+        }
+
+        .content-wrapper {
+            background: white;
+            border-radius: 20px 20px 0 0;
+            margin-top: -36px;
+            position: relative;
+            box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.06);
+            padding-bottom: 56px;
+        }
+
+        .effective-date {
+            text-align: center;
+            padding: 36px 0 26px;
+            color: #86868b;
+            font-size: 15px;
+            border-bottom: 1px solid #e5e5e7;
+        }
+
+        .effective-date strong { color: #E65100; font-weight: 600; }
+
+        .policy-content { padding: 48px 56px; }
+
+        .policy-content h2 {
+            font-size: 26px;
+            font-weight: 700;
+            margin: 44px 0 22px;
+            color: #1d1d1f;
+            letter-spacing: -0.3px;
+        }
+
+        .policy-content h2:first-child { margin-top: 0; }
+
+        .policy-content h3 {
+            font-size: 19px;
+            font-weight: 600;
+            margin: 26px 0 14px;
+            color: #1d1d1f;
+        }
+
+        .policy-content p {
+            margin-bottom: 16px;
+            color: #424245;
+            font-size: 17px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .policy-content ul, .policy-content ol {
+            margin: 14px 0 22px 24px;
+            color: #424245;
+        }
+
+        .policy-content li { margin-bottom: 10px; font-size: 17px; line-height: 1.75; }
+
+        .policy-content strong { color: #1d1d1f; font-weight: 600; }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #FFF8E1 0%, #FFECB3 100%);
+            border-left: 4px solid #FF8F00;
+            padding: 22px 24px;
+            border-radius: 12px;
+            margin: 26px 0;
+        }
+
+        .highlight-box p:last-child { margin-bottom: 0; }
+
+        .contact-card {
+            background: #f5f5f7;
+            border-radius: 16px;
+            padding: 26px;
+            margin: 26px 0;
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .contact-card .icon {
+            width: 54px;
+            height: 54px;
+            background: linear-gradient(135deg, #FFE082 0%, #FF8F00 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-card .icon svg { width: 26px; height: 26px; fill: white; }
+
+        .contact-card .info { flex: 1; }
+
+        .contact-card .info p { margin: 0; font-size: 16px; color: #1d1d1f; }
+
+        .contact-card .info a { color: #E65100; text-decoration: none; font-weight: 500; }
+
+        footer {
+            text-align: center;
+            padding: 36px 0;
+            color: #86868b;
+            font-size: 14px;
+            border-top: 1px solid #e5e5e7;
+            margin-top: 36px;
+        }
+
+        .back-to-top { text-align: center; padding: 28px 0; }
+
+        .back-to-top button {
+            background: white;
+            border: 1px solid #d2d2d7;
+            color: #E65100;
+            padding: 12px 26px;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .back-to-top button:hover { background: #fafafa; border-color: #FFB74D; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 30px; }
+            .subtitle { font-size: 17px; }
+            .app-icon { width: 88px; height: 88px; font-size: 40px; }
+            .policy-content { padding: 28px 20px; }
+            .policy-content h2 { font-size: 22px; }
+            .policy-content p, .policy-content li { font-size: 16px; }
+            .contact-card { flex-direction: column; text-align: center; }
+            header { padding: 40px 0 58px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="app-icon">🎡</div>
+            <h1>小决定</h1>
+            <p class="subtitle">转盘决策工具 · 隐私政策</p>
+            <span class="privacy-badge">无注册账号 · 本地存储优先 · 不做广告追踪</span>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="effective-date">
+                生效日期：<strong>2026年4月27日</strong>
+            </div>
+
+            <article class="policy-content">
+                <h2>一、引言</h2>
+                <p><strong>小决定</strong>（以下简称「本 App」）是一款帮助用户进行日常选择的工具类应用，主要功能包括：创建选项、编辑转盘、随机抽取结果、保存常用模板等。</p>
+                <p>本隐私政策用于说明本 App 如何处理信息。本 App <strong>不提供注册/登录体系</strong>，并坚持<strong>本地处理优先</strong>。除本政策明确说明的情形外，我们不会将您的个人信息上传至开发者服务器。</p>
+
+                <h2>二、我们收集与不收集的信息</h2>
+                <p>本 App 以本地功能为主，默认不收集可直接识别个人身份的信息用于广告投放、用户画像或数据交易：</p>
+                <div class="highlight-box">
+                    <ol>
+                        <li><strong>身份信息：</strong>不要求注册登录，不收集姓名、手机号、身份证号等身份信息；</li>
+                        <li><strong>联系方式：</strong>不主动收集邮箱、通讯地址、社交账号等联系信息（您主动邮件联系除外）；</li>
+                        <li><strong>敏感权限数据：</strong>不因核心功能采集通讯录、精确定位、短信、通话记录等信息；</li>
+                        <li><strong>广告追踪信息：</strong>不使用广告标识符进行个性化广告投放。</li>
+                    </ol>
+                </div>
+
+                <h2>三、设备权限与本地数据</h2>
+                <p>为实现基础功能，本 App 可能在您授权后使用以下系统能力（具体以系统弹窗为准）：</p>
+                <ul>
+                    <li><strong>本地存储：</strong>用于保存您创建的选项、转盘模板、历史记录和界面偏好；</li>
+                    <li><strong>通知权限（如您启用相关提醒功能）：</strong>用于发送本地提醒通知，不用于推送营销信息；</li>
+                    <li><strong>网络访问（如存在）：</strong>仅用于加载应用必要资源或跳转系统页面，不用于上传您的决策内容。</li>
+                </ul>
+                <p>以下数据默认保存在<strong>您的设备本地</strong>（如 UserDefaults 或本地文件）：</p>
+                <ul>
+                    <li><strong>转盘内容：</strong>您输入的选项、分组、权重（如有）等；</li>
+                    <li><strong>使用偏好：</strong>主题样式、音效开关、动画开关等；</li>
+                    <li><strong>本地统计：</strong>仅用于改善体验的设备端计数（如启动次数、评分弹窗频率控制）。</li>
+                </ul>
+
+                <h3>1. 系统通知</h3>
+                <p>若您启用通知功能，通知内容通过 Apple <strong>UserNotifications</strong> 在设备本地生成与触发。您可在系统「设置 → 通知」中随时关闭或调整权限。</p>
+
+                <h3>2. 小组件（如适用）</h3>
+                <p>若您添加小组件，小组件可能通过 Apple 提供的 <strong>App Group</strong> 读取设备本地保存的最小必要数据（如最近使用转盘名称）用于展示。该数据仍位于您的设备内。</p>
+
+                <h3>3. 数据共享与第三方</h3>
+                <p>我们不会将您的转盘选项、历史结果等内容出售给第三方，也不会将其用于跨应用追踪。</p>
+
+                <h3>4. 数据保存期限</h3>
+                <p>本地数据会在您使用期间持续保存，直至您主动删除相关内容或卸载应用。</p>
+
+                <h2>四、跳转与系统界面</h2>
+                <ul>
+                    <li><strong>App Store：</strong>当您点击评分或下载更多应用时，系统会跳转至 App Store 页面；我们不会因此获知您的 Apple ID 或支付信息。</li>
+                    <li><strong>系统分享：</strong>若您使用分享功能，分享对象与内容由您自行选择，应用不拦截分享链路。</li>
+                </ul>
+
+                <h2>五、网络与第三方 SDK</h2>
+                <p>本 App 不以广告追踪为目的集成第三方 SDK。若后续新增第三方能力，我们会在版本更新时同步更新本政策，并在必要时再次征得您的授权。</p>
+
+                <h2>六、未成年人</h2>
+                <p>若您为未成年人，建议在监护人指导下阅读并使用本 App。监护人对未成年人的隐私权益保护负有监督责任。</p>
+
+                <h2>七、您的控制与删除</h2>
+                <p>您可在 App 内删除转盘选项与历史记录，也可通过卸载应用清除本地数据。若存在小组件共享数据，系统会按 Apple 机制同步处理。</p>
+
+                <h2>八、政策更新</h2>
+                <p>我们可能根据法律法规或产品功能变化更新本政策。更新后将发布在本页面，并更新生效日期。重大变更时，我们会通过适当方式提示您。</p>
+
+                <h2>九、联系我们</h2>
+                <p>如对本政策有疑问或建议，可通过以下方式联系：</p>
+                <div class="contact-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </div>
+                    <div class="info">
+                        <p>联系邮箱：<a href="mailto:youjiancau@gmail.com">youjiancau@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 32px; padding: 22px; background: linear-gradient(135deg, #FFF8E1 0%, #FFECB3 100%); border-radius: 14px; border-left: 4px solid #FF8F00;">
+                    <h3 style="margin: 0 0 10px 0; font-size: 17px; color: #1d1d1f;">App Store 与合规说明</h3>
+                    <p style="margin: 0; font-size: 15px; color: #424245; line-height: 1.65;">
+                        本 App 以本地决策工具为核心，不收集账号体系信息，不做个性化广告追踪。您可根据本政策在 App Store「App 隐私」中进行对应披露。
+                    </p>
+                </div>
+
+                <p style="margin-top: 32px; padding: 18px; background: #f5f5f7; border-radius: 12px; font-size: 15px; color: #86868b;">
+                    本政策旨在帮助您理解小决定的数据处理方式。应用内与商店展示名称均为 <strong>小决定</strong>。
+                </p>
+            </article>
+
+            <div class="back-to-top">
+                <button type="button" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">返回顶部</button>
+            </div>
+
+            <footer>
+                <p>&copy; 2026 小决定</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
