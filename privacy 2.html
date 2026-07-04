@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="DoubleTake Privacy Policy — dual-camera recording, live filters, and on-device face processing.">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>DoubleTake — Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", sans-serif;
+            line-height: 1.8;
+            color: #1d1d1f;
+            background-color: #f5f5f7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 22px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #7B2CBF 0%, #5a1d8f 100%);
+            color: white;
+            padding: 60px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.1)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 26px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            font-size: 21px;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+
+        .privacy-badge {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 8px 20px;
+            background: rgba(255,255,255,0.25);
+            border-radius: 24px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .content-wrapper {
+            background: white;
+            border-radius: 20px 20px 0 0;
+            margin-top: -40px;
+            position: relative;
+            box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.08);
+            padding-bottom: 60px;
+        }
+
+        .effective-date {
+            text-align: center;
+            padding: 40px 0 30px;
+            color: #86868b;
+            font-size: 15px;
+            border-bottom: 1px solid #e5e5e7;
+        }
+
+        .effective-date strong {
+            color: #7B2CBF;
+            font-weight: 600;
+        }
+
+        .policy-content {
+            padding: 50px 60px;
+        }
+
+        .policy-content h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 50px 0 24px;
+            color: #1d1d1f;
+            letter-spacing: -0.3px;
+        }
+
+        .policy-content h2:first-child {
+            margin-top: 0;
+        }
+
+        .policy-content h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 28px 0 16px;
+            color: #1d1d1f;
+        }
+
+        .policy-content p {
+            margin-bottom: 16px;
+            color: #424245;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .policy-content ul, .policy-content ol {
+            margin: 16px 0 24px 24px;
+            color: #424245;
+        }
+
+        .policy-content li {
+            margin-bottom: 12px;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .policy-content strong {
+            color: #1d1d1f;
+            font-weight: 600;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #f5f0ff 0%, #ede8ff 100%);
+            border-left: 4px solid #7B2CBF;
+            padding: 24px;
+            border-radius: 12px;
+            margin: 28px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+        }
+
+        .contact-card {
+            background: #f5f5f7;
+            border-radius: 16px;
+            padding: 28px;
+            margin: 28px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .contact-card .icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, #7B2CBF 0%, #5a1d8f 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-card .icon svg {
+            width: 28px;
+            height: 28px;
+            fill: white;
+        }
+
+        .contact-card .info {
+            flex: 1;
+        }
+
+        .contact-card .info p {
+            margin: 0;
+            font-size: 16px;
+            color: #1d1d1f;
+        }
+
+        .contact-card .info a {
+            color: #7B2CBF;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #86868b;
+            font-size: 14px;
+            border-top: 1px solid #e5e5e7;
+            margin-top: 40px;
+        }
+
+        .back-to-top {
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .back-to-top button {
+            background: white;
+            border: 1px solid #d2d2d7;
+            color: #7B2CBF;
+            padding: 12px 28px;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .back-to-top button:hover {
+            background: #f5f5f7;
+            border-color: #7B2CBF;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .subtitle {
+                font-size: 17px;
+            }
+
+            .app-icon {
+                width: 90px;
+                height: 90px;
+                font-size: 36px;
+            }
+
+            .policy-content {
+                padding: 30px 24px;
+            }
+
+            .policy-content h2 {
+                font-size: 24px;
+                margin: 36px 0 20px;
+            }
+
+            .policy-content h3 {
+                font-size: 18px;
+            }
+
+            .policy-content p,
+            .policy-content li {
+                font-size: 16px;
+            }
+
+            .contact-card {
+                flex-direction: column;
+                text-align: center;
+                padding: 24px;
+            }
+
+            header {
+                padding: 40px 0 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="app-icon">📷</div>
+            <h1>DoubleTake</h1>
+            <p class="subtitle">Privacy Policy</p>
+            <span class="privacy-badge">🔒 Privacy-first · On-device processing</span>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="effective-date">
+                Effective date: <strong>July 4, 2026</strong>
+            </div>
+
+            <article class="policy-content">
+                <h2>1. Introduction</h2>
+                <p><strong>DoubleTake</strong> (“the App”) is a photography and video app focused on <strong>dual-camera recording</strong>. It lets you switch between dual record, picture-in-picture (PiP), and split-screen layouts in one flow, and also includes a live filter camera, photo filter editing from your library, beauty retouching, and an in-app recording library (depending on the version installed on your device).</p>
+                <p>This Privacy Policy explains what information the App accesses, how it is used, and what stays on your device. We designed DoubleTake so that <strong>your photos, videos, and face data are not uploaded to our servers</strong>. Processing happens locally on your iPhone or iPad unless you explicitly use a system service such as the App Store for purchases.</p>
+                <p>By using the App, you agree to this Privacy Policy. If you do not agree, please uninstall the App.</p>
+
+                <h2>2. Information We Do Not Collect</h2>
+                <p>DoubleTake is a <strong>local-first tool</strong>. We do <strong>not</strong> operate user accounts and we do <strong>not</strong> collect personal information on our own servers, including:</p>
+
+                <div class="highlight-box">
+                    <h3>We do not collect:</h3>
+                    <ol>
+                        <li><strong>Identity information</strong> such as your name, phone number, email address, or social profile;</li>
+                        <li><strong>Device tracking data</strong> such as advertising IDs, IP-based profiles, or location history for analytics;</li>
+                        <li><strong>Usage analytics</strong> such as session replay, click tracking, or behavioral profiling by the developer;</li>
+                        <li><strong>Your media content</strong> — photos, Live Photos, and videos you capture or edit are saved only on your device (Photos library or the App’s local storage) unless you choose to share them elsewhere;</li>
+                        <li><strong>Face images or face templates</strong> — face detection and beauty processing run on-device and are not stored as separate face records or uploaded;</li>
+                        <li><strong>Remote backups of your edits</strong> — we do not sync your content to developer-controlled cloud storage.</li>
+                    </ol>
+                </div>
+
+                <h2 id="face-data">2.1 Face Data (App Store Requirement)</h2>
+                <p>This section addresses Apple App Store Review Guideline 2.1 requirements for apps that process face data.</p>
+
+                <h3>What face data does the App collect?</h3>
+                <p><strong>The App does not collect or store face data.</strong> For live preview, beauty retouch, and related features, DoubleTake uses Apple’s on-device frameworks (including <strong>Vision</strong> and <strong>Core Image</strong>) to temporarily detect face rectangles or facial landmarks in memory. These calculations exist only for the current frame or the photo being edited and are discarded afterward. They are <strong>not written to disk as face profiles, not uploaded, and not shared with third parties</strong>.</p>
+
+                <h3>How is face-related data used?</h3>
+                <ul>
+                    <li><strong>Face bounding boxes:</strong> used for real-time camera preview, optional beauty effects, and smart framing hints on the current frame only;</li>
+                    <li><strong>Facial regions:</strong> used to apply effects such as skin smoothing, spot removal, slim-face, dark-circle reduction, and tone evening within the current image or preview frame;</li>
+                    <li><strong>No persistent face archive:</strong> the App does not build a face gallery, face ID, or biometric template.</li>
+                </ul>
+
+                <h3>Is face data shared or stored?</h3>
+                <p><strong>No.</strong> Face-related processing happens entirely on your device. It is not sent to our servers, not stored in an App database, and not written to persistent files as face data.</p>
+
+                <h3>How long is face data retained?</h3>
+                <p><strong>It is not retained.</strong> Temporary face geometry exists only in memory during a single preview frame or single edit operation and is released immediately afterward.</p>
+
+                <div class="highlight-box">
+                    <p><strong>Summary for App Review:</strong> “DoubleTake does not collect or store face data. For live filters, beauty, and portrait editing, the App uses Apple system frameworks to compute face position or facial regions on-device in memory for the current frame or image only. Results are not saved as face records, not uploaded, and not shared with third parties. Face data is not stored on servers or in persistent local storage and has no retention period.”</p>
+                </div>
+
+                <h2>3. Information Stored on Your Device</h2>
+                <p>Although we do not collect data on our servers, the App stores some information locally on your device to function:</p>
+                <ul>
+                    <li><strong>App preferences</strong> (language, appearance/theme, sound, onboarding completion, and similar settings) using iOS local storage;</li>
+                    <li><strong>In-app recording library</strong> — dual-camera and comprehensive recordings you save inside the App are stored in the App’s documents directory on your device;</li>
+                    <li><strong>Local edit history</strong> — recent filter or camera history may be cached locally for convenience;</li>
+                    <li><strong>Pro purchase status</strong> — whether you unlocked Pro is determined through Apple StoreKit; we do not receive your payment card details.</li>
+                </ul>
+                <p>You can remove App-local data by deleting items inside the App or by uninstalling the App. Content saved to the system Photos library remains there until you delete it in Photos.</p>
+
+                <h2>4. Permissions</h2>
+                <p>The App requests only the permissions needed for its features. All granted access is used on-device:</p>
+                <ul>
+                    <li><strong>Camera</strong> — dual-camera recording, PiP, split-screen layouts, live filter capture, and photo/video recording. Preview and capture stay on your device;</li>
+                    <li><strong>Photo Library (read)</strong> — select existing photos to apply filters and edits;</li>
+                    <li><strong>Photo Library (add)</strong> — save photos and videos you export to your library;</li>
+                    <li><strong>Microphone</strong> — record audio when you capture video with sound. Audio is stored locally with your video.</li>
+                </ul>
+                <p>You can revoke permissions at any time in iOS Settings. Some features will not work without the relevant permission.</p>
+
+                <h2>5. In-App Purchases (Pro)</h2>
+                <p>DoubleTake offers an optional <strong>one-time Pro upgrade</strong> processed by <strong>Apple App Store and StoreKit</strong>. Apple handles payment, receipt validation, and restore purchases. We do not receive or store your full payment credentials. Purchase-related information is governed by <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>.</p>
+
+                <h2>6. Third-Party Services</h2>
+                <p>The App does <strong>not</strong> integrate advertising SDKs, analytics SDKs, social login, or third-party tracking for developer marketing.</p>
+                <ul>
+                    <li><strong>Apple system services</strong> — App Store purchases, StoreKit transaction verification, and optional App Store review prompts;</li>
+                    <li><strong>Links you open</strong> — the App may open this Privacy Policy, Terms of Use, or App Store pages in Safari or an in-app browser. Those pages are subject to their own policies;</li>
+                    <li><strong>No developer upload server</strong> — apart from standard Apple purchase communication and pages you choose to open, the App does not upload your photos, videos, or face data to developer-operated servers.</li>
+                </ul>
+
+                <h2>7. Data Security</h2>
+                <p>Because your media and face processing remain on your device, security depends primarily on your device protections (passcode, Face ID, Touch ID, and iOS system security). We recommend keeping your device updated and using a strong screen lock.</p>
+
+                <h2>8. Children’s Privacy</h2>
+                <p>The App is not directed at children under 13 (or the minimum age required in your region). We do not knowingly collect personal information from children. If you believe a child has provided personal information to us, please contact us and we will respond promptly.</p>
+
+                <h2>9. Your Rights</h2>
+                <p>Depending on your region, you may have rights to access, correct, or delete personal information. Because DoubleTake does not maintain developer-side accounts or server copies of your media, most user-controlled data is already on your device and can be removed by deleting content in the App, clearing Photos items you saved, or uninstalling the App.</p>
+                <p>For purchase-related requests (refunds, restore purchases), please use Apple’s standard App Store support channels.</p>
+
+                <h2>10. Changes to This Policy</h2>
+                <ol>
+                    <li>We may update this Privacy Policy when features, laws, or App Store requirements change. The effective date at the top will be revised accordingly.</li>
+                    <li>Continued use of the App after an update means you accept the revised policy. If you do not agree, please stop using the App and uninstall it.</li>
+                </ol>
+
+                <h2>11. Contact Us</h2>
+                <p>If you have questions, suggestions, or privacy-related requests about DoubleTake, contact us:</p>
+
+                <div class="contact-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </div>
+                    <div class="info">
+                        <p>Email: <a href="mailto:nickgao1986@users.noreply.github.com">nickgao1986@users.noreply.github.com</a></p>
+                    </div>
+                </div>
+
+                <h2>12. Technical Support</h2>
+                <p>If you need help using DoubleTake, email us at the address above. We aim to respond within <strong>1–3 business days</strong>.</p>
+
+                <h2>13. Disclaimer</h2>
+                <ol>
+                    <li>DoubleTake is provided as a creative tool. You are responsible for how you use captured content and for complying with applicable laws where you record or share media;</li>
+                    <li>We are not responsible for loss of data caused by device failure, loss, or unauthorized access to your unlocked device;</li>
+                    <li>This policy applies only to DoubleTake. Third-party websites or services you access outside the App are governed by their own policies.</li>
+                </ol>
+
+                <div style="margin-top: 40px; padding: 24px; background: linear-gradient(135deg, #f5f0ff 0%, #ede8ff 100%); border-radius: 16px; border-left: 4px solid #7B2CBF;">
+                    <h3 style="margin: 0 0 12px 0; font-size: 18px; color: #7B2CBF;">App Store Privacy Summary</h3>
+                    <p style="margin: 0; font-size: 15px; color: #424245; line-height: 1.6;">
+                        DoubleTake is privacy-first: your photos, videos, and face processing stay on your device and are not uploaded to developer servers. Optional Pro purchases are handled by Apple. For support, contact <a href="mailto:nickgao1986@users.noreply.github.com" style="color: #7B2CBF; font-weight: 500;">nickgao1986@users.noreply.github.com</a>.
+                    </p>
+                </div>
+
+                <p style="margin-top: 40px; padding: 20px; background: #f5f5f7; border-radius: 12px; font-size: 15px; color: #86868b;">
+                    App: DoubleTake · Bundle ID: com.nickgao.shuangping · This policy is written in English for the U.S. App Store listing and complies with Apple App Store Review Guidelines regarding privacy and face data.
+                </p>
+            </article>
+
+            <div class="back-to-top">
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Back to top</button>
+            </div>
+
+            <footer>
+                <p>&copy; 2026 DoubleTake. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
