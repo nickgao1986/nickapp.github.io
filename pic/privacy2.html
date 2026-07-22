@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Dual Record Privacy Policy — synchronized landscape and portrait video recording, on-device processing, and optional Pro export.">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>Dual Record — Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", sans-serif;
+            line-height: 1.8;
+            color: #1d1d1f;
+            background-color: #f5f5f7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 22px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #7B2CBF 0%, #5a1d8f 100%);
+            color: white;
+            padding: 60px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.1)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 26px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            font-size: 21px;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+
+        .privacy-badge {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 8px 20px;
+            background: rgba(255,255,255,0.25);
+            border-radius: 24px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .content-wrapper {
+            background: white;
+            border-radius: 20px 20px 0 0;
+            margin-top: -40px;
+            position: relative;
+            box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.08);
+            padding-bottom: 60px;
+        }
+
+        .effective-date {
+            text-align: center;
+            padding: 40px 0 30px;
+            color: #86868b;
+            font-size: 15px;
+            border-bottom: 1px solid #e5e5e7;
+        }
+
+        .effective-date strong {
+            color: #7B2CBF;
+            font-weight: 600;
+        }
+
+        .policy-content {
+            padding: 50px 60px;
+        }
+
+        .policy-content h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 50px 0 24px;
+            color: #1d1d1f;
+            letter-spacing: -0.3px;
+        }
+
+        .policy-content h2:first-child {
+            margin-top: 0;
+        }
+
+        .policy-content h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 28px 0 16px;
+            color: #1d1d1f;
+        }
+
+        .policy-content p {
+            margin-bottom: 16px;
+            color: #424245;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .policy-content ul, .policy-content ol {
+            margin: 16px 0 24px 24px;
+            color: #424245;
+        }
+
+        .policy-content li {
+            margin-bottom: 12px;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .policy-content strong {
+            color: #1d1d1f;
+            font-weight: 600;
+        }
+
+        .policy-content a {
+            color: #7B2CBF;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #f5f0ff 0%, #ede8ff 100%);
+            border-left: 4px solid #7B2CBF;
+            padding: 24px;
+            border-radius: 12px;
+            margin: 28px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+        }
+
+        .contact-card {
+            background: #f5f5f7;
+            border-radius: 16px;
+            padding: 28px;
+            margin: 28px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .contact-card .icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, #7B2CBF 0%, #5a1d8f 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-card .icon svg {
+            width: 28px;
+            height: 28px;
+            fill: white;
+        }
+
+        .contact-card .info {
+            flex: 1;
+        }
+
+        .contact-card .info p {
+            margin: 0;
+            font-size: 16px;
+            color: #1d1d1f;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #86868b;
+            font-size: 14px;
+            border-top: 1px solid #e5e5e7;
+            margin-top: 40px;
+        }
+
+        .back-to-top {
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .back-to-top button {
+            background: white;
+            border: 1px solid #d2d2d7;
+            color: #7B2CBF;
+            padding: 12px 28px;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .back-to-top button:hover {
+            background: #f5f5f7;
+            border-color: #7B2CBF;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .subtitle {
+                font-size: 17px;
+            }
+
+            .app-icon {
+                width: 90px;
+                height: 90px;
+                font-size: 18px;
+            }
+
+            .policy-content {
+                padding: 30px 24px;
+            }
+
+            .policy-content h2 {
+                font-size: 24px;
+                margin: 36px 0 20px;
+            }
+
+            .policy-content h3 {
+                font-size: 18px;
+            }
+
+            .policy-content p,
+            .policy-content li {
+                font-size: 16px;
+            }
+
+            .contact-card {
+                flex-direction: column;
+                text-align: center;
+                padding: 24px;
+            }
+
+            header {
+                padding: 40px 0 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="app-icon">DR</div>
+            <h1>Dual Record</h1>
+            <p class="subtitle">Privacy Policy</p>
+            <span class="privacy-badge">Privacy-first · On-device processing</span>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="effective-date">
+                Effective date: <strong>July 22, 2026</strong>
+            </div>
+
+            <article class="policy-content">
+                <h2>1. Introduction</h2>
+                <p><strong>Dual Record</strong> (“the App”) is an iOS app for <strong>synchronized dual-format video recording</strong>. From a single recording session, the App can produce a 16:9 landscape video and a 9:16 portrait video with matched timing and shared audio. The App supports <strong>Dual Lens</strong> capture (rear Wide and Ultra Wide when your device supports multi-camera capture) and <strong>Single Lens</strong> capture (one camera framed into both aspect ratios).</p>
+                <p>The App also includes an <strong>in-app portfolio</strong> for saved recordings, optional export to the system Photos library, and additional creative tools in Settings (such as photo filter editing) depending on the version on your device.</p>
+                <p>This Privacy Policy explains what the App accesses, how information is used, and what stays on your device. We designed Dual Record so that <strong>your videos and photos are not uploaded to developer-operated servers</strong>. Processing happens on your iPhone or iPad unless you use Apple system services (for example App Store purchases).</p>
+                <p>By using the App, you agree to this Privacy Policy. If you do not agree, please uninstall the App.</p>
+
+                <h2>2. Information We Do Not Collect</h2>
+                <p>Dual Record is a <strong>local-first</strong> app. We do <strong>not</strong> operate user accounts and we do <strong>not</strong> collect personal information on our own servers, including:</p>
+
+                <div class="highlight-box">
+                    <h3>We do not collect:</h3>
+                    <ol>
+                        <li><strong>Identity information</strong> such as your name, phone number, email address, or social profile;</li>
+                        <li><strong>Advertising or tracking profiles</strong> such as advertising IDs, cross-app tracking, or location history for analytics;</li>
+                        <li><strong>Developer analytics</strong> such as session replay, behavioral profiling, or usage dashboards operated by us;</li>
+                        <li><strong>Your media by default</strong> — videos and photos you capture or edit are stored on your device (the App’s local storage and/or your Photos library when you export). We do not receive copies unless you voluntarily contact support and attach files;</li>
+                        <li><strong>Face images or face templates</strong> — when optional beauty or filter features use face detection, processing runs on-device and is not stored as separate face records or uploaded;</li>
+                        <li><strong>Developer cloud backups</strong> of your recordings or edits.</li>
+                    </ol>
+                </div>
+
+                <h2 id="face-data">2.1 Face Data (App Store Requirement)</h2>
+                <p>This section addresses Apple App Store Review Guideline 2.1 for apps that process face-related data.</p>
+
+                <h3>What face data does the App collect?</h3>
+                <p><strong>The App does not collect or store face data as a persistent record.</strong> If you use optional live preview, beauty, or photo-editing features, the App may use Apple’s on-device frameworks (including <strong>Vision</strong> and <strong>Core Image</strong>) to detect face rectangles or facial regions <strong>in memory only</strong> for the current camera frame or the photo being edited. That information is discarded after the frame or edit completes. It is <strong>not written to disk as face profiles, not uploaded, and not shared with third parties</strong>.</p>
+
+                <h3>How is face-related data used?</h3>
+                <ul>
+                    <li><strong>Face geometry:</strong> optional real-time preview effects, beauty adjustments, or framing hints on the current frame or image;</li>
+                    <li><strong>No face archive:</strong> the App does not build a face gallery, face ID, or biometric template.</li>
+                </ul>
+
+                <h3>Is face data shared or stored?</h3>
+                <p><strong>No.</strong> Face-related processing stays on your device. It is not sent to our servers and not saved as face data in persistent storage.</p>
+
+                <h3>How long is face data retained?</h3>
+                <p><strong>It is not retained.</strong> Temporary face geometry exists only in memory during a single preview frame or single edit operation.</p>
+
+                <div class="highlight-box">
+                    <p><strong>Summary for App Review:</strong> “Dual Record does not collect or store face data. Optional beauty or filter features use Apple system frameworks to compute face position or facial regions on-device in memory for the current frame or image only. Results are not saved as face records, not uploaded, and not shared with third parties. Face data is not stored on servers or in persistent local storage and has no retention period.”</p>
+                </div>
+
+                <h2>3. Information Stored on Your Device</h2>
+                <p>The App stores information locally so it can function:</p>
+                <ul>
+                    <li><strong>App preferences</strong> — language, appearance, sound, onboarding status, recording mode preferences, and similar settings (iOS local storage);</li>
+                    <li><strong>In-app portfolio</strong> — recordings you save inside the App are stored in the App’s documents directory on your device;</li>
+                    <li><strong>Local history caches</strong> — optional recent filter or camera history for convenience;</li>
+                    <li><strong>Free export allowance</strong> — a counter for how many portfolio exports to Photos are available on the free tier (stored locally);</li>
+                    <li><strong>Pro purchase status</strong> — determined through Apple StoreKit; we do not receive your payment card details.</li>
+                </ul>
+                <p>You can remove App-local data by deleting items in the portfolio, clearing App storage, or uninstalling the App. Content saved to Photos remains until you delete it in the Photos app.</p>
+
+                <h2>4. Permissions</h2>
+                <p>The App requests permissions only as needed. Granted access is used on-device:</p>
+                <ul>
+                    <li><strong>Camera</strong> — dual-format video recording, preview, and optional photo capture;</li>
+                    <li><strong>Microphone</strong> — record audio with video. Audio is stored locally with your recording;</li>
+                    <li><strong>Photo Library (read)</strong> — select photos for optional filter or editing tools;</li>
+                    <li><strong>Photo Library (add)</strong> — save videos or photos when you export to your library.</li>
+                </ul>
+                <p>You can revoke permissions in iOS Settings. Features that need a permission will not work without it.</p>
+
+                <h2>5. In-App Purchases (Pro)</h2>
+                <p>Dual Record offers an optional <strong>one-time Pro upgrade</strong> (product ID <code>com.mynick.dualrecord.upgrade</code>) processed by <strong>Apple App Store and StoreKit</strong>. Apple handles payment, receipt validation, and Restore Purchases. We do not receive or store your full payment credentials. Purchase-related information is governed by <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>.</p>
+                <p>Pro unlocks benefits such as <strong>unlimited export of portfolio recordings to Photos</strong> and access to higher capture settings as described in the App. Recording into the in-app portfolio remains available without Pro, subject to the App’s current free-tier limits.</p>
+
+                <h2>6. Third-Party Services</h2>
+                <p>The App does <strong>not</strong> integrate advertising SDKs, third-party analytics SDKs, or social login for developer marketing.</p>
+                <ul>
+                    <li><strong>Apple system services</strong> — App Store purchases, StoreKit, and optional in-app rating prompts;</li>
+                    <li><strong>Links you open</strong> — this Privacy Policy, Terms of Use, or App Store pages may open in Safari or an in-app browser;</li>
+                    <li><strong>No developer media upload server</strong> — apart from standard Apple purchase communication, the App does not upload your videos, photos, or face data to servers we operate.</li>
+                </ul>
+
+                <h2>7. Data Security</h2>
+                <p>Your media and on-device processing are protected primarily by your device security (passcode, Face ID, Touch ID, and iOS updates). We recommend keeping your device updated and using a strong screen lock.</p>
+
+                <h2>8. Children’s Privacy</h2>
+                <p>The App is not directed at children under 13 (or the minimum age in your region). We do not knowingly collect personal information from children on our servers. If you believe a child has contacted us with personal information, please email us and we will respond promptly.</p>
+
+                <h2>9. Your Rights</h2>
+                <p>Depending on your region, you may have rights regarding personal information. Because we do not maintain developer-side accounts or server copies of your media, most data is on your device and can be removed by deleting portfolio items, removing exports from Photos, or uninstalling the App.</p>
+                <p>For refunds or purchase restoration, use Apple’s standard App Store support channels.</p>
+
+                <h2>10. Changes to This Policy</h2>
+                <ol>
+                    <li>We may update this Privacy Policy when features, laws, or App Store requirements change. The effective date at the top will be revised.</li>
+                    <li>Continued use after an update means you accept the revised policy. If you do not agree, stop using the App and uninstall it.</li>
+                </ol>
+
+                <h2>11. Contact Us</h2>
+                <p>For privacy questions or requests about Dual Record:</p>
+
+                <div class="contact-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </div>
+                    <div class="info">
+                        <p>Email: <a href="mailto:nickgao1986@users.noreply.github.com">nickgao1986@users.noreply.github.com</a></p>
+                    </div>
+                </div>
+
+                <h2>12. Technical Support</h2>
+                <p>For help using Dual Record, email the address above. We aim to respond within <strong>1–3 business days</strong>.</p>
+
+                <h2>13. Disclaimer</h2>
+                <ol>
+                    <li>Dual Record is a creative tool. You are responsible for how you use recordings and for complying with laws where you record or share media;</li>
+                    <li>We are not responsible for data loss caused by device failure, loss, or unauthorized access to an unlocked device;</li>
+                    <li>This policy applies only to Dual Record. Third-party sites or services you open outside the App have their own policies.</li>
+                </ol>
+
+                <div style="margin-top: 40px; padding: 24px; background: linear-gradient(135deg, #f5f0ff 0%, #ede8ff 100%); border-radius: 16px; border-left: 4px solid #7B2CBF;">
+                    <h3 style="margin: 0 0 12px 0; font-size: 18px; color: #7B2CBF;">App Store Privacy Summary</h3>
+                    <p style="margin: 0; font-size: 15px; color: #424245; line-height: 1.6;">
+                        Dual Record keeps video capture and processing on your device. Optional Pro purchases are handled by Apple. Support: <a href="mailto:nickgao1986@users.noreply.github.com">nickgao1986@users.noreply.github.com</a>.
+                    </p>
+                </div>
+
+                <p style="margin-top: 40px; padding: 20px; background: #f5f5f7; border-radius: 12px; font-size: 15px; color: #86868b;">
+                    App: Dual Record · App Store ID: 6793436052 · Bundle ID: com.mynick.dualrecord ·
+                    <a href="https://apps.apple.com/app/id6793436052">App Store page</a> ·
+                    This policy is written in English for the U.S. App Store listing and addresses Apple requirements for privacy and face data.
+                </p>
+            </article>
+
+            <div class="back-to-top">
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Back to top</button>
+            </div>
+
+            <footer>
+                <p>&copy; 2026 Dual Record. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
