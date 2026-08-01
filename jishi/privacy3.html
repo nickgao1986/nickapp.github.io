@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="横竖双录隐私政策 — 一次拍摄同步生成横屏与竖屏视频，本地处理，可选 Pro 买断导出。">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>横竖双录 — 隐私政策</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "PingFang SC", "Helvetica Neue", sans-serif;
+            line-height: 1.8;
+            color: #1d1d1f;
+            background-color: #f5f5f7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 22px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a2332 0%, #0d1219 100%);
+            color: white;
+            padding: 60px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.06)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            background: rgba(255, 255, 255, 0.12);
+            border-radius: 26px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 44px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .subtitle {
+            font-size: 21px;
+            opacity: 0.9;
+            font-weight: 400;
+            position: relative;
+            z-index: 1;
+        }
+
+        .privacy-badge {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 8px 20px;
+            background: rgba(255,255,255,0.18);
+            border-radius: 24px;
+            font-size: 15px;
+            font-weight: 500;
+            position: relative;
+            z-index: 1;
+        }
+
+        .content-wrapper {
+            background: white;
+            border-radius: 20px 20px 0 0;
+            margin-top: -40px;
+            position: relative;
+            box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.08);
+            padding-bottom: 60px;
+        }
+
+        .effective-date {
+            text-align: center;
+            padding: 40px 0 30px;
+            color: #86868b;
+            font-size: 15px;
+            border-bottom: 1px solid #e5e5e7;
+        }
+
+        .effective-date strong {
+            color: #1a2332;
+            font-weight: 600;
+        }
+
+        .policy-content {
+            padding: 50px 60px;
+        }
+
+        .policy-content h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 50px 0 24px;
+            color: #1d1d1f;
+            letter-spacing: -0.3px;
+        }
+
+        .policy-content h2:first-child {
+            margin-top: 0;
+        }
+
+        .policy-content h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 28px 0 16px;
+            color: #1d1d1f;
+        }
+
+        .policy-content p {
+            margin-bottom: 16px;
+            color: #424245;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .policy-content ul, .policy-content ol {
+            margin: 16px 0 24px 24px;
+            color: #424245;
+        }
+
+        .policy-content li {
+            margin-bottom: 12px;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .policy-content strong {
+            color: #1d1d1f;
+            font-weight: 600;
+        }
+
+        .policy-content a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .policy-content code {
+            font-size: 14px;
+            background: #f5f5f7;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #f0f4f8 0%, #e8eef5 100%);
+            border-left: 4px solid #1a2332;
+            padding: 24px;
+            border-radius: 12px;
+            margin: 28px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+        }
+
+        .contact-card {
+            background: #f5f5f7;
+            border-radius: 16px;
+            padding: 28px;
+            margin: 28px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .contact-card .icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, #1a2332 0%, #0d1219 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-card .icon svg {
+            width: 28px;
+            height: 28px;
+            fill: white;
+        }
+
+        .contact-card .info {
+            flex: 1;
+        }
+
+        .contact-card .info p {
+            margin: 0;
+            font-size: 16px;
+            color: #1d1d1f;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #86868b;
+            font-size: 14px;
+            border-top: 1px solid #e5e5e7;
+            margin-top: 40px;
+        }
+
+        .back-to-top {
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .back-to-top button {
+            background: white;
+            border: 1px solid #d2d2d7;
+            color: #1a2332;
+            padding: 12px 28px;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .back-to-top button:hover {
+            background: #f5f5f7;
+            border-color: #1a2332;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .subtitle {
+                font-size: 17px;
+            }
+
+            .app-icon {
+                width: 90px;
+                height: 90px;
+                font-size: 16px;
+            }
+
+            .policy-content {
+                padding: 30px 24px;
+            }
+
+            .policy-content h2 {
+                font-size: 24px;
+                margin: 36px 0 20px;
+            }
+
+            .policy-content h3 {
+                font-size: 18px;
+            }
+
+            .policy-content p,
+            .policy-content li {
+                font-size: 16px;
+            }
+
+            .contact-card {
+                flex-direction: column;
+                text-align: center;
+                padding: 24px;
+            }
+
+            header {
+                padding: 40px 0 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="app-icon">双录</div>
+            <h1>横竖双录</h1>
+            <p class="subtitle">隐私政策</p>
+            <span class="privacy-badge">本地优先 · 视频不上云</span>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="effective-date">
+                生效日期：<strong>2026 年 8 月 1 日</strong>
+            </div>
+
+            <article class="policy-content">
+                <h2>1. 引言</h2>
+                <p><strong>横竖双录</strong>（App Store 名称亦可显示为「横竖双录相机」，以下简称「本应用」）是一款面向 iPhone / iPad 的视频拍摄应用。一次按下录制后，本应用可同步生成<strong>横屏 16:9</strong>与<strong>竖屏 9:16</strong>两路视频，并共享同一时间轴与音轨。</p>
+                <p>本应用支持多种拍摄方式，包括但不限于：后置双镜头（广角与超广角，设备支持多摄时）、单镜头双画幅、前后同框、分屏拍摄；并提供作品集管理、导出到系统相册，以及滤镜、美颜、提词器、智能剪辑、自动字幕等创作工具（以你设备上的实际版本为准）。</p>
+                <p>本隐私政策说明本应用会访问哪些权限、信息如何使用，以及哪些内容会留在你的设备上。我们的设计原则是：<strong>你的视频、照片与面部相关处理默认在本机完成，不会上传到开发者运营的服务器</strong>。使用 Apple 系统服务（例如 App Store 内购、系统语音识别在不支持设备端识别时的处理）时，适用 Apple 的相关政策。</p>
+                <p>使用本应用即表示你同意本隐私政策。如不同意，请停止使用并卸载本应用。</p>
+
+                <h2>2. 我们不收集的信息</h2>
+                <p>本应用采用<strong>本地优先</strong>架构。我们不提供开发者侧用户账号体系，也不在自有服务器上收集个人信息，包括：</p>
+
+                <div class="highlight-box">
+                    <h3>我们不会收集：</h3>
+                    <ol>
+                        <li><strong>身份信息</strong>：姓名、手机号、电子邮箱、社交账号等；</li>
+                        <li><strong>广告与追踪画像</strong>：广告标识符、跨应用追踪、用于分析的定位历史等；</li>
+                        <li><strong>开发者分析 SDK</strong>：会话回放、行为画像或由我们运营的使用数据看板；</li>
+                        <li><strong>你的媒体内容副本</strong>：拍摄与编辑的视频、照片默认保存在本机（应用沙盒和/或你导出后的系统相册）。除非你主动联系客服并自行附上文件，我们不会收到副本；</li>
+                        <li><strong>人脸档案或生物特征模板</strong>：可选美颜 / 滤镜如使用人脸检测，仅在设备内存中临时计算，不会作为独立人脸记录保存或上传；</li>
+                        <li><strong>开发者云端备份</strong>：我们不提供也不保存你的录像或编辑工程到自有云端。</li>
+                    </ol>
+                </div>
+
+                <h2 id="face-data">2.1 面部数据说明（App Store 要求）</h2>
+                <p>本节回应 Apple App Store 审核指南中关于处理面部相关数据的要求。</p>
+
+                <h3>本应用是否收集面部数据？</h3>
+                <p><strong>不会将面部数据作为持久记录收集或存储。</strong>若你使用实时预览、美颜、滤镜或照片编辑等可选功能，本应用可能调用 Apple 本机框架（包括 <strong>Vision</strong>、<strong>Core Image</strong> 等）在当前相机帧或当前编辑图片的<strong>内存中</strong>检测人脸矩形或面部区域。该信息在当前帧或当前编辑操作结束后丢弃，<strong>不会写入磁盘为人脸档案，不会上传，也不会与第三方共享</strong>。</p>
+
+                <h3>面部相关数据如何使用？</h3>
+                <ul>
+                    <li><strong>面部几何信息</strong>：用于可选的实时预览效果、美颜调节或构图提示；</li>
+                    <li><strong>无面部库</strong>：本应用不会建立人脸相册、Face ID 档案或生物特征模板。</li>
+                </ul>
+
+                <h3>是否共享或持久保存？</h3>
+                <p><strong>否。</strong>面部相关处理仅在本机进行，不发送到开发者服务器，也不作为面部数据持久化存储。</p>
+
+                <h3>保留多久？</h3>
+                <p><strong>不保留。</strong>临时面部几何信息仅存在于单次预览帧或单次编辑操作的内存中。</p>
+
+                <div class="highlight-box">
+                    <p><strong>供 App Review 摘要：</strong>「横竖双录不收集、不存储面部数据。可选美颜或滤镜功能使用 Apple 系统框架，仅在本机内存中针对当前帧或当前图片计算面部位置或区域。结果不会保存为人脸记录、不会上传、不会与第三方共享。面部数据不保存在服务器或本地持久存储中，无保留期。」</p>
+                </div>
+
+                <h2>3. 保存在你设备上的信息</h2>
+                <p>为保障功能正常，本应用会在本机存储：</p>
+                <ul>
+                    <li><strong>应用偏好</strong>：语言、外观、声音、引导页状态、拍摄模式偏好等（iOS 本地存储）；</li>
+                    <li><strong>应用内作品集</strong>：你在本应用中保存的录像文件，存放于应用沙盒文档目录；</li>
+                    <li><strong>本地历史缓存</strong>：可选的近期滤镜或相机相关记录，便于再次使用；</li>
+                    <li><strong>免费导出额度</strong>：免费版导出到系统相册的次数计数（本地存储）；</li>
+                    <li><strong>Pro 购买状态</strong>：通过 Apple StoreKit 判定；我们不会收到你的银行卡等支付凭证详情。</li>
+                </ul>
+                <p>你可通过删除作品集项目、清除应用存储或卸载本应用来移除应用本地数据。已导出到「照片」的内容需在系统「照片」应用中自行删除。</p>
+
+                <h2>4. 权限说明</h2>
+                <p>本应用仅在需要时请求权限，且仅在本机使用：</p>
+                <ul>
+                    <li><strong>相机</strong>：双画幅视频录制、实时预览及可选拍照；</li>
+                    <li><strong>麦克风</strong>：为视频录制声音；音频与录像一并保存在本机；</li>
+                    <li><strong>相册（读取）</strong>：选择照片或视频用于滤镜、编辑等功能；</li>
+                    <li><strong>相册（写入）</strong>：在你导出时将视频或照片保存到系统相册；</li>
+                    <li><strong>语音识别</strong>：在你主动使用「自动字幕」时，识别录像中的语音以生成字幕（见第 5 节）。</li>
+                </ul>
+                <p>你可以在 iOS「设置」中随时撤销权限。缺少相应权限时，依赖该权限的功能将无法使用。</p>
+
+                <h2>5. 自动字幕与语音识别</h2>
+                <p>当你主动使用自动字幕功能时，本应用会从视频中提取音轨，并调用 Apple 的 <strong>Speech</strong> 框架进行识别。</p>
+                <ul>
+                    <li>在设备支持本机语音识别时，本应用会<strong>优先使用设备端识别</strong>（<code>requiresOnDeviceRecognition</code>），音轨尽量不离开设备；</li>
+                    <li>若当前语言或设备不支持本机识别，识别可能通过 Apple 系统语音识别服务完成，此时适用 <a href="https://www.apple.com/legal/privacy/">Apple 隐私政策</a>；</li>
+                    <li>开发者<strong>不会</strong>运营自有服务器接收或存储你的语音、字幕原文用于训练或营销；识别结果仅用于在本机生成或烧录字幕。</li>
+                </ul>
+
+                <h2>6. 应用内购买（Pro）</h2>
+                <p>本应用提供可选的<strong>一次性 Pro 升级</strong>（商品 ID：<code>com.mynick.dualrecordzh.upgrade</code>），由 <strong>Apple App Store 与 StoreKit</strong> 处理支付、收据校验与恢复购买。我们不会接收或存储你的完整支付凭证。与购买相关的信息适用 <a href="https://www.apple.com/legal/privacy/">Apple 隐私政策</a>。</p>
+                <p>Pro 可解锁无限导出作品集到系统相册，以及更高画质拍摄参数等（以应用内说明为准）。免费版仍可使用核心拍摄能力，并受导出次数等限制约束。Pro 为买断型内购，不含自动续费订阅。</p>
+
+                <h2>7. 第三方服务</h2>
+                <p>本应用<strong>未集成</strong>广告 SDK、第三方分析 SDK，或用于营销的社交登录。</p>
+                <ul>
+                    <li><strong>Apple 系统服务</strong>：App Store 购买、StoreKit、可选的系统评分提示，以及第 5 节所述语音识别；</li>
+                    <li><strong>你主动打开的链接</strong>：本隐私政策、用户协议或 App Store 页面可能在 Safari 或应用内浏览器中打开；</li>
+                    <li><strong>无开发者媒体上传服务器</strong>：除与 Apple 购买、系统服务通信外，本应用不会将你的视频、照片或面部数据上传到我们运营的服务器。</li>
+                </ul>
+
+                <h2>8. 数据安全</h2>
+                <p>你的媒体与本机处理主要依赖设备自身安全机制（锁屏密码、Face ID、Touch ID 及系统更新）。建议保持系统更新，并使用可靠的屏幕锁定方式。</p>
+
+                <h2>9. 儿童隐私</h2>
+                <p>本应用不以 13 岁以下儿童（或你所在地区规定的最低年龄）为主要服务对象。我们不会在自有服务器上故意收集儿童的个人信息。若你认为儿童向我们提供了个人信息，请通过下方邮箱联系，我们将尽快处理。</p>
+
+                <h2>10. 你的权利</h2>
+                <p>根据你所在地区的适用法律，你可能对个人信息享有查阅、更正、删除等权利。由于我们不维护开发者侧账号，也不在服务器保存你的媒体副本，绝大多数数据位于你的设备上，可通过删除作品集项目、在「照片」中删除导出内容或卸载本应用来移除。</p>
+                <p>退款或恢复购买请通过 Apple App Store 官方渠道处理。</p>
+
+                <h2>11. 政策更新</h2>
+                <ol>
+                    <li>当功能、法律法规或 App Store 要求变化时，我们可能更新本隐私政策，并修订页面顶部的生效日期；</li>
+                    <li>更新后继续使用本应用，即视为接受修订后的政策。如不同意，请停止使用并卸载本应用。</li>
+                </ol>
+
+                <h2>12. 联系我们</h2>
+                <p>如对本应用隐私事项有疑问或请求，请联系：</p>
+
+                <div class="contact-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </div>
+                    <div class="info">
+                        <p>电子邮箱：<a href="mailto:nickgao1986@users.noreply.github.com">nickgao1986@users.noreply.github.com</a></p>
+                    </div>
+                </div>
+
+                <h2>13. 技术支持</h2>
+                <p>使用本应用遇到问题，也可发送邮件至上述地址。我们通常会在<strong>1–3 个工作日</strong>内回复。</p>
+
+                <h2>14. 免责声明</h2>
+                <ol>
+                    <li>本应用为创作工具。你应对录制与分享内容的合法性负责，并遵守拍摄与发布所在地的法律法规；</li>
+                    <li>因设备故障、遗失或未锁定设备导致的数据丢失或泄露，我们不承担责任；</li>
+                    <li>本政策仅适用于横竖双录。你在本应用外打开的第三方网站或服务有其独立政策。</li>
+                </ol>
+
+                <div style="margin-top: 40px; padding: 24px; background: linear-gradient(135deg, #f0f4f8 0%, #e8eef5 100%); border-radius: 16px; border-left: 4px solid #1a2332;">
+                    <h3 style="margin: 0 0 12px 0; font-size: 18px; color: #1a2332;">App Store 隐私摘要</h3>
+                    <p style="margin: 0; font-size: 15px; color: #424245; line-height: 1.6;">
+                        横竖双录在设备本地完成视频拍摄与处理，不会将你的视频或面部数据上传到开发者服务器。可选 Pro 由 Apple 处理支付。自动字幕优先本机语音识别；不支持时可能经 Apple 系统服务处理。支持邮箱：<a href="mailto:nickgao1986@users.noreply.github.com">nickgao1986@users.noreply.github.com</a>。
+                    </p>
+                </div>
+
+                <p style="margin-top: 40px; padding: 20px; background: #f5f5f7; border-radius: 12px; font-size: 15px; color: #86868b;">
+                    应用：横竖双录 · App Store ID：6793436052 · Bundle ID：com.mynick.dualrecordzh ·
+                    <a href="https://apps.apple.com/cn/app/id6793436052">App Store 页面</a> ·
+                    本政策为简体中文，适用于中国区 App Store 上架与审核说明。
+                </p>
+            </article>
+
+            <div class="back-to-top">
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})">回到顶部</button>
+            </div>
+
+            <footer>
+                <p>&copy; 2026 横竖双录. 保留所有权利。</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
