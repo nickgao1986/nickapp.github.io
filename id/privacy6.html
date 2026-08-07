@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="映记 - 隐私政策">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>映记 - 隐私政策</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            line-height: 1.8;
+            color: #1d1d1f;
+            background-color: #f5f5f7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 22px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #007AFF 0%, #0051D5 100%);
+            color: white;
+            padding: 60px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.1)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3L1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 26px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            font-size: 21px;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+
+        .privacy-badge {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 8px 20px;
+            background: rgba(255,255,255,0.25);
+            border-radius: 24px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .content-wrapper {
+            background: white;
+            border-radius: 20px 20px 0 0;
+            margin-top: -40px;
+            position: relative;
+            box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.08);
+            padding-bottom: 60px;
+        }
+
+        .effective-date {
+            text-align: center;
+            padding: 40px 0 30px;
+            color: #86868b;
+            font-size: 15px;
+            border-bottom: 1px solid #e5e5e7;
+        }
+
+        .effective-date strong {
+            color: #007AFF;
+            font-weight: 600;
+        }
+
+        .policy-content {
+            padding: 50px 60px;
+        }
+
+        .policy-content h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 50px 0 24px;
+            color: #1d1d1f;
+            letter-spacing: -0.3px;
+        }
+
+        .policy-content h2:first-child {
+            margin-top: 0;
+        }
+
+        .policy-content h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 28px 0 16px;
+            color: #1d1d1f;
+        }
+
+        .policy-content p {
+            margin-bottom: 16px;
+            color: #424245;
+            font-size: 17px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .policy-content ul, .policy-content ol {
+            margin: 16px 0 24px 24px;
+            color: #424245;
+        }
+
+        .policy-content li {
+            margin-bottom: 12px;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .policy-content strong {
+            color: #1d1d1f;
+            font-weight: 600;
+        }
+
+        .policy-content a {
+            color: #007AFF;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #E8F4FD 0%, #D1E9FF 100%);
+            border-left: 4px solid #007AFF;
+            padding: 24px;
+            border-radius: 12px;
+            margin: 28px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 12px;
+        }
+
+        .highlight-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-card {
+            background: #f5f5f7;
+            border-radius: 16px;
+            padding: 28px;
+            margin: 28px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .contact-card .icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, #007AFF 0%, #0051D5 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-card .icon svg {
+            width: 28px;
+            height: 28px;
+            fill: white;
+        }
+
+        .contact-card .info {
+            flex: 1;
+        }
+
+        .contact-card .info p {
+            margin: 0;
+            font-size: 16px;
+            color: #1d1d1f;
+        }
+
+        .contact-card .info a {
+            color: #007AFF;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #86868b;
+            font-size: 14px;
+            border-top: 1px solid #e5e5e7;
+            margin-top: 40px;
+        }
+
+        .back-to-top {
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .back-to-top button {
+            background: white;
+            border: 1px solid #d2d2d7;
+            color: #007AFF;
+            padding: 12px 28px;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .back-to-top button:hover {
+            background: #f5f5f7;
+            border-color: #007AFF;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .subtitle {
+                font-size: 17px;
+            }
+
+            .app-icon {
+                width: 90px;
+                height: 90px;
+                font-size: 36px;
+            }
+
+            .policy-content {
+                padding: 30px 24px;
+            }
+
+            .policy-content h2 {
+                font-size: 24px;
+                margin: 36px 0 20px;
+            }
+
+            .policy-content h3 {
+                font-size: 18px;
+            }
+
+            .policy-content p,
+            .policy-content li {
+                font-size: 16px;
+            }
+
+            .contact-card {
+                flex-direction: column;
+                text-align: center;
+                padding: 24px;
+            }
+
+            header {
+                padding: 40px 0 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="app-icon">📝</div>
+            <h1>映记</h1>
+            <p class="subtitle">隐私政策</p>
+            <span class="privacy-badge">本地优先 · AI 功能可选</span>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="effective-date">
+                生效日期：<strong>2026年8月7日</strong>
+            </div>
+
+            <article class="policy-content">
+                <h2>一、引言</h2>
+                <p><strong>映记</strong>（以下简称「本App」）是一款本地优先的日记应用，提供文字记录、照片与短视频附件、语音转文字、位置足迹、回顾整理、桌面小组件，以及可选的云端 AI 辅助等功能。</p>
+                <p>本政策说明本App如何处理您主动提供或为实现功能所必需的信息。请您在使用前仔细阅读。核心日记功能可在不启用 AI、定位、相机等可选能力的情况下使用；只有当您主动使用需要权限或联网的功能时，相关数据才会按下文说明处理。</p>
+                <p>本政策与<a href="https://nickgao1986.github.io/nickapp.github.io/todo/user.html">《映记用户协议》</a>共同构成您使用本App的完整约定。</p>
+
+                <h2>二、我们处理的信息与用途</h2>
+                <p>本App<strong>不以注册账号为前提</strong>，也不向开发者自有服务器上传完整日记库。我们处理的信息类型与用途如下：</p>
+                <ul>
+                    <li><strong>日记内容：</strong>标题、正文、心情 Emoji、标签、创建/编辑时间、虚拟小伙伴回复等，用于保存、展示、筛选与回顾。</li>
+                    <li><strong>照片与短视频：</strong>仅在您主动拍摄或从相册选择时处理，用于日记附件、播放与导出。单篇日记照片上限为 9 张；短视频为约 1–5 秒的片段。</li>
+                    <li><strong>语音：</strong>仅在您主动使用语音速记时采集，用于转换为文字。本App不将原始录音作为日记附件长期保存。</li>
+                    <li><strong>位置信息：</strong>仅在您主动点击记录当前位置时获取经纬度，并可反查地点名称，用于日记位置标注与足迹地图。</li>
+                    <li><strong>应用设置：</strong>语言、外观、主题偏好、语音识别语言、写作提醒开关、小伙伴选择、拍一刻清晰度等，用于维持您的使用偏好。</li>
+                    <li><strong>购买状态：</strong>Pro 权益是否已解锁，用于判断去水印、PDF 导出、应用锁定等功能是否可用。支付细节由 Apple 处理，见下文。</li>
+                    <li><strong>小组件摘要：</strong>今日篇数、总篇数、连续天数、最近若干条标题与 Emoji 等摘要信息，经设备上的 App Group 供桌面小组件展示；不包含完整正文与媒体文件。</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <h3>可选 AI 功能说明</h3>
+                    <p>当您首次使用自动起标题 / 标签 / Emoji、文字润色、对话整理、单日回顾、月度大事记或虚拟小伙伴回复等功能时，本App会弹出说明并征求您的同意。您同意后，为完成该次请求，相关<strong>日记文字</strong>会通过 HTTPS 发送至<strong>阿里云百炼（通义千问）</strong>进行处理。</p>
+                    <p>默认情况下，照片、视频、精确位置坐标，以及设备中其他未被您提交的日记，不会随该次 AI 请求发送。请勿在提交给 AI 的文本中写入您不希望第三方处理的敏感信息（如密码、证件号、精确住址等）。</p>
+                    <p>AI 功能完全可选。您可拒绝同意并继续使用不依赖云端 AI 的功能。第三方对数据的留存与处理还受阿里云相关服务条款与隐私规则约束。</p>
+                </div>
+
+                <h2>三、本地存储与数据留存</h2>
+                <p>日记元数据默认保存在设备本地（应用沙盒内的 UserDefaults 等）；照片与短视频分别保存在设备本地的应用文档目录中。本App当前<strong>不提供云同步</strong>，开发者也不会将您的完整日记库备份到自有服务器。</p>
+                <p>本地数据将保留至您删除对应日记（含级联清理已移除的媒体文件）、清除相关设置，或卸载本App。使用 iCloud / 电脑备份，或您主动导出、分享的文件，还可能保存在您选择的系统或第三方位置，其处理规则以对应服务为准。</p>
+
+                <h2>四、权限说明</h2>
+                <p>本App仅在您使用对应功能时请求下列权限，您可在 iOS「设置」中随时变更：</p>
+                <ul>
+                    <li><strong>相机：</strong>拍摄日记配图与短视频。</li>
+                    <li><strong>麦克风：</strong>语音速记，以及拍摄视频时的收音。</li>
+                    <li><strong>语音识别：</strong>将语音转为日记文字；根据设备与系统能力，音频可能由 Apple 的语音识别服务处理。</li>
+                    <li><strong>照片图库：</strong>从相册选择配图或短视频；在您主动保存时，将内容写入相册。</li>
+                    <li><strong>位置（使用期间）：</strong>仅在您主动记录位置时获取当前位置与地点名称；本App不会在后台持续追踪位置。</li>
+                    <li><strong>通知：</strong>用于您主动开启的写作提醒等本地通知。</li>
+                    <li><strong>面容 ID / 设备密码（可选 Pro）：</strong>在您开启应用锁定时，用于验证解锁，生物特征数据由系统处理，本App不会采集或上传您的面部或指纹原始数据。</li>
+                </ul>
+                <p>拒绝某项权限不会影响不依赖该权限的功能；例如拒绝位置权限后，您仍可正常书写不含位置的日记。</p>
+
+                <h2>五、第三方服务与数据共享</h2>
+                <p>除下列为实现功能所必需、且通常由您主动触发的情形外，本App不会向第三方出售您的个人信息，也不会将日记内容用于定向广告画像：</p>
+                <ul>
+                    <li><strong>阿里云百炼（通义千问）：</strong>处理您主动同意并提交的 AI 文本请求。</li>
+                    <li><strong>Apple 系统与服务：</strong>相机、照片、语音识别、定位与地图、本地通知、面容 ID / 密码、App Store 应用内购买、系统分享面板等。</li>
+                    <li><strong>导出与分享：</strong>仅在您主动导出（如 CSV、JSON、Markdown、PDF）或调用系统分享时，将您所选内容交给您指定的目标应用或位置。</li>
+                </ul>
+                <p>本App当前未集成用于用户画像的广告 SDK 或第三方行为分析 SDK。</p>
+
+                <h2>六、购买与支付</h2>
+                <p>Pro 会员（含订阅或一次性买断，以应用内展示为准）通过 Apple 应用内购买完成。支付账号、银行卡等支付信息由 Apple 处理，本App无法获取完整支付凭证细节。本App仅在本地保存或校验购买状态，用于解锁去水印、PDF 导出、应用锁定等已标明的 Pro 权益。</p>
+
+                <h2>七、数据安全</h2>
+                <p>本App使用 iOS 应用沙盒保存本地数据；若您在设置中自行填写 AI API Key，将保存在系统 Keychain 中。联网的 AI 请求使用 HTTPS 传输。开启 Pro 应用锁定后，进入应用需通过系统面容 ID 或设备密码验证。</p>
+                <p>任何本地存储与网络传输都无法保证绝对安全。请使用设备密码、Touch ID 或 Face ID 保护设备，并谨慎对待导出与备份文件。</p>
+
+                <h2>八、您的权利与选择</h2>
+                <ul>
+                    <li>您可以拒绝相机、麦克风、语音识别、照片、位置、通知等权限，并继续使用不依赖这些权限的功能。</li>
+                    <li>您可以不同意云端 AI 说明，从而不向通义千问提交日记文字。</li>
+                    <li>您可以在应用内编辑或删除单篇日记及其附件，也可卸载本App以清除应用容器内的本地数据。</li>
+                    <li>您可通过「恢复购买」在同一 Apple ID 下恢复已购 Pro 权益。</li>
+                    <li>如对第三方已处理数据的查询、更正或删除有疑问，可通过下方邮箱联系我们，我们将在合理范围内协助说明或转达。</li>
+                </ul>
+
+                <h2>九、儿童与未成年人</h2>
+                <p>本App不以儿童为主要服务对象，亦不以收集儿童个人信息为目的。若您未满 14 周岁（或其他适用法律所规定的年龄），请在监护人指导下使用，并避免通过 AI 或分享功能提交敏感个人信息。监护人如发现相关情形，可通过下方邮箱联系我们。</p>
+
+                <h2>十、跨境与适用法律</h2>
+                <p>当您使用云端 AI 功能时，相关文本将发送至阿里云百炼服务进行处理，处理地点可能位于中华人民共和国境内。本政策的解释与适用以中华人民共和国法律为准（不含冲突法规范）。若您位于其他法域，请确认使用本App及可选联网功能是否符合当地要求。</p>
+
+                <h2>十一、政策更新</h2>
+                <ol>
+                    <li>我们可能根据功能变更、法律法规要求等情况更新本政策。更新后的版本将在本页面公布，并可能通过应用内合理方式提示。</li>
+                    <li>若您在政策更新后继续使用本App，即视为您知悉更新内容；若您不接受，请停止使用相关功能或卸载本App。</li>
+                </ol>
+
+                <h2>十二、联系我们</h2>
+                <p>若您对本隐私政策或个人信息处理有任何疑问、建议或投诉，请通过以下方式联系：</p>
+
+                <div class="contact-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </div>
+                    <div class="info">
+                        <p>联系邮箱：<a href="mailto:youjiancau@gmail.com">youjiancau@gmail.com</a></p>
+                    </div>
+                </div>
+                <p>我们将在合理时间内予以回复。使用问题也可通过同一邮箱寻求技术支持。</p>
+
+                <h2>十三、其他说明</h2>
+                <ol>
+                    <li>本App仅提供日记记录与整理工具；AI 生成内容可能不准确，不构成医疗、心理、法律或其他专业建议。</li>
+                    <li>您应妥善保管设备及相关凭据；因设备丢失、未锁定、备份泄露等非本App原因导致的风险，由您自行承担。</li>
+                    <li>本政策仅适用于本App。若您通过分享或链接跳转至第三方应用或网页，相关隐私保护由该第三方负责。</li>
+                </ol>
+
+                <div style="margin-top: 40px; padding: 24px; background: linear-gradient(135deg, #E8F4FD 0%, #D1E9FF 100%); border-radius: 16px; border-left: 4px solid #007AFF;">
+                    <h3 style="margin: 0 0 12px 0; font-size: 18px; color: #0051D5;">App Store 隐私摘要</h3>
+                    <p style="margin: 0; font-size: 15px; color: #424245; line-height: 1.6;">
+                        核心日记数据默认仅保存在您的设备本地。当您主动使用 AI、语音识别、地图定位、应用内购买、导出或系统分享时，对应数据会按本政策交由相关服务处理。您可以不启用这些可选功能。我们将努力使应用内权限说明、本政策与 App Store 隐私披露保持一致。
+                    </p>
+                </div>
+
+                <p style="margin-top: 40px; padding: 20px; background: #f5f5f7; border-radius: 12px; font-size: 15px; color: #86868b;">
+                    如本App的功能或数据处理方式发生变化，我们将相应更新本政策。发布地址：
+                    <a href="https://nickgao1986.github.io/nickapp.github.io/todo/privacy.html">https://nickgao1986.github.io/nickapp.github.io/todo/privacy.html</a>
+                </p>
+            </article>
+
+            <div class="back-to-top">
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})">返回顶部</button>
+            </div>
+
+            <footer>
+                <p>&copy; 2026 映记 保留所有权利</p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
