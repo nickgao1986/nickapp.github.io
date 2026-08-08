@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>小纪念日 - 隐私政策</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fb;
+      --card: #ffffff;
+      --text: #1f2533;
+      --muted: #5f6777;
+      --line: #e6e9f0;
+      --accent: #4b8ff1;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #12161f;
+        --card: #1b2130;
+        --text: #eef2ff;
+        --muted: #a8b0c0;
+        --line: #2a3345;
+        --accent: #7ab0ff;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    .wrap {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 28px 18px 56px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 28px 22px;
+      box-shadow: 0 8px 28px rgba(31, 37, 51, 0.06);
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      line-height: 1.3;
+    }
+    .meta {
+      margin: 0 0 22px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    h2 {
+      margin: 28px 0 10px;
+      font-size: 18px;
+      padding-top: 8px;
+      border-top: 1px solid var(--line);
+    }
+    h2:first-of-type { border-top: none; padding-top: 0; }
+    p, li { font-size: 15px; color: var(--text); }
+    ul { padding-left: 1.2em; }
+    li { margin: 6px 0; }
+    a { color: var(--accent); }
+    .note {
+      background: rgba(75, 143, 241, 0.08);
+      border: 1px solid rgba(75, 143, 241, 0.18);
+      border-radius: 12px;
+      padding: 12px 14px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>小纪念日隐私政策</h1>
+      <p class="meta">生效日期：2026年8月8日<br />适用应用：小纪念日（Bundle ID：com.nickgao.date）</p>
+
+      <p class="note">
+        小纪念日坚持隐私优先：纪念日、恋爱瞬间、祝福草稿、记忆盲盒等核心数据默认保存在您的设备本地；我们不强制注册账号，也不向自有服务器上传您的内容。仅在您主动使用需要联网的功能（如可选 iCloud 同步、应用内购买）时，相关内容才会按本政策说明进行处理。
+      </p>
+
+      <h2>一、引言</h2>
+      <p>
+        小纪念日（以下简称“本应用”）是一款重要日子与纪念日管理工具，提供纪念日记录与倒数/正数、桌面小组件、恋爱纪念与心动瞬间、祝福草稿与提醒、记忆盲盒、节日库与事件广场模板，以及可选的 iCloud 同步与一次性高级功能解锁等能力。
+      </p>
+      <p>
+        本隐私政策说明本应用如何处理与您相关的信息。请您在使用前仔细阅读。继续使用本应用，即表示您已了解并同意本政策。如您不同意，请停止使用并卸载本应用。
+      </p>
+
+      <h2>二、我们如何处理信息</h2>
+      <p>
+        本应用开发者<strong>不运营用于收集用户内容的自有后端</strong>，不要求您注册应用账号。下列信息主要用于本应用在您设备上的功能实现：
+      </p>
+      <ul>
+        <li><strong>纪念日与内容数据（本地）：</strong>您创建或添加的纪念日/事件（标题、日期、分类、重复规则、提醒设置、置顶状态等）、恋爱在一起日期与心动瞬间、记忆盲盒内容与开封设定、祝福草稿（含收件人号码与正文等您自行填写的内容）、昵称等资料，默认保存在设备本地（含应用沙盒与 UserDefaults 等本地偏好设置）。</li>
+        <li><strong>应用设置（本地）：</strong>外观模式、引导完成状态、云同步开关、会员解锁本地标记、上次同步时间等。</li>
+        <li><strong>小组件数据（本地 App Group）：</strong>为在桌面展示倒数信息，可能通过 App Group（group.com.nickgao.date）在主应用与小组件之间共享必要快照，仍保留在您的设备与 Apple 提供的本地共享容器中。</li>
+      </ul>
+      <p>我们不会把上述本地数据用于广告画像、跨应用追踪或出售给第三方。</p>
+
+      <h2>三、您可能主动触发的联网处理</h2>
+      <p>下列能力仅在您主动使用时才会产生网络传输；不使用则无需联网完成对应功能。</p>
+      <ul>
+        <li>
+          <strong>可选 iCloud 同步：</strong>
+          若您开启云同步（通常为高级功能），纪念日、恋爱瞬间、记忆盲盒、祝福草稿、昵称与在一起日期等相关数据，将通过 Apple CloudKit 同步到您已登录的 iCloud 账户私人数据库（容器标识：iCloud.com.nickgao.date），便于您在自己的设备间同步或换机恢复。该数据由 Apple 按 iCloud 服务条款与隐私政策处理，开发者不建立独立账号体系保管您的云端档案。
+        </li>
+        <li>
+          <strong>应用内购买：</strong>
+          一次性购买高级功能通过 Apple StoreKit / App Store 完成。支付与账单由 Apple 处理，我们不收集银行卡号等支付敏感信息；应用仅在本地维护解锁状态，并可通过“恢复购买”在您的 Apple ID 下恢复权益。
+        </li>
+        <li>
+          <strong>系统分享与外链：</strong>
+          您主动分享卡片、评分或打开隐私政策等网页时，可能调用系统分享面板，或跳转至 App Store / 浏览器，相关处理遵循对应系统能力或页面服务方的规则。
+        </li>
+      </ul>
+
+      <h2>四、短信祝福与系统能力说明</h2>
+      <ul>
+        <li>
+          <strong>祝福草稿与提醒：</strong>
+          您可提前编写祝福文案并设定提醒。到日子时，本应用可通过本地通知提醒您；应用本身<strong>无法在后台静默代您发送短信</strong>。
+        </li>
+        <li>
+          <strong>发送短信：</strong>
+          当您选择发送时，本应用会调用系统短信界面（MessageUI），由您在系统界面中确认后才会发出。短信内容与收件人由系统短信服务处理，开发者不会代发，也不会将短信内容上传至自有服务器。
+        </li>
+      </ul>
+
+      <h2>五、设备权限说明</h2>
+      <p>本应用可能申请或使用以下权限/系统能力，仅用于对应功能，您可在系统设置中随时管理：</p>
+      <ul>
+        <li><strong>通知（如开启提醒）：</strong>发送纪念日提醒、祝福草稿等到日提醒。</li>
+        <li><strong>iCloud / CloudKit（如开启同步）：</strong>在您已登录的 iCloud 账户下于设备间同步记录。</li>
+        <li><strong>系统短信界面（发送祝福时）：</strong>调起系统短信编辑与确认界面，不会绕过您的确认直接发送。</li>
+      </ul>
+      <p>本应用不要求通讯录读取、精确持续定位、广告追踪等与核心功能无关的权限，也不将您的纪念日数据用于广告定向。</p>
+
+      <h2>六、本地存储、删除与安全</h2>
+      <ul>
+        <li>本地数据保存在您的设备中。您可在应用内编辑或删除对应记录；卸载应用通常会清除应用沙盒数据。</li>
+        <li>清除本地数据不会自动取消 Apple ID 下的购买记录；重新安装后通常可通过“恢复购买”找回已购权益。</li>
+        <li>若您曾开启 iCloud 同步，还需根据需要在 iCloud / 系统设置中管理或删除云端数据。</li>
+        <li>请妥善保管设备解锁方式。因设备丢失、被他人使用，或您主动分享截图、分享卡片、导出/转发内容而导致的信息泄露风险，由您自行防范。</li>
+      </ul>
+
+      <h2>七、第三方服务</h2>
+      <p>在您使用相关功能时，本应用可能涉及以下第三方或平台能力：</p>
+      <ul>
+        <li>Apple：App Store、StoreKit、（可选）iCloud / CloudKit、本地通知、系统分享与短信界面等。</li>
+      </ul>
+      <p>
+        第三方会按其自身隐私政策处理为实现服务所必需的数据。我们不会向第三方出售您的个人信息。除实现上述功能所必需外，我们不额外集成广告追踪或第三方行为分析 SDK。
+      </p>
+
+      <h2>八、应用内购买说明</h2>
+      <p>
+        本应用提供一次性买断的高级功能解锁（非自动续期订阅），例如 iCloud 同步、分享卡片去水印、更多日子模板等（具体以应用内说明为准）。购买、退款与订单问题由 Apple 处理。您可在 Apple ID 账户设置中查看购买记录，或按 Apple 规则申请退款。开发者无法直接获取或存储您的完整支付凭证用于身份追踪。
+      </p>
+
+      <h2>九、未成年人保护</h2>
+      <p>
+        本应用面向一般用户提供纪念日管理工具，不专门面向儿童收集个人信息。若您是未成年人，请在监护人指导下使用，并不要提交与功能无关的个人敏感信息。
+      </p>
+
+      <h2>十、您的权利</h2>
+      <ul>
+        <li>查阅与管理：可在应用内查看、编辑或删除您录入的纪念日与相关内容；</li>
+        <li>撤回权限：可在系统设置中关闭通知、iCloud 等权限；</li>
+        <li>停止联网功能：不开启云同步、不进行应用内购买或外链访问时，可减少或避免相应数据外传；</li>
+        <li>联系我们：就隐私问题通过下方邮箱与我们联系。</li>
+      </ul>
+
+      <h2>十一、政策更新</h2>
+      <p>
+        我们可能因功能变化或法律法规要求更新本政策。更新后的版本将公布于本页面，并更新生效日期。重大变更时，我们会通过应用内合理方式提示。若您继续使用，即视为接受更新后的政策。
+      </p>
+
+      <h2>十二、联系方式</h2>
+      <p>
+        如对本隐私政策或个人信息处理有疑问、建议或投诉，请联系：
+        <br />邮箱：<a href="mailto:nickgao1986@gmail.com">nickgao1986@gmail.com</a>
+        <br />我们将在合理期限内回复。
+      </p>
+
+      <h2>十三、免责声明</h2>
+      <ul>
+        <li>本应用为纪念日与重要日子管理工具，提醒与倒数功能依赖于设备时间、系统通知权限与您设定的规则；请自行核对关键日期，避免遗漏。</li>
+        <li>短信祝福需您在系统界面确认后才会发送；因运营商、系统限制或您未确认发送导致未能发出的情形，开发者不承担责任。</li>
+        <li>本政策仅适用于小纪念日。若您跳转至第三方网页或服务，其隐私实践由该方负责。</li>
+      </ul>
+
+      <p class="meta" style="margin-top:28px;">
+        本隐私政策结合《中华人民共和国个人信息保护法》等适用法律法规，以及 Apple App Store 审核对隐私说明的要求拟定。核心记录默认本地保存；联网能力按需启用并如实披露。
+      </p>
+    </div>
+  </div>
+</body>
+</html>
