@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="HIIT训练大师 - 隐私政策">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>HIIT训练大师 - 隐私政策</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            line-height: 1.8;
+            color: #1d1d1f;
+            background-color: #f5f5f7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container { max-width: 980px; margin: 0 auto; padding: 0 22px; }
+
+        header {
+            background: linear-gradient(135deg, #FF8A3D 0%, #EE4242 55%, #E85D04 100%);
+            color: white;
+            padding: 56px 0 76px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.12)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+        }
+
+        .app-icon {
+            width: 112px;
+            height: 112px;
+            background: rgba(255, 255, 255, 0.22);
+            border-radius: 26px;
+            margin: 0 auto 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 52px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        h1 {
+            font-size: 44px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle { font-size: 20px; opacity: 0.95; font-weight: 400; }
+
+        .privacy-badge {
+            display: inline-block;
+            margin-top: 14px;
+            padding: 8px 20px;
+            background: rgba(255,255,255,0.28);
+            border-radius: 24px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .content-wrapper {
+            background: white;
+            border-radius: 20px 20px 0 0;
+            margin-top: -36px;
+            position: relative;
+            box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.06);
+            padding-bottom: 56px;
+        }
+
+        .effective-date {
+            text-align: center;
+            padding: 36px 0 26px;
+            color: #86868b;
+            font-size: 15px;
+            border-bottom: 1px solid #e5e5e7;
+        }
+
+        .effective-date strong { color: #EE4242; font-weight: 600; }
+
+        .policy-content { padding: 48px 56px; }
+
+        .policy-content h2 {
+            font-size: 26px;
+            font-weight: 700;
+            margin: 44px 0 22px;
+            color: #1d1d1f;
+            letter-spacing: -0.3px;
+        }
+
+        .policy-content h2:first-of-type { margin-top: 8px; }
+        .policy-content h3 { font-size: 18px; margin: 24px 0 12px; color: #3a3a3c; }
+        .policy-content p, .policy-content li { font-size: 16px; color: #424245; margin-bottom: 12px; }
+        .policy-content ol, .policy-content ul { padding-left: 22px; margin-bottom: 12px; }
+        .policy-content a { color: #EE4242; text-decoration: none; }
+        .policy-content a:hover { text-decoration: underline; }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #FFF4EB 0%, #FFF8F2 100%);
+            border-left: 4px solid #FF8A3D;
+            border-radius: 14px;
+            padding: 18px 20px;
+            margin: 16px 0 20px;
+        }
+
+        .contact-card {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            background: #f7f7f8;
+            border-radius: 16px;
+            padding: 20px;
+            margin-top: 12px;
+        }
+
+        .contact-card .icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: #FFE8D6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-card .icon svg { width: 22px; height: 22px; fill: #EE4242; }
+
+        .back-to-top { text-align: center; margin: 28px 0 8px; }
+        .back-to-top button {
+            border: none;
+            background: #1d1d1f;
+            color: white;
+            padding: 12px 22px;
+            border-radius: 999px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        footer { text-align: center; color: #86868b; font-size: 13px; padding: 12px 0 8px; }
+
+        @media (max-width: 680px) {
+            h1 { font-size: 30px; }
+            .subtitle { font-size: 17px; }
+            .policy-content { padding: 28px 20px; }
+            header { padding: 40px 0 60px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="app-icon">🏃</div>
+            <h1>HIIT训练大师</h1>
+            <p class="subtitle">隐私政策</p>
+            <span class="privacy-badge">本地数据为主 · 无账号 · 含统计分析</span>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="effective-date">
+                生效日期：<strong>2026年8月15日</strong>
+            </div>
+
+            <article class="policy-content">
+                <h2>一、引言</h2>
+                <p><strong>HIIT训练大师</strong>（以下简称「本 App」，英文名 HIIT Training Master）是一款在 iPhone 上使用的<strong>间歇训练 / HIIT 计时应用</strong>，主要提供：训练模板与自定义分段（热身 / 训练 / 休息 / 放松）、语音教练播报、全屏跟练倒计时、系统画中画（PiP）悬浮倒计时、训练记录与周报、计时器与秒表、桌面小组件与实时活动等能力。</p>
+                <p>本隐私政策说明本 App 如何对待您的信息。本 App <strong>不要求注册或登录</strong>；您创建的训练模板、训练记录、计时偏好等内容<strong>默认保存在您的设备本地</strong>，开发者<strong>不会将其上传至自有业务服务器做云端存档</strong>。为实现产品改进，本 App 集成了<strong>第三方统计分析 SDK</strong>（见下文），可能收集设备与使用相关的技术信息。请您在使用前仔细阅读本政策。</p>
+
+                <h2>二、我们不主动收集的信息</h2>
+                <p>本 App 为<strong>以本地功能为主的健身计时工具</strong>，开发者<strong>不通过本 App 主动收集</strong>以下信息用于用户画像、广告推送或云端存档：</p>
+                <div class="highlight-box">
+                    <ol>
+                        <li><strong>身份与联系方式：</strong>不要求注册、登录，不收集姓名、手机号、邮箱等；</li>
+                        <li><strong>训练内容与记录：</strong>自定义模板、阶段名称与时长、完成记录、周报统计等<strong>仅存本地</strong>；</li>
+                        <li><strong>计时器、秒表与历史：</strong>标签、时长、圈数等<strong>仅存本地</strong>；</li>
+                        <li><strong>语音教练与跟练界面：</strong>语音播报与倒计时画面在设备上生成，<strong>不上传您的训练过程录音或视频</strong>；</li>
+                        <li><strong>画中画悬浮展示：</strong>倒计时、时钟等在设备上渲染，<strong>不上传至开发者服务器</strong>；</li>
+                        <li><strong>精确地理位置、通讯录：</strong>本 App 不因核心功能采集此类信息。</li>
+                    </ol>
+                </div>
+
+                <h2>三、本地与系统侧的数据说明</h2>
+                <p>为实现功能，以下数据会保存在<strong>您的设备</strong>上（例如通过 UserDefaults、本地文件、App Group 或系统提供的存储方式），<strong>不会由开发者远程读取您的业务内容</strong>：</p>
+                <ul>
+                    <li><strong>训练相关：</strong>预设与自定义训练模板、阶段配置、语音开关、训练完成记录与统计；</li>
+                    <li><strong>计时与偏好：</strong>计时器、秒表、历史记录、悬浮窗开关、语言、主题色、引导是否完成、Pro 权益本地标记等；</li>
+                    <li><strong>画中画相关：</strong>媒体素材引用、弹幕或字幕内容（若您使用相关工具）、快捷倒计时偏好等；</li>
+                    <li><strong>为改善体验的本地计数：</strong>例如启动次数、上次请求系统评分提示的时间等（用于控制提示频率）。</li>
+                </ul>
+
+                <h3>1. 系统通知</h3>
+                <p>训练结束、计时器到期等可能依赖 Apple <strong>UserNotifications</strong> 在本地调度。您可在系统「设置 → 通知」中管理权限。<strong>通知内容由本机在本地生成</strong>，开发者不接收通知正文副本。</p>
+
+                <h3>2. 画中画（Picture in Picture）与音频会话</h3>
+                <p>若您开启训练悬浮窗 / 画中画倒计时，相关能力由系统与 Apple 媒体框架在本地完成；为在退到后台时保持更新，本 App 可能使用<strong>静音音频保活</strong>等系统允许的方式（不涉及录制您的语音）。语音教练使用系统朗读能力在本地播报。</p>
+
+                <h3>3. 相册、日历与麦克风（按需授权）</h3>
+                <p>若您使用画中画相册轮播、从日历创建演讲/会议计时、或录制自定义提示音等可选功能，本 App 可能请求访问<strong>照片图库</strong>、<strong>日历</strong>或<strong>麦克风</strong>。相关内容<strong>仅在您授权后于本地使用</strong>，不会上传至开发者服务器。您可在系统设置中随时关闭相应权限。</p>
+
+                <h3>4. 桌面小组件与实时活动</h3>
+                <p>若您添加小组件或启用实时活动，相关扩展通过 Apple 提供的 <strong>App Group</strong>、ActivityKit 等机制读取<strong>已在您设备上保存的摘要信息</strong>用于展示。<strong>共享容器位于您的设备内</strong>，开发者无法远程访问。</p>
+
+                <h3>5. 存储空间与缓存</h3>
+                <p>您可在应用相关设置内查看或清理缓存、临时文件等；操作均在本地完成。</p>
+
+                <h2>四、内购与订阅</h2>
+                <p>本 App 可提供可选的 <strong>Pro 会员</strong>能力，可能包括：</p>
+                <ul>
+                    <li><strong>自动续期订阅</strong>（如连续包月，可含免费试用）；</li>
+                    <li><strong>一次性买断</strong>（永久解锁）。</li>
+                </ul>
+                <p>交易由 <strong>Apple App Store / StoreKit</strong> 处理。Apple 可能向开发者提供订单核验所需的必要信息（例如交易标识、产品标识、购买/恢复状态），用于确认权益。<strong>支付账单、银行卡信息由 Apple 保管</strong>，开发者不收集您的银行卡号或 Apple ID 密码。您可在系统「设置 → Apple ID → 订阅」中管理自动续期订阅。</p>
+
+                <h2>五、跳转与系统界面</h2>
+                <ul>
+                    <li><strong>App Store：</strong>评价引导、「更多应用」等可能打开 App Store 页面；跳转由系统或 App Store 处理。</li>
+                    <li><strong>分享：</strong>使用系统分享面板分享训练口令时，由您选择分享对象与渠道，开发者不截获分享内容。</li>
+                </ul>
+
+                <h2>六、第三方 SDK（统计分析）</h2>
+                <p>为了解产品稳定性与功能使用情况、改进体验，本 App 集成了<strong>友盟+（Umeng）移动统计 SDK</strong>（含设备标识相关组件）。在您完成引导并开始使用后，SDK 可能收集并处理以下类型的信息（以友盟实际处理及适用法律法规为准）：</p>
+                <ul>
+                    <li>设备信息（如设备型号、操作系统版本、设备标识相关信息等）；</li>
+                    <li>应用信息（如应用版本、渠道、崩溃或异常相关技术日志等）；</li>
+                    <li>使用情况（如启动、页面/功能使用频次、训练开始等统计类事件）。</li>
+                </ul>
+                <p>上述信息用于<strong>统计分析与产品优化</strong>，<strong>不用于向您展示个性化广告</strong>。友盟作为数据处理方，将按其隐私政策处理相关数据。您可查阅友盟相关说明了解更多细节。</p>
+                <p>除上述统计分析及 App Store 交易外，本 App <strong>不集成广告追踪 SDK</strong>，也<strong>不会将您的训练模板正文、自定义阶段名称等业务内容上传至开发者自有服务器</strong>。</p>
+
+                <h2>七、未成年人</h2>
+                <p>本 App 面向普通用户。若您为未成年人，请在监护人指导下阅读本政策并使用。本 App 提供的是计时与训练辅助，不构成医疗或健身指导建议。</p>
+
+                <h2>八、您的控制与删除</h2>
+                <p>您可随时在 App 内修改或删除训练模板、训练记录与计时相关数据；可清理缓存；亦可<strong>卸载本 App</strong>以移除主程序及其常规本地数据。小组件、App Group 与系统侧数据将随 Apple 环境与卸载策略处理。关于统计分析数据，您可通过停止使用/卸载本 App 减少后续采集；历史统计数据的处理遵循友盟及适用法律要求。</p>
+
+                <h2>九、政策更新</h2>
+                <p>我们可能因功能或法规要求更新本政策。更新后的版本将发布于当前页面（以页首生效日期为准）。若您继续使用本 App，即视为知悉更新；若不同意，请停止使用并卸载。</p>
+
+                <h2>十、联系我们</h2>
+                <p>如对本政策有疑问或建议，可通过以下方式联系：</p>
+                <div class="contact-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </div>
+                    <div class="info">
+                        <p>联系邮箱：<a href="mailto:youjiancau@gmail.com">youjiancau@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 32px; padding: 22px; background: linear-gradient(135deg, #FFF4EB 0%, #FFE8D6 100%); border-radius: 14px; border-left: 4px solid #EE4242;">
+                    <h3 style="margin: 0 0 10px 0; font-size: 17px; color: #1d1d1f;">App Store 与合规说明</h3>
+                    <p style="margin: 0; font-size: 15px; color: #424245; line-height: 1.65;">
+                        本 App 以本地 HIIT / 间歇训练计时与语音教练为核心；业务内容默认本地存储。已集成友盟统计分析，并可能提供可选的 App 内购买/订阅（由 Apple 处理交易）。请在 App Store Connect「App 隐私」问卷中如实披露：统计分析相关数据、照片库/日历/麦克风（若适用）、购买历史等收集类型。技术支持可通过上述邮箱联系。
+                    </p>
+                </div>
+
+                <p style="margin-top: 32px; padding: 18px; background: #f5f5f7; border-radius: 12px; font-size: 15px; color: #86868b;">
+                    本政策旨在帮助您理解「HIIT训练大师」的数据处理方式。正文以中文为准。
+                </p>
+            </article>
+
+            <div class="back-to-top">
+                <button type="button" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">返回顶部</button>
+            </div>
+
+            <footer>
+                <p>&copy; 2026 HIIT训练大师</p>
+                <p style="margin-top:8px;font-size:13px;">本页公开地址：<a href="https://nickgao1986.github.io/nickapp.github.io/tool/privacy25.html" style="color:#EE4242;">nickapp.github.io/…/tool/privacy25.html</a></p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
