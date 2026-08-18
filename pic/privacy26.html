@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Audio Workshop - Privacy Policy">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>Audio Workshop - Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", sans-serif;
+            line-height: 1.8;
+            color: #1d1d1f;
+            background-color: #f5f5f7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 22px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0F766E 0%, #148E84 55%, #E97834 100%);
+            color: white;
+            padding: 60px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.1)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 26px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            font-weight: 700;
+            letter-spacing: -1px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            font-size: 21px;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+
+        .privacy-badge {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 8px 20px;
+            background: rgba(255,255,255,0.25);
+            border-radius: 24px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .content-wrapper {
+            background: white;
+            border-radius: 20px 20px 0 0;
+            margin-top: -40px;
+            position: relative;
+            box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.08);
+            padding-bottom: 60px;
+        }
+
+        .effective-date {
+            text-align: center;
+            padding: 40px 0 30px;
+            color: #86868b;
+            font-size: 15px;
+            border-bottom: 1px solid #e5e5e7;
+        }
+
+        .effective-date strong {
+            color: #0F766E;
+            font-weight: 600;
+        }
+
+        .policy-content {
+            padding: 50px 60px;
+        }
+
+        .policy-content h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 50px 0 24px;
+            color: #1d1d1f;
+            letter-spacing: -0.3px;
+        }
+
+        .policy-content h2:first-child {
+            margin-top: 0;
+        }
+
+        .policy-content h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 28px 0 16px;
+            color: #1d1d1f;
+        }
+
+        .policy-content p {
+            margin-bottom: 16px;
+            color: #424245;
+            font-size: 17px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .policy-content ul, .policy-content ol {
+            margin: 16px 0 24px 24px;
+            color: #424245;
+        }
+
+        .policy-content li {
+            margin-bottom: 12px;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .policy-content strong {
+            color: #1d1d1f;
+            font-weight: 600;
+        }
+
+        .policy-content a {
+            color: #0F766E;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .policy-content a:hover {
+            text-decoration: underline;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #eef8f6 0%, #fdf4eb 100%);
+            border-left: 4px solid #0F766E;
+            padding: 24px;
+            border-radius: 12px;
+            margin: 28px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+        }
+
+        .contact-card {
+            background: #f5f5f7;
+            border-radius: 16px;
+            padding: 28px;
+            margin: 28px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .contact-card .icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, #0F766E 0%, #E97834 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-card .icon svg {
+            width: 28px;
+            height: 28px;
+            fill: white;
+        }
+
+        .contact-card .info {
+            flex: 1;
+        }
+
+        .contact-card .info p {
+            margin: 0;
+            font-size: 16px;
+            color: #1d1d1f;
+        }
+
+        .contact-card .info a {
+            color: #0F766E;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #86868b;
+            font-size: 14px;
+            border-top: 1px solid #e5e5e7;
+            margin-top: 40px;
+        }
+
+        .back-to-top {
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .back-to-top button {
+            background: white;
+            border: 1px solid #d2d2d7;
+            color: #0F766E;
+            padding: 12px 28px;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .back-to-top button:hover {
+            background: #f5f5f7;
+            border-color: #0F766E;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 32px; }
+            .subtitle { font-size: 17px; }
+            .app-icon { width: 90px; height: 90px; font-size: 28px; }
+            .policy-content { padding: 30px 24px; }
+            .policy-content h2 { font-size: 24px; margin: 36px 0 20px; }
+            .policy-content h3 { font-size: 18px; }
+            .policy-content p, .policy-content li { font-size: 16px; }
+            .contact-card { flex-direction: column; text-align: center; padding: 24px; }
+            header { padding: 40px 0 60px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="app-icon">AW</div>
+            <h1>Audio Workshop</h1>
+            <p class="subtitle">Privacy Policy</p>
+            <span class="privacy-badge">On-device processing · Audio stays on your device</span>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="effective-date">
+                Effective date: <strong>August 18, 2026</strong>
+            </div>
+
+            <article class="policy-content">
+                <div class="highlight-box">
+                    <p><strong>Summary:</strong> Audio Workshop is designed for on-device processing. Your recordings, imported audio, merge/multitrack projects, exported files, and related settings are stored on your device by default. We do not operate a backend server that centrally stores your audio content, and we do not use that content for advertising or user profiling.</p>
+                </div>
+
+                <h2>1. Introduction</h2>
+                <p><strong>Audio Workshop</strong> (Chinese name: 音频工坊; the “App”) is a professional audio toolkit for iPhone. Core features include audio merging, multitrack mixing, an audio toolbox (such as video-to-audio extraction, trim, gain, EQ/effects, noise reduction, speech-to-text, and related tools), high-quality recording, and secondary tools available under Settings (such as photo editing and social post helpers).</p>
+                <p>This Privacy Policy explains how we treat information related to you. By using the App, you acknowledge and agree to this Policy. If you do not agree, please stop using the App.</p>
+                <p>For the Terms of Use, please see the <a href="https://nickgao1986.github.io/nickapp.github.io/scan1/user.html">Audio Workshop User Agreement</a>.</p>
+
+                <h2>2. Information We Collect</h2>
+                <p>The App does <strong>not upload your personal identity or finished audio projects to developer-owned servers</strong> for the purpose of identifying who you are. In normal use, the following data primarily remains on your device (or is shared locally via Apple App Group between the main App and widgets/extensions on the same device, without passing through our servers):</p>
+                <ul>
+                    <li><strong>Recordings and editing projects:</strong> clips you record, copies of imported audio/video soundtracks, merge order, multitrack timelines, waveform caches, markers/tags, export settings, and similar data used for editing, preview, and export.</li>
+                    <li><strong>Speech-to-text (if used):</strong> transcription uses Apple’s speech recognition capabilities and is processed within your device and Apple’s systems; we do not build a separate “voice profile” database from this.</li>
+                    <li><strong>Exported files (if created):</strong> merged audio, toolbox results, and similar outputs are generated locally; they are not sent to us unless you choose to share them with a third party through the system share sheet.</li>
+                    <li><strong>Settings and membership status:</strong> language, theme, recording preferences, in-app purchase entitlement cache, and similar preferences stored with system local storage (including UserDefaults and App Group).</li>
+                    <li><strong>Share Extension inbox (if used):</strong> when you share audio into Audio Workshop from Voice Memos, Files, or other apps, files may be placed in a local App Group inbox on your device for import; this does not go through developer servers.</li>
+                </ul>
+                <p>We do not actively collect advertising identifiers for cross-app tracking, and we do not integrate third-party advertising SDKs.</p>
+
+                <h3>Optional anonymous analytics</h3>
+                <p>If you opt in during onboarding or later in Settings (“Share anonymous usage data”), the App may initialize Umeng+ (U-App) analytics to help us understand aggregate product usage (for example, which tabs or features are opened, paywall views, and purchase/restore outcomes). This analytics data does <strong>not</strong> include your audio content. You can turn it off at any time in Settings; when disabled, analytics is not initialized and events are not sent.</p>
+
+                <h2>3. System Permissions</h2>
+                <p>The App requests system permissions only when needed for a feature. You can change these anytime in <strong>Settings → Audio Workshop</strong>:</p>
+                <ul>
+                    <li><strong>Microphone:</strong> to record audio; sound is captured only when you start recording.</li>
+                    <li><strong>Speech Recognition:</strong> to convert recordings/audio to text when you use transcription; granted per system prompts.</li>
+                    <li><strong>Photo Library:</strong> only when you choose media from Photos or save an export to Photos.</li>
+                    <li><strong>Files:</strong> to import audio/video from the Files app, or save results to a location you choose.</li>
+                    <li><strong>Camera (secondary tools):</strong> only if you actively use a capture-related helper under Settings.</li>
+                    <li><strong>Calendar (if used):</strong> only when you choose to save a detected event from transcription helpers.</li>
+                    <li><strong>Background Audio:</strong> for long recordings, Lock Screen controls, and continuing to record in the background when the system allows.</li>
+                </ul>
+                <p>Denying a permission may disable the related feature; other features remain available.</p>
+
+                <h2>4. Apple In-App Purchases (Premium)</h2>
+                <p>The App may offer optional Premium (Pro) access through the App Store. Product types and identifiers are shown in App Store Connect and in the App (currently primarily a one-time non-consumable purchase). Price, tax, and display text follow your regional App Store.</p>
+                <p>Payment and receipts are handled by Apple; we do not receive your card number or full payment credentials. Purchase and restore rely on your Apple Account and StoreKit. We update local membership status on your device based on Apple’s transaction/entitlement information. If you previously purchased a historical subscription or one-time product, the App may still recognize that entitlement where Apple’s rules allow, based on actual transaction records.</p>
+                <p>For refunds, billing, and Family Sharing questions, please contact Apple Support or manage your account settings.</p>
+
+                <h2>5. Widgets, Live Activities, and Extensions</h2>
+                <p>If you add home-screen widgets, use Recorder Live Activities, or use the Audio Share Extension, those components may read limited configuration, shortcut data, or inbox files locally through Apple’s App Group on your device. This data is not uploaded to developer servers.</p>
+
+                <h2>6. Data Storage and Security</h2>
+                <p>User content and project data are primarily stored in device storage (the app sandbox). Uninstalling the App clears sandbox data unless the system retains copies elsewhere. Please keep your device and passcode secure. We cannot remotely access the data stored inside your device sandbox.</p>
+                <p>If you save files to Files, Photos, or share them via AirDrop or other apps, you control those copies and how they are further distributed.</p>
+
+                <h2>7. Data Sharing and Disclosure</h2>
+                <p>Except where required by law or by a lawful request from judicial or regulatory authorities, we do not sell or rent your personal information. Because the App does not maintain a centralized identifiable user profile database, there is typically no “user database” shared with third parties.</p>
+                <p>When you use the system share sheet, AirDrop, Mail, or open a file in another app, content leaves the App by your choice and is thereafter handled under the recipient’s policies.</p>
+                <p>If you opt into anonymous analytics, usage events may be processed by Umeng+ under their services and privacy practices, solely for product analytics as described above.</p>
+
+                <h2>8. Third Parties and Network Access</h2>
+                <p>The App does not integrate third-party advertising or tracking SDKs for ads. Network interactions typically include:</p>
+                <ul>
+                    <li>Apple StoreKit (purchase verification / restore)</li>
+                    <li>Optional Umeng+ analytics (only if you consent)</li>
+                    <li>Links you open yourself (such as this Privacy Policy or the User Agreement)</li>
+                </ul>
+                <p>Aside from those cases, core recording, merge, multitrack, and most local editing features can work offline. Speech recognition, purchase verification, and optional analytics may still require a network connection, depending on Apple and system services.</p>
+
+                <h2>9. Children’s Privacy</h2>
+                <p>The App is not directed at children under 13, and we do not knowingly collect personal information from children. If a parent or guardian believes a child provided information without consent, please contact us using the details below and we will help address it.</p>
+
+                <h2>10. Your Choices</h2>
+                <p>You can control local data by deleting in-app projects/recordings, clearing local caches, revoking system permissions, turning off anonymous analytics in Settings, or uninstalling the App. If you have questions about this Policy or need App Store review-related clarification, please contact us.</p>
+
+                <h2>11. Policy Updates</h2>
+                <p>We may update this Policy when features or legal requirements change, and will revise the effective date on this page. For material changes, we will provide reasonable notice where appropriate. Continued use after an update means you acknowledge the revised Policy.</p>
+
+                <h2>12. Contact Us</h2>
+                <p>If you have questions, suggestions, or complaints about this Privacy Policy, please contact:</p>
+                <div class="contact-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </div>
+                    <div class="info">
+                        <p>Email: <a href="mailto:nickgao1986@users.noreply.github.com">nickgao1986@users.noreply.github.com</a></p>
+                    </div>
+                </div>
+
+                <h2>13. Disclaimers</h2>
+                <ol>
+                    <li>Merge, mix, transcription, export, and related tools are assistive utilities. Results may vary with source quality, device performance, and system capabilities; use outputs as appropriate for your purpose.</li>
+                    <li>Risks from lost devices, jailbreaking, malware, or content you choose to share are outside the App’s control.</li>
+                    <li>After you leave the App for a third-party website or app, that party’s terms and privacy policy apply.</li>
+                </ol>
+
+                <h2>14. App Store “App Privacy” Labels</h2>
+                <p>The App is primarily on-device: microphone for recording; speech recognition for optional transcription; Photos and Files for import/export you initiate; in-app purchases via Apple; widgets and extensions sharing necessary data locally via App Group. If App Store Connect requires data-type declarations, those should match actual collection and linkage practices. This Policy is provided for users and App Review and should remain consistent with real product behavior.</p>
+
+                <div class="highlight-box">
+                    <p>Before using the App, please also read the <a href="https://nickgao1986.github.io/nickapp.github.io/scan1/user.html">Audio Workshop User Agreement</a>.</p>
+                </div>
+            </article>
+
+            <div class="back-to-top">
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Back to Top</button>
+            </div>
+
+            <footer>
+                <p>&copy; 2026 Audio Workshop. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    </script>
+</body>
+</html>
