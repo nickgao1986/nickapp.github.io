@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="这杯 · 咖啡记录 - 隐私政策">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>这杯 · 咖啡记录 - 隐私政策</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            line-height: 1.8;
+            color: #1d1d1f;
+            background-color: #f5f1ea;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container { max-width: 980px; margin: 0 auto; padding: 0 22px; }
+
+        header {
+            background: linear-gradient(135deg, #8B5E3C 0%, #6F4E37 100%);
+            color: white;
+            padding: 60px 0 80px;
+            text-align: center;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            background: rgba(255, 255, 255, 0.18);
+            border-radius: 26px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 { font-size: 40px; font-weight: 700; letter-spacing: -0.4px; margin-bottom: 12px; }
+        .subtitle { font-size: 21px; opacity: 0.92; }
+        .privacy-badge {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 8px 20px;
+            background: rgba(255,255,255,0.22);
+            border-radius: 24px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .content-wrapper {
+            background: white;
+            border-radius: 20px 20px 0 0;
+            margin-top: -40px;
+            position: relative;
+            box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.08);
+            padding-bottom: 60px;
+        }
+
+        .effective-date {
+            text-align: center;
+            padding: 40px 0 30px;
+            color: #86868b;
+            font-size: 15px;
+            border-bottom: 1px solid #e8e0d6;
+        }
+
+        .effective-date strong { color: #8B5E3C; font-weight: 600; }
+
+        .policy-content { padding: 50px 60px; }
+        .policy-content h2 {
+            font-size: 26px;
+            font-weight: 700;
+            margin: 50px 0 24px;
+            color: #1d1d1f;
+        }
+        .policy-content h2:first-child { margin-top: 0; }
+        .policy-content h3 {
+            font-size: 19px;
+            font-weight: 600;
+            margin: 28px 0 16px;
+        }
+        .policy-content p, .policy-content li {
+            margin-bottom: 12px;
+            color: #424245;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+        .policy-content p { text-align: justify; margin-bottom: 16px; }
+        .policy-content ul, .policy-content ol { margin: 16px 0 24px 24px; }
+        .policy-content strong { color: #1d1d1f; }
+
+        .highlight-box {
+            background: #f7f1ea;
+            border-left: 4px solid #8B5E3C;
+            padding: 24px;
+            border-radius: 12px;
+            margin: 28px 0;
+        }
+
+        .warning-box {
+            background: #fff8ee;
+            border-left: 4px solid #c9893a;
+            padding: 24px;
+            border-radius: 12px;
+            margin: 28px 0;
+        }
+        .warning-box h3 { margin: 0 0 12px; color: #8B5E3C; }
+        .warning-box p { margin: 0; }
+
+        .contact-card {
+            background: #f7f1ea;
+            border-radius: 16px;
+            padding: 28px;
+            margin: 28px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .contact-card .icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, #8B5E3C 0%, #6F4E37 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .contact-card .icon svg { width: 28px; height: 28px; fill: white; }
+        .contact-card .info p { margin: 0; font-size: 16px; color: #1d1d1f; }
+        .contact-card .info a { color: #8B5E3C; text-decoration: none; font-weight: 500; }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #86868b;
+            font-size: 14px;
+            border-top: 1px solid #e8e0d6;
+            margin-top: 40px;
+        }
+
+        .back-to-top { text-align: center; padding: 30px 0; }
+        .back-to-top button {
+            background: white;
+            border: 1px solid #d2d2d7;
+            color: #8B5E3C;
+            padding: 12px 28px;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 28px; }
+            .subtitle { font-size: 17px; }
+            .app-icon { width: 90px; height: 90px; font-size: 36px; }
+            .policy-content { padding: 30px 24px; }
+            .policy-content h2 { font-size: 22px; }
+            .policy-content p, .policy-content li { font-size: 16px; }
+            .contact-card { flex-direction: column; text-align: center; }
+            header { padding: 40px 0 60px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="app-icon">☕</div>
+            <h1>这杯 · 咖啡记录</h1>
+            <p class="subtitle">隐私政策</p>
+            <span class="privacy-badge">本地优先 · 无账号 · 无广告追踪</span>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="effective-date">
+                生效日期：<strong>2026年8月21日</strong>
+            </div>
+
+            <article class="policy-content">
+                <h2>一、引言</h2>
+                <p><strong>这杯 · 咖啡记录</strong>（英文名 This Cup，以下简称「本 App」）是一款用于记录每日咖啡、咖啡因、花销与咖啡时光的工具类应用。本 App <strong>没有账号系统</strong>，打开即可使用。</p>
+                <p>本政策说明我们如何处理与您使用本 App 相关的信息。请在使用前仔细阅读。继续使用即表示您理解并接受本政策。</p>
+
+                <div class="highlight-box">
+                    <p>我们<strong>不自行运营用户数据服务器</strong>，也<strong>不出售、出租或与广告商共享</strong>您的个人信息。咖啡记录默认保存在您的设备本地。仅当您主动使用照片、定位、语音、内购或 iCloud 同步等功能时，才会在系统授权范围内处理相关信息。</p>
+                </div>
+
+                <h2>二、我们处理哪些信息</h2>
+                <h3>1. 您主动录入的内容（本地存储）</h3>
+                <p>您添加的咖啡记录及设置仅保存在本机（使用 iOS UserDefaults 及 App 沙盒文件），包括但不限于：</p>
+                <ul>
+                    <li>饮品名称、类型、杯型、温度、咖啡因、糖量、价格、评分、备注、品牌、自制咖啡豆与冲煮方式；</li>
+                    <li>记录时间、是否在首页展示；</li>
+                    <li>您选择附上的照片与贴纸文件（保存在本机，不会随 iCloud 同步上传）；</li>
+                    <li>您选择附上的地点名称及经纬度（仅在您主动添加地点时保存）；</li>
+                    <li>主题、语言、咖啡因上限、半衰期、就寝时间、品牌与转盘等偏好设置。</li>
+                </ul>
+                <p>卸载本 App 或在设置中清除本地数据后，上述本机数据将被删除。</p>
+
+                <h3>2. 我们不主动收集的信息</h3>
+                <ul>
+                    <li>姓名、手机号、邮箱等用于注册的身份信息（本 App 无需注册）；</li>
+                    <li>广告标识符、第三方分析 SDK 收集的行为画像；</li>
+                    <li>通讯录、日历、健康 App 中的数据。</li>
+                </ul>
+
+                <h2>三、权限说明（均为可选）</h2>
+                <p>下列权限仅在您使用对应功能时申请，您可以拒绝，拒绝后核心记录功能仍可使用。</p>
+                <ul>
+                    <li><strong>相机：</strong>拍摄咖啡照片并附在记录上，照片保存在本机。</li>
+                    <li><strong>相册：</strong>从相册选择咖啡照片，或将壁纸/图片保存到相册。</li>
+                    <li><strong>位置（使用期间）：</strong>为记录添加地点，并在咖啡地图上展示您主动标记过的位置。我们不会在后台持续定位。</li>
+                    <li><strong>麦克风与语音识别：</strong>将语音转成文字写入备注。识别由 Apple 语音识别服务完成；音频用于当次识别，我们不会自行上传或保存录音文件。</li>
+                </ul>
+
+                <h2>四、第三方服务</h2>
+                <h3>1. Apple iCloud / CloudKit（可选）</h3>
+                <p>若您解锁并开启 iCloud 同步，本 App 会将<strong>记录与设置的 JSON 快照</strong>写入您 Apple ID 下的<strong>私人 iCloud 数据库</strong>，以便在您自己的设备间同步。照片与贴纸仍只保存在本机。</p>
+                <p>数据由 Apple CloudKit 托管。您可在本 App 设置中停止同步，或在系统「设置 → 苹果账号 → iCloud」中管理云端数据。</p>
+
+                <h3>2. Apple StoreKit（内购）</h3>
+                <p>一次性购买由 Apple 处理付款。我们不会获取您的银行卡号或完整账单信息。购买状态用于解锁主题、云同步等功能，并可能缓存在本机以便下次启动时正确显示。</p>
+
+                <h3>3. 小组件</h3>
+                <p>今日杯数、咖啡因进度等摘要可通过 App Group 在本机提供给系统小组件，数据不离开您的设备。</p>
+
+                <p>本 App <strong>不接入广告、不接入第三方统计分析、不提供第三方登录</strong>。</p>
+
+                <h2>五、数据存储、共享与安全</h2>
+                <p>默认情况下，数据只存在您的设备上。开启 iCloud 同步后，记录与设置会进入您自己的 iCloud 私人数据库。我们不会向广告商或其他开发者出售或共享您的咖啡记录。</p>
+                <p>本机数据安全取决于您设备的锁定方式（密码、面容 ID 等）。请妥善保管设备与 Apple ID。</p>
+
+                <h2>六、咖啡因估算说明</h2>
+                <div class="warning-box">
+                    <h3>重要声明</h3>
+                    <p>体内咖啡因估算、半衰期与「最后一杯」建议仅供生活记录参考，<strong>不构成医疗建议、诊断或治疗</strong>。实际代谢因人而异。如有健康问题，请咨询专业医生。</p>
+                </div>
+
+                <h2>七、您的权利</h2>
+                <ul>
+                    <li>随时在本 App 中编辑或删除单条记录；</li>
+                    <li>在设置中清除本地数据；</li>
+                    <li>在系统设置中关闭相机、相册、位置、麦克风或语音识别权限；</li>
+                    <li>关闭或停止使用 iCloud 同步；</li>
+                    <li>卸载本 App 以删除本机沙盒中的数据。</li>
+                </ul>
+
+                <h2>八、未成年人</h2>
+                <p>本 App 面向普通消费者记录饮品习惯，不专门面向儿童。若您是监护人，请指导未成年人使用本 App，并决定是否授权相机、位置等权限。</p>
+
+                <h2>九、政策更新</h2>
+                <p>我们可能因功能或法律法规变化更新本政策。更新后将在本页面公示，并视情况在 App 内提示。继续使用即视为接受更新后的政策；如不接受，请停止使用并卸载本 App。</p>
+
+                <h2>十、联系我们</h2>
+                <p>若对本隐私政策有疑问、建议或投诉，请通过以下邮箱联系，我们将在合理时间内回复：</p>
+
+                <div class="contact-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </div>
+                    <div class="info">
+                        <p>联系邮箱：<a href="mailto:nickgao1986@gmail.com">nickgao1986@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <p style="margin-top: 32px; padding: 20px; background: #f7f1ea; border-radius: 12px; font-size: 15px; color: #86868b;">
+                    本政策依据《中华人民共和国个人信息保护法》等适用法律，以及 Apple App Store 审核指南中关于隐私说明的要求制定。英文应用名为 This Cup。
+                </p>
+            </article>
+
+            <div class="back-to-top">
+                <button type="button" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">返回顶部</button>
+            </div>
+
+            <footer>
+                <p>&copy; 2026 这杯 · 咖啡记录（This Cup）保留所有权利</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
