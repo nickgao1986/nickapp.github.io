@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TalkDraft 隐私政策</title>
+  <style>
+    :root { color-scheme: light dark; --page: #f5f5f7; --surface: #ffffff; --text: #1d1d1f; --secondary: #5f6368; --line: #d9dce1; --link: #0066cc; }
+    @media (prefers-color-scheme: dark) { :root { --page: #111214; --surface: #1b1d20; --text: #f5f5f7; --secondary: #a9adb5; --line: #363a40; --link: #5aa7ff; } }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--page); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Segoe UI", sans-serif; font-size: 16px; line-height: 1.7; }
+    main { max-width: 760px; margin: 0 auto; padding: 32px 20px 56px; }
+    article { padding: clamp(22px, 5vw, 40px); background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
+    h1 { margin: 0 0 4px; font-size: 32px; line-height: 1.25; }
+    h2 { margin: 32px 0 10px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 21px; line-height: 1.35; }
+    h2:first-of-type { border-top: 0; padding-top: 0; }
+    p, li { max-width: 42em; }
+    ul { padding-left: 1.25rem; }
+    li + li { margin-top: 8px; }
+    a { color: var(--link); }
+    .meta, .notice { color: var(--secondary); }
+    .notice { margin: 24px 0; padding: 16px; border-left: 4px solid var(--link); background: color-mix(in srgb, var(--link) 8%, transparent); }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <h1>隐私政策</h1>
+      <p class="meta">生效日期：2026 年 8 月 22 日<br>更新日期：2026 年 8 月 22 日<br>应用名称：TalkDraft: Voice to Text（以下简称「本应用」或「TalkDraft」）<br>Bundle ID：com.nickgao.record</p>
+      <p class="notice">TalkDraft 默认在您的设备上完成录音与转写，不要求注册账号，也不会自动上传录音文件。仅当您主动使用 AI 功能并确认后，转写文本才会发送至人工智能服务。音频文件与声纹信息不会因此上传。</p>
+
+      <h2>1. 适用范围</h2>
+      <p>本政策说明我们在您使用 TalkDraft 录音、导入音频、本机转写、导出、购买、使用可选统计，或选择 AI 功能时如何处理相关信息。通过 iOS 系统分享面板发送到其他应用或服务的内容，适用该第三方自己的隐私政策，本政策不予覆盖。</p>
+      <p>开发者联系邮箱：<a href="mailto:nickgao1986@gmail.com">nickgao1986@gmail.com</a>。</p>
+
+      <h2>2. 本机存储的信息</h2>
+      <p>本应用不要求创建账户。下列信息保存在您设备上的应用沙盒中：</p>
+      <ul>
+        <li><strong>录音数据：</strong>您录制或导入的音频，以及标题、时间戳、转写文本、说话人标注、书签、批注、待办和 AI 生成结果。</li>
+        <li><strong>设置与安全信息：</strong>转写语言、功能偏好、购买权益、同意选择和应用锁设置保存在本机。应用锁使用的数字密码保存在系统钥匙串（Keychain）中。</li>
+        <li><strong>小组件数据：</strong>桌面小组件仅通过 App Group 读取最近最多 3 条录音的标题、日期、时长和转写状态，不会获得音频文件或转写全文。</li>
+      </ul>
+      <p>我们不会出售您的录音或转写内容，不会将其用于广告画像，也不会用其训练我们自己的模型。</p>
+
+      <h2>3. 设备权限</h2>
+      <ul>
+        <li><strong>麦克风：</strong>仅在您开始录音时使用，用于录制会议、采访或语音备忘。</li>
+        <li><strong>语音识别：</strong>在开始转写时申请。本应用在系统支持时使用设备端识别，不会为云端转写自动上传音频。</li>
+        <li><strong>通知：</strong>用于在应用未处于前台时提醒您转写已完成。</li>
+        <li><strong>Face ID / Touch ID：</strong>仅在您开启应用锁时使用。本应用不会从苹果获取或保存生物识别数据本身。</li>
+      </ul>
+      <p>您可随时在 iOS「设置」中关闭上述权限。关闭麦克风或语音识别后，对应功能将无法使用。</p>
+
+      <h2>4. 可选的 AI 功能</h2>
+      <p>若您使用 AI 会议纪要、基于原文的问答，或跨录音的知识问答，本应用会在发送数据前征求确认。您确认后，录音标题、会话类型、转写文本以及您的问题可能经加密连接发送至<strong>阿里云模型服务（通义千问 / Qwen）</strong>，以生成您请求的结果。这些功能<strong>不会</strong>发送音频文件或声纹信息。</p>
+      <p>AI 结果会保存在对应的本机录音会话中。阿里云按其适用条款与隐私声明处理所提交的信息。请勿在您无权分享的情况下提交内容，尤其是敏感或保密信息。您可随时停止使用 AI 功能；如需撤回此前已作出的 AI 同意，请通过下方邮箱联系我们。</p>
+
+      <h2>5. 可选的统计分析</h2>
+      <p>首次使用时，您可以选择是否允许统计分析。仅在您同意后才会初始化统计服务。若您同意，友盟+（Umeng+）可能接收设备与应用使用信息，以及有限的功能使用、购买流程结果等事件，用于改进 TalkDraft。本应用不会故意将音频文件、转写文本、导入音频或 AI 答复作为统计事件内容上报。</p>
+      <p>拒绝统计不影响录音与转写。若您事后希望撤回同意，请通过下方邮箱联系我们。若统计实现发生变化，我们将更新本政策及 App Store 隐私披露。</p>
+
+      <h2>6. 购买与第三方服务</h2>
+      <ul>
+        <li><strong>Apple：</strong>App Store 与 StoreKit 处理购买与恢复。系统服务在适用时提供语音识别、通知和生物识别认证。</li>
+        <li><strong>阿里云模型服务（通义千问）：</strong>仅在您选择并确认使用 AI 功能后处理转写文本。</li>
+        <li><strong>友盟+：</strong>仅在您同意后提供可选统计分析。</li>
+      </ul>
+      <p>上述第三方按其自身政策处理相关信息。我们不会将您的录音文件提供给广告网络。</p>
+
+      <h2>7. 保存、导出与删除</h2>
+      <p>录音与转写会保留在您的设备上，直至您删除。在 TalkDraft 中删除一条录音时，会同时删除其关联的本机音频和元数据。您导出的备份包含录音元数据与转写文本，<strong>不包含</strong>音频文件。您自行分享或导出的文件由您控制。</p>
+      <p>设备备份设置可能将本应用数据纳入苹果设备备份。卸载应用通常会删除其沙盒数据，但不会删除您已导出、已分享或另行备份的副本。</p>
+
+      <h2>8. 您的选择与权利</h2>
+      <p>您可以在应用内查看、编辑、导出和删除本机录音。您可以在 iOS 设置中管理麦克风、语音识别、通知和生物识别权限。就可选统计或 AI 处理提出的访问、更正、删除、反对或撤回同意等请求，请通过下方邮箱联系我们。我们将在核实后依法及时处理。</p>
+
+      <h2>9. 未成年人</h2>
+      <p>本应用不以儿童为对象。如果您认为未成年人在未经适当授权的情况下通过 AI 功能提供了个人信息，请联系我们，我们将核实并处理相关请求。</p>
+
+      <h2>10. 政策更新与联系方式</h2>
+      <p>当功能、服务提供方或适用要求发生变化时，我们可能更新本政策。现行版本与更新日期将展示在本页面。隐私相关问题或请求，请发送邮件至 <a href="mailto:nickgao1986@gmail.com">nickgao1986@gmail.com</a>。</p>
+    </article>
+  </main>
+</body>
+</html>
