@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Float Clock 使用协议">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>Float Clock - 使用协议</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "PingFang SC", "Hiragino Sans GB", "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8;
+            color: #1d1d1f;
+            background: #f5f7fb;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container { max-width: 980px; margin: 0 auto; padding: 0 22px; }
+
+        header {
+            background: linear-gradient(135deg, #0A84FF 0%, #35C2FF 48%, #7C5CFF 100%);
+            color: white;
+            padding: 58px 0 78px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(circle at 20% 20%, rgba(255,255,255,0.28), transparent 28%),
+                radial-gradient(circle at 82% 18%, rgba(255,255,255,0.18), transparent 24%),
+                radial-gradient(circle at 50% 100%, rgba(255,255,255,0.20), transparent 34%);
+        }
+
+        .hero-inner { position: relative; z-index: 1; }
+
+        .app-icon {
+            width: 112px;
+            height: 112px;
+            border-radius: 26px;
+            margin: 0 auto 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.20);
+            border: 1px solid rgba(255, 255, 255, 0.34);
+            box-shadow: 0 18px 42px rgba(8, 42, 92, 0.22);
+            backdrop-filter: blur(16px);
+        }
+
+        .icon-window {
+            width: 66px;
+            height: 48px;
+            border-radius: 14px;
+            background: rgba(255,255,255,0.92);
+            color: #0A84FF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 800;
+            letter-spacing: -0.4px;
+            box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+        }
+
+        h1 {
+            font-size: 44px;
+            font-weight: 800;
+            letter-spacing: -0.8px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle { font-size: 20px; opacity: 0.95; font-weight: 500; }
+
+        .terms-badge {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 8px 18px;
+            background: rgba(255,255,255,0.22);
+            border: 1px solid rgba(255,255,255,0.24);
+            border-radius: 999px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .content-wrapper {
+            background: #fff;
+            border-radius: 24px 24px 0 0;
+            margin-top: -38px;
+            position: relative;
+            box-shadow: 0 -10px 32px rgba(15, 33, 62, 0.08);
+            padding-bottom: 56px;
+        }
+
+        .effective-date {
+            text-align: center;
+            padding: 34px 0 26px;
+            color: #6b7280;
+            font-size: 15px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .effective-date strong { color: #0A84FF; font-weight: 700; }
+
+        article { padding: 46px 56px; }
+
+        h2 {
+            font-size: 26px;
+            font-weight: 800;
+            margin: 44px 0 18px;
+            color: #111827;
+            letter-spacing: -0.35px;
+        }
+
+        h2:first-child { margin-top: 0; }
+
+        h3 {
+            font-size: 19px;
+            font-weight: 750;
+            margin: 26px 0 12px;
+            color: #111827;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: #374151;
+            font-size: 17px;
+        }
+
+        ul, ol {
+            margin: 12px 0 22px 24px;
+            color: #374151;
+        }
+
+        li { margin-bottom: 10px; font-size: 17px; line-height: 1.7; }
+
+        strong { color: #111827; font-weight: 750; }
+
+        a { color: #0A84FF; text-decoration: none; font-weight: 650; }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #eef7ff 0%, #f3f2ff 100%);
+            border-left: 4px solid #0A84FF;
+            padding: 22px 24px;
+            border-radius: 14px;
+            margin: 26px 0;
+        }
+
+        .highlight-box p:last-child { margin-bottom: 0; }
+
+        .contact-card {
+            background: #f8fafc;
+            border: 1px solid #e5e7eb;
+            border-radius: 18px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 34px 0;
+            color: #6b7280;
+            font-size: 14px;
+            border-top: 1px solid #e5e7eb;
+            margin-top: 34px;
+        }
+
+        .back-to-top { text-align: center; padding: 24px 0; }
+
+        .back-to-top button {
+            background: white;
+            border: 1px solid #d1d5db;
+            color: #0A84FF;
+            padding: 11px 24px;
+            border-radius: 999px;
+            font-size: 15px;
+            font-weight: 650;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 32px; }
+            .subtitle { font-size: 17px; }
+            .app-icon { width: 88px; height: 88px; border-radius: 22px; }
+            .icon-window { width: 54px; height: 40px; font-size: 15px; border-radius: 12px; }
+            article { padding: 30px 20px; }
+            h2 { font-size: 22px; }
+            p, li { font-size: 16px; }
+            header { padding: 42px 0 60px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container hero-inner">
+            <div class="app-icon" aria-hidden="true">
+                <div class="icon-window">12:30</div>
+            </div>
+            <h1>Float Clock</h1>
+            <p class="subtitle">使用协议</p>
+            <span class="terms-badge">周订阅 · 年订阅 · 终身买断</span>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="effective-date">
+                生效日期：<strong>2026年9月6日</strong>
+            </div>
+
+            <article>
+                <h2>一、协议接受与适用范围</h2>
+                <p>本使用协议（以下简称「本协议」）适用于您对 <strong>Float Clock</strong>（以下简称「本 App」）的下载、安装与使用。请您在使用前仔细阅读并理解本协议及<a href="privacy.html">《Float Clock 隐私政策》</a>。一旦下载、安装或使用本 App，即视为您已同意本协议；如不同意，请立即停止使用。</p>
+
+                <h2>二、服务内容说明</h2>
+                <p>Float Clock 是一款生产力工具，可提供悬浮时钟、倒计时、专注计时、秒表、备注、文档、所选媒体及相关画中画能力（在 iOS 支持的前提下，具体以应用内实际版本为准）。</p>
+                <p>本 App 定位为便利性工具。系统后台行为、通知、画中画可用性、计时精度与小组件表现可能受 iOS、设备型号、电量、权限及 Apple 系统策略影响。</p>
+
+                <h2>三、非关键用途声明</h2>
+                <p>请勿将 Float Clock 作为安全关键、医疗、紧急、法律、金融、交通或其他高风险场景下的唯一计时工具。重要事项请同时采用可靠的备用提醒方式。</p>
+
+                <h2>四、可选 Pro 权益（订阅与买断）</h2>
+                <p>本 App 可能通过 Apple StoreKit 提供可选 Pro 权益，包括自动续期的周订阅、年订阅，以及可选的一次性终身买断。具体权益、价格、试用与展示以应用内及 App Store 为准。</p>
+                <ul>
+                    <li>周订阅商品 ID：<strong>com.nickgao.jishien.weekrenew</strong></li>
+                    <li>年订阅商品 ID：<strong>com.nickgao.jishien.yearrenew</strong></li>
+                    <li>终身买断商品 ID：<strong>com.nickgao.jishien.upgrade</strong></li>
+                    <li>支付由 Apple 通过您的 Apple ID 处理。</li>
+                    <li>价格及免费试用（如有）以 App Store 或购买页展示为准，可能因地区而异。</li>
+                    <li>自动续期订阅将在当前周期结束前至少 24 小时未取消的情况下续订。您可在「设置 → Apple ID → 订阅」中管理或取消。</li>
+                    <li>可在应用内使用「恢复购买」恢复符合条件的已购权益。</li>
+                    <li>退款与账单争议由 Apple 按其适用政策处理。</li>
+                </ul>
+                <div class="highlight-box">
+                    <p><strong>特别说明：</strong>订阅到期后，对应 Pro 权益可能失效；终身买断在购买成功后长期有效（以 Apple 权益记录为准）。已订阅用户仍可选择购买终身买断升级。</p>
+                </div>
+
+                <h2>五、权限</h2>
+                <p>部分功能可能需要通知、相册、媒体库、文件、麦克风（自定义录音）或小组件等相关权限。您可在 iOS 设置中管理权限；若拒绝授权，相关功能可能无法使用。</p>
+
+                <h2>六、用户内容</h2>
+                <p>您对在 Float Clock 中使用的备注、导入文档、所选媒体、标签及其他内容自行负责。请勿使用本 App 展示、存储或分享违反适用法律或侵害他人权利的内容。</p>
+
+                <h2>七、隐私</h2>
+                <p>您对本 App 的使用同时受 <a href="privacy.html">《Float Clock 隐私政策》</a>约束。本 App 设计为无需账号、无广告、无追踪 SDK。</p>
+
+                <h2>八、知识产权</h2>
+                <p>本 App 的软件、设计、代码、图标、文案及相关材料归开发者所有或经合法授权。除法律允许外，您不得复制、反向工程、再分发、出售或修改本 App。</p>
+
+                <h2>九、变更与可用性</h2>
+                <p>我们可能随时更新、修改、增加或移除功能。部分能力依赖 Apple 框架，并可能随 iOS 变化而变化。我们也可能根据需要更新本协议，最新版本以本页面发布内容为准。</p>
+
+                <h2>十、免责声明</h2>
+                <p>在法律允许的最大范围内，Float Clock 按「现状」和「可用」提供。我们不保证服务不中断、在一切条件下计时绝对精确，或兼容每一台设备、每一个 iOS 版本、应用或系统配置。</p>
+
+                <h2>十一、责任限制</h2>
+                <p>在法律允许的最大范围内，开发者不对因使用本 App 而产生的间接、附带、特殊、后果性或惩罚性损害，以及数据丢失、错过提醒、错过事件、利润损失或业务中断承担责任。</p>
+
+                <h2>十二、适用法律与争议解决</h2>
+                <p>本协议的订立、效力、解释与争议解决，适用中华人民共和国法律（不含冲突法规则，且在适用范围内）。因本协议或本 App 使用产生的争议，双方应先友好协商；协商不成的，提交有管辖权的人民法院处理。</p>
+
+                <h2>十三、联系我们</h2>
+                <p>如对本协议有任何疑问，请联系：</p>
+                <div class="contact-card">
+                    <p><strong>邮箱：</strong> <a href="mailto:youjiancau@gmail.com">youjiancau@gmail.com</a></p>
+                </div>
+
+                <div class="highlight-box">
+                    <p><strong>摘要：</strong>Float Clock 是一款本地优先的计时工具，可提供周订阅、年订阅或终身买断的可选 Pro 权益。请勿将其作为关键场景下的唯一计时工具。本使用协议与隐私政策共同构成完整约定。</p>
+                </div>
+            </article>
+
+            <div class="back-to-top">
+                <button type="button" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">返回顶部</button>
+            </div>
+
+            <footer>
+                <p>&copy; 2026 Float Clock. 保留所有权利。</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
