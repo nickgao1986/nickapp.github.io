@@ -3,263 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="码上扫 - 用户协议">
+    <meta name="description" content="抢购悬浮助手 - 用户协议 / 使用条款（EULA）">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <title>码上扫 - 用户协议</title>
+    <title>抢购悬浮助手 - 用户协议</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
             line-height: 1.8;
             color: #1d1d1f;
             background-color: #f5f5f7;
             -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
         }
-
-        .container {
-            max-width: 980px;
-            margin: 0 auto;
-            padding: 0 22px;
-        }
-
+        .container { max-width: 980px; margin: 0 auto; padding: 0 22px; }
         header {
-            background: linear-gradient(135deg, #7B2CBF 0%, #5a1d8f 100%);
+            background: linear-gradient(135deg, #FF8A3D 0%, #FF6B1A 55%, #E85D04 100%);
             color: white;
             padding: 60px 0 80px;
             text-align: center;
             position: relative;
             overflow: hidden;
         }
-
         header::before {
             content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
+            position: absolute; inset: 0;
             background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.1)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
             background-size: cover;
         }
-
         .app-icon {
-            width: 120px;
-            height: 120px;
-            background: rgba(255, 255, 255, 0.2);
+            width: 120px; height: 120px;
+            background: rgba(255, 255, 255, 0.22);
             border-radius: 26px;
             margin: 0 auto 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            display: flex; align-items: center; justify-content: center;
             font-size: 48px;
             backdrop-filter: blur(10px);
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+            position: relative; z-index: 1;
         }
-
         h1 {
-            font-size: 48px;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-            margin-bottom: 12px;
+            font-size: 42px; font-weight: 700; letter-spacing: -0.5px;
+            margin-bottom: 12px; position: relative; z-index: 1;
         }
-
         .subtitle {
-            font-size: 21px;
-            opacity: 0.9;
-            font-weight: 400;
+            font-size: 20px; opacity: 0.95; font-weight: 400;
+            position: relative; z-index: 1;
         }
-
         .privacy-badge {
-            display: inline-block;
-            margin-top: 16px;
-            padding: 8px 20px;
-            background: rgba(255,255,255,0.25);
-            border-radius: 24px;
-            font-size: 15px;
-            font-weight: 500;
+            display: inline-block; margin-top: 18px;
+            padding: 8px 16px; border-radius: 999px;
+            background: rgba(255,255,255,0.18);
+            font-size: 13px; font-weight: 600;
+            position: relative; z-index: 1;
         }
-
-        .content-wrapper {
-            background: white;
-            border-radius: 20px 20px 0 0;
-            margin-top: -40px;
-            position: relative;
-            box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.08);
-            padding-bottom: 60px;
-        }
-
+        .content-wrapper { margin-top: -40px; position: relative; z-index: 2; padding-bottom: 60px; }
         .effective-date {
-            text-align: center;
-            padding: 40px 0 30px;
-            color: #86868b;
-            font-size: 15px;
-            border-bottom: 1px solid #e5e5e7;
+            background: white; border-radius: 16px; padding: 18px 22px;
+            margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            color: #6e6e73; font-size: 15px;
         }
-
-        .effective-date strong {
-            color: #7B2CBF;
-            font-weight: 600;
-        }
-
         .policy-content {
-            padding: 50px 60px;
+            background: white; border-radius: 20px; padding: 40px 36px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.06);
         }
-
         .policy-content h2 {
-            font-size: 28px;
-            font-weight: 700;
-            margin: 50px 0 24px;
-            color: #1d1d1f;
-            letter-spacing: -0.3px;
+            font-size: 22px; margin: 36px 0 14px; color: #1d1d1f;
+            padding-bottom: 10px; border-bottom: 1px solid #f0f0f2;
         }
-
-        .policy-content h2:first-child {
-            margin-top: 0;
+        .policy-content h2:first-of-type { margin-top: 8px; }
+        .policy-content h3 { font-size: 17px; margin: 22px 0 10px; color: #3a3a3c; }
+        .policy-content p, .policy-content li { font-size: 16px; color: #424245; margin-bottom: 12px; }
+        .policy-content ol, .policy-content ul { padding-left: 22px; margin-bottom: 12px; }
+        .policy-content a { color: #FF6B1A; text-decoration: none; }
+        .policy-content a:hover { text-decoration: underline; }
+        .policy-content code {
+            font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+            font-size: 13px; background: #f5f5f7; padding: 2px 6px; border-radius: 6px;
         }
-
-        .policy-content h3 {
-            font-size: 20px;
-            font-weight: 600;
-            margin: 28px 0 16px;
-            color: #1d1d1f;
-        }
-
-        .policy-content p {
-            margin-bottom: 16px;
-            color: #424245;
-            font-size: 17px;
-            line-height: 1.8;
-            text-align: justify;
-        }
-
-        .policy-content ul, .policy-content ol {
-            margin: 16px 0 24px 24px;
-            color: #424245;
-        }
-
-        .policy-content li {
-            margin-bottom: 12px;
-            font-size: 17px;
-            line-height: 1.8;
-        }
-
-        .policy-content strong {
-            color: #1d1d1f;
-            font-weight: 600;
-        }
-
-        .policy-content a {
-            color: #7B2CBF;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .policy-content a:hover {
-            text-decoration: underline;
-        }
-
         .highlight-box {
-            background: linear-gradient(135deg, #f5f0ff 0%, #ede8ff 100%);
-            border-left: 4px solid #7B2CBF;
-            padding: 24px;
-            border-radius: 12px;
-            margin: 28px 0;
+            background: linear-gradient(135deg, #FFF4EB 0%, #FFF8F2 100%);
+            border-left: 4px solid #FF8A3D;
+            border-radius: 14px; padding: 18px 20px; margin: 16px 0 20px;
         }
-
-        .highlight-box p {
-            margin-bottom: 0;
-        }
-
         .contact-card {
-            background: #f5f5f7;
-            border-radius: 16px;
-            padding: 28px;
-            margin: 28px 0;
-            display: flex;
-            align-items: center;
-            gap: 20px;
+            display: flex; gap: 16px; align-items: flex-start;
+            background: #f7f7f8; border-radius: 16px; padding: 20px; margin-top: 12px;
         }
-
         .contact-card .icon {
-            width: 56px;
-            height: 56px;
-            background: linear-gradient(135deg, #7B2CBF 0%, #5a1d8f 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
+            width: 44px; height: 44px; border-radius: 12px;
+            background: #FFE8D6; display: flex; align-items: center; justify-content: center; flex-shrink: 0;
         }
-
-        .contact-card .icon svg {
-            width: 28px;
-            height: 28px;
-            fill: white;
-        }
-
-        .contact-card .info {
-            flex: 1;
-        }
-
-        .contact-card .info p {
-            margin: 0;
-            font-size: 16px;
-            color: #1d1d1f;
-        }
-
-        .contact-card .info a {
-            color: #7B2CBF;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        footer {
-            text-align: center;
-            padding: 40px 0;
-            color: #86868b;
-            font-size: 14px;
-            border-top: 1px solid #e5e5e7;
-            margin-top: 40px;
-        }
-
-        .back-to-top {
-            text-align: center;
-            padding: 30px 0;
-        }
-
+        .contact-card .icon svg { width: 22px; height: 22px; fill: #FF6B1A; }
+        .back-to-top { text-align: center; margin: 28px 0 8px; }
         .back-to-top button {
-            background: white;
-            border: 1px solid #d2d2d7;
-            color: #7B2CBF;
-            padding: 12px 28px;
-            border-radius: 20px;
-            font-size: 15px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: all 0.3s ease;
+            border: none; background: #1d1d1f; color: white;
+            padding: 12px 22px; border-radius: 999px; font-size: 14px; font-weight: 600; cursor: pointer;
         }
-
-        .back-to-top button:hover {
-            background: #f5f5f7;
-            border-color: #7B2CBF;
-        }
-
-        @media (max-width: 768px) {
-            h1 { font-size: 32px; }
+        footer { text-align: center; color: #86868b; font-size: 13px; padding: 12px 0 8px; }
+        @media (max-width: 680px) {
+            h1 { font-size: 30px; }
             .subtitle { font-size: 17px; }
-            .app-icon { width: 90px; height: 90px; font-size: 36px; }
-            .policy-content { padding: 30px 24px; }
-            .policy-content h2 { font-size: 24px; margin: 36px 0 20px; }
-            .policy-content h3 { font-size: 18px; }
-            .policy-content p, .policy-content li { font-size: 16px; }
-            .contact-card { flex-direction: column; text-align: center; padding: 24px; }
+            .policy-content { padding: 28px 20px; }
             header { padding: 40px 0 60px; }
         }
     </style>
@@ -267,64 +112,105 @@
 <body>
     <header>
         <div class="container">
-            <div class="app-icon">📱</div>
-            <h1>码上扫</h1>
-            <p class="subtitle">用户协议</p>
-            <span class="privacy-badge">一扫即得 · 轻量好用</span>
+            <div class="app-icon">🛒</div>
+            <h1>抢购悬浮助手</h1>
+            <p class="subtitle">用户协议 · 使用条款（EULA）</p>
+            <span class="privacy-badge">Terms of Use</span>
         </div>
     </header>
 
     <div class="content-wrapper">
         <div class="container">
             <div class="effective-date">
-                生效日期：<strong>2026年3月15日</strong>
+                生效日期：<strong>2026年9月5日</strong>
+                · 适用于 App「抢购悬浮助手」（Flash Deal Float Assistant）
             </div>
 
             <article class="policy-content">
-                <h2>一、服务说明</h2>
-                <p><strong>码上扫</strong>（以下简称「本 App」）是一款二维码与条形码扫描、生成及安全检测工具，主要功能包括：扫一扫、批量扫码、生成二维码（文本/网址/WiFi）、安全检测、扫描历史、桌面小组件等。本用户协议适用于您使用本 App 及其中高级会员订阅服务的全部行为。</p>
-                <p>使用本 App 即表示您已阅读并同意本协议及<a href="https://nickgao1986.github.io/nickapp.github.io/scan/privacy.html">《隐私政策》</a>。若不同意，请勿使用本 App。</p>
+                <div class="highlight-box">
+                    <p>请在使用「抢购悬浮助手」（以下简称「本应用」）前仔细阅读本《用户协议》（使用条款 / Terms of Use / EULA）。下载、安装、打开或继续使用本应用，即表示您已阅读并同意受本协议约束。若您不同意，请立即停止使用并卸载本应用。</p>
+                    <p>隐私相关说明请另行查阅：<a href="https://nickgao1986.github.io/nickapp.github.io/scan/privacy25.html">《隐私政策》</a>。</p>
+                </div>
 
-                <h2>二、用户行为规范</h2>
-                <p>您在使用本 App 时，应遵守法律法规及公序良俗，不得利用本 App 从事违法违规、侵犯他人权益或干扰服务正常运行的行为。您对通过本 App 扫描、生成、保存或分享的内容自行承担责任。</p>
+                <h2>一、协议主体与适用范围</h2>
+                <p>本协议由本应用运营方（以下简称「我们」）与您订立，适用于您对本应用及其中相关服务（含免费功能与付费功能）的全部使用行为。</p>
+                <p>本应用面向个人用户，提供抢购/秒杀事件管理、临场作战倒计时、悬浮窗与画中画（PiP）、番茄专注、计时器与秒表、桌面小组件与实时活动等效率辅助能力。具体功能以应用内实际展示为准，我们可能不时增减或调整功能。</p>
 
-                <h2>三、知识产权</h2>
-                <p>本 App 的界面、 logo、文案、技术实现等知识产权归运营方所有。未经授权，不得复制、修改、反向工程或用于商业目的。</p>
-
-                <h2>四、自动续期会员协议</h2>
-
-                <h3>1. 协议说明</h3>
-                <p>本协议约定关于自动续费服务的权利和义务。请您务必审慎阅读、充分理解本协议各条款内容，<strong>特别是免除或限制责任的相应条款</strong>，以加粗或斜体加粗等形式提示您注意限制、免责条款。您勾选同意的行为将被视为接受本协议的各项条款。</p>
-
-                <h3>2. 服务说明</h3>
-                <p>自动续费服务是为避免您因疏忽或其他原因导致未能及时续费而推出的服务。您授权高级会员即将过期时，委托支付渠道在不验证您的账户密码、支付密码、短信校验码等信息的情况下，从您绑定的第三方支付账户、银行卡、通信账户（以下统称「账户」）余额中代扣下一个计费周期的费用。</p>
-                <p>计费周期包括周、月度、年度等，您可根据页面提示自行选择。如因上述账户中可扣款余额不足导致续费失败，有权中断/终止相应的高级会员权益和服务。除法律另有规定外，不以任何方式对您已经支付的费用予以退还。</p>
-
-                <h3>3. 双方的权利和义务</h3>
-                <p><strong>3.1 自动续费服务条款：</strong>将在自动续费服务期限到期前24小时和到期后，通过您的上述账户扣除下一计费周期费用，会将扣划款项记入高级会员支付记录，并同时相应延长高级会员有效期。一旦扣款成功，有权即时收取该费用并不提供退费服务。如在扣费过程中出现差错应密切配合查明原因，各自承担己方过错造成的损失。通过 iOS 渠道进行购买，前述自动续费服务的扣款时间以 iOS 渠道实际扣款时间为准，请您关注。</p>
-                <p><strong>3.2 协议修改条款：</strong>可根据业务情况修改本协议，并在本页面公布、告知您修订后的协议内容。如果您不同意修改后的协议，可以取消自动续费服务；如果您继续使用本服务，则视为您已经知晓、同意并接受本协议修订后的内容。</p>
-
-                <h3>7. 取消订阅步骤</h3>
-                <p>若您需要取消自动续费，请按以下步骤操作：</p>
+                <h2>二、使用许可</h2>
                 <ol>
-                    <li>打开 iPhone <strong>设置</strong> → <strong>Apple ID</strong>（顶部您的姓名）→ <strong>订阅</strong></li>
-                    <li>在订阅列表中找到「<strong>码上扫</strong>」</li>
-                    <li>点击进入后选择「<strong>取消订阅</strong>」即可</li>
-                </ol>
-                <p>取消后，当前计费周期结束前您仍可继续使用高级会员权益，到期后将不再自动扣费。</p>
-
-                <h2>五、免责声明</h2>
-                <ol>
-                    <li>本 App 仅提供工具服务，对您使用本 App 产生的直接或间接损失不承担责任；</li>
-                    <li>您应妥善保管设备及账户，因设备丢失、账户泄露等非本 App 原因导致的风险由您自行承担；</li>
-                    <li>通过本 App 跳转至的第三方应用或网页，其隐私与条款由第三方负责，与本 App 无关。</li>
+                    <li>我们授予您一项<strong>个人的、非独占、不可转让、可撤销</strong>的许可，仅可在您合法拥有或控制的 Apple 设备上，按照本协议及 App Store 适用规则使用本应用。</li>
+                    <li>您不得对本应用进行反向工程、反编译、破解、篡改、二次分发，或用于任何违法、侵权、骚扰他人、干扰正常交易秩序的用途。</li>
+                    <li>本应用为时间与效率辅助工具，<strong>不代替</strong>第三方平台的下单、支付或抢购流程，亦不保证您在任何第三方平台上一定成功购得商品或票务。</li>
                 </ol>
 
-                <h2>六、协议变更</h2>
-                <p>我们可能根据产品更新或法律法规变化修订本协议，修订后将在本页面或 App 内公示。若您继续使用本 App 或订阅服务，即视为接受修订内容；若不同意，可停止使用并取消订阅。</p>
+                <h2>三、账户与 Apple ID</h2>
+                <p>本应用<strong>不要求</strong>单独注册账号。付费权益通过 Apple App Store / StoreKit 完成，并与您的 Apple ID 关联。请妥善保管 Apple ID 及设备安全。因您自身原因（如账号泄露、设备丢失、误操作等）导致的损失，由您自行承担。</p>
+                <p>在新设备上，您可通过应用内「恢复购买」找回已购买的 Pro 权益（以 Apple 账户实际购买记录为准）。</p>
 
-                <h2>七、联系方式</h2>
-                <p>若对本用户协议或高级会员服务有任何疑问、建议或投诉，可通过以下方式联系我们：</p>
+                <h2>四、免费功能与 Pro 付费说明</h2>
+                <h3>1. 免费功能</h3>
+                <p>本应用提供部分基础功能供免费使用，例如有限数量的抢购事件、单节点提醒、基础悬浮时钟与快捷倒计时、有限数量的计时器/秒表等。免费范围、次数或功能限制可能随版本调整，以应用内说明为准。</p>
+
+                <h3>2. Pro 一次性买断</h3>
+                <p>当前付费模式为<strong>非消耗型一次性内购</strong>（Non-Consumable）。</p>
+                <ul>
+                    <li><strong>产品名称：</strong>抢购悬浮助手 Pro 永久买断（以 App Store 显示名称为准）</li>
+                    <li><strong>产品 ID：</strong><code>com.nickgao.fengping.upgrade</code></li>
+                    <li><strong>价格：</strong>以 App Store / 应用内 StoreKit 实时显示为准（中国区示例参考价约 ¥12，实际以购买时显示为准）</li>
+                    <li>该商品为一次性购买，<strong>不会自动续费</strong>。购买成功后，Pro 权益与您的 Apple ID 绑定，可在换机后通过「恢复购买」找回</li>
+                </ul>
+
+                <h3>3. Pro 权益范围</h3>
+                <p>Pro 权益通常包括（以购买页实际展示为准，并可能随版本持续更新）：抢购作战模式、多节点提醒、无限抢购事件、到点直达活动链接、悬浮倒计时及相关画中画工具（如媒体轮播、弹幕、待办字幕、分屏浏览）、无限计时器与秒表等。</p>
+                <p>已合法完成一次性买断的用户，可使用当期应用内标明的 Pro 能力。一次性买断永久有效，不因时间到期而失效。</p>
+
+                <h3>4. 支付、账单与退款</h3>
+                <ul>
+                    <li>所有内购付款均由 Apple 处理，适用 Apple 的付款与退款政策。</li>
+                    <li>除适用法律或 Apple 政策另有规定外，我们一般不直接办理退款；如需退款，请通过 Apple 支持渠道申请（例如 <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>）。</li>
+                    <li>因网络、设备、Apple 账户状态、地区商店限制等原因导致购买失败或权益未即时生效的，请先尝试「恢复购买」；仍有问题可通过文末邮箱联系我们。</li>
+                </ul>
+
+                <h3>5. 权益变更</h3>
+                <p>我们可能调整 Pro 包含的功能组合，并持续提供更新与改进。对于已合法购买一次性买断的用户，我们不会无故取消其已获权益本身。若功能因系统兼容性或法律法规要求而调整，我们将尽力在应用内或以合理方式说明。</p>
+
+                <h2>五、用户内容与使用规范</h2>
+                <ol>
+                    <li>您在本应用中创建的抢购事件、备注、链接、口令、相册素材、弹幕与待办文案等内容（「用户内容」）由您自行保管。核心数据主要保存在您的设备本地。</li>
+                    <li>您应保证对用户内容拥有合法权利，且不侵犯他人合法权益；不得利用本应用制作、传播违法违规信息，或干扰第三方平台的正常秩序。</li>
+                    <li>本应用提供的时间校准、网络状态、提醒与跳转仅为辅助信息，开抢结果受第三方平台规则、库存、网络与设备状态等影响，我们不对抢购成败作任何保证。</li>
+                </ol>
+
+                <h2>六、知识产权</h2>
+                <p>本应用的软件、界面、图标、文案、算法实现、商标及相关知识产权归我们或相应权利人所有。本协议未明示授予的权利均予保留。未经许可，您不得复制、修改、出租、出售或以其他方式利用上述内容。</p>
+
+                <h2>七、免责声明</h2>
+                <ol>
+                    <li>本应用按「现状」和「现有」基础提供。在适用法律允许的最大范围内，我们不对特定目的适用性、无中断、无错误、满足您全部预期等作明示或默示保证。</li>
+                    <li>倒计时、提醒、画中画与 Live Activity 等能力受系统版本、省电策略、通知权限、网络状况与设备性能影响，实际表现可能因设备而异。</li>
+                    <li>因不可抗力、系统故障、网络中断、Apple 服务异常、您的操作失误或第三方平台原因导致的服务中断、数据丢失、错过开抢时机或使用障碍，我们在法律允许范围内不承担责任。</li>
+                    <li>您应自行备份重要设置与记录。卸载应用可能导致本地数据被清除。</li>
+                </ol>
+
+                <h2>八、责任限制</h2>
+                <p>在适用法律允许的最大范围内，我们对因使用或无法使用本应用而产生的任何间接、附带、惩罚性、后果性损害（包括但不限于利润损失、数据损失、商誉损失、未能购得商品或票务）不承担责任。我们对本协议项下的累计责任上限，不超过您就相关争议所涉内购实际向 Apple 支付的金额（如有）。部分法域不允许限制责任，此时以当地强制法为准。</p>
+
+                <h2>九、服务变更、中止与终止</h2>
+                <p>我们可根据运营需要更新应用版本、调整功能或停止提供部分/全部服务。若您严重违反本协议或相关法律法规，我们有权限制或终止向您提供服务。您可随时通过卸载本应用停止使用。</p>
+
+                <h2>十、条款更新</h2>
+                <p>我们可能不时修订本协议，并通过本页面更新生效日期与内容。重大变更时，我们可能在应用内或以其他合理方式提示。若您在更新后继续使用本应用，即视为接受修订后的协议；若不同意，请停止使用并卸载。</p>
+
+                <h2>十一、适用法律与争议解决</h2>
+                <p>本协议的订立、效力、解释与履行，适用中华人民共和国法律（不含冲突法规则），但您所在地强制消费者保护规定另有要求的除外。因本协议引起的争议，双方应友好协商；协商不成的，提交有管辖权的人民法院解决。</p>
+                <p>若本协议任一条款被认定为无效或不可执行，不影响其余条款继续有效。</p>
+
+                <h2>十二、与隐私政策的关系</h2>
+                <p>本协议主要规范使用许可、付费与责任等事项。关于个人信息处理，请阅读：</p>
+                <p><a href="https://nickgao1986.github.io/nickapp.github.io/scan/privacy25.html">https://nickgao1986.github.io/nickapp.github.io/scan/privacy25.html</a></p>
+
+                <h2>十三、联系我们</h2>
+                <p>如对本用户协议有任何疑问、建议或投诉，请通过以下方式联系：</p>
                 <div class="contact-card">
                     <div class="icon">
                         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -332,13 +218,15 @@
                         </svg>
                     </div>
                     <div class="info">
-                        <p>联系邮箱：<a href="mailto:nickgao1986@users.noreply.github.com">nickgao1986@users.noreply.github.com</a></p>
+                        <p>联系邮箱：<a href="mailto:youjiancau@gmail.com">youjiancau@gmail.com</a></p>
+                        <p style="margin-top: 8px; color: #86868b; font-size: 14px;">我们将在 1–3 个工作日内回复。</p>
                     </div>
                 </div>
 
-                <div class="highlight-box">
-                    <p>我们将在合理时间内回复您的反馈。隐私与数据收集说明请参阅<a href="https://nickgao1986.github.io/nickapp.github.io/scan/privacy.html">《码上扫 - 隐私政策》</a>。</p>
-                </div>
+                <p style="margin-top: 40px; padding: 20px; background: #f5f5f7; border-radius: 12px; font-size: 15px; color: #86868b;">
+                    本页面可作为 App Store Connect 中的自定义使用条款（EULA / Terms of Use）链接使用：
+                    <a href="https://nickgao1986.github.io/nickapp.github.io/scan/user1.html">https://nickgao1986.github.io/nickapp.github.io/scan/user1.html</a>
+                </p>
             </article>
 
             <div class="back-to-top">
@@ -346,19 +234,9 @@
             </div>
 
             <footer>
-                <p>&copy; 2026 码上扫 保留所有权利</p>
+                <p>&copy; 2026 抢购悬浮助手 保留所有权利</p>
             </footer>
         </div>
     </div>
-
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            });
-        });
-    </script>
 </body>
 </html>
