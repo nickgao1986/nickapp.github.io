@@ -1,108 +1,211 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="GlowCam Privacy Policy">
-  <title>GlowCam Privacy Policy</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lumen证件照管家 隐私政策 — 证件照制作、换底、导出，本机处理">
+  <title>Lumen证件照管家 - 隐私政策</title>
   <style>
     :root {
       color-scheme: light;
-      --ink: #1d1d1f;
-      --muted: #62626a;
-      --line: #e6e6ea;
-      --page: #f5f5f7;
-      --panel: #ffffff;
-      --accent: #1769e0;
-      --accent-soft: #eef5ff;
+      --bg: #f7f8fc;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --border: #e5e7eb;
+      --max-width: 760px;
     }
+
     * { box-sizing: border-box; }
+
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      color: var(--ink);
-      background: var(--page);
-      line-height: 1.65;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC",
+        "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      line-height: 1.7;
+      color: var(--text);
+      background: linear-gradient(180deg, #eef5ff 0%, var(--bg) 220px);
     }
-    header {
-      background: linear-gradient(135deg, #7B2CBF 0%, #3A86FF 100%);
-      color: white;
-      padding: 44px 20px;
-      text-align: center;
+
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 32px 20px 56px;
     }
-    header h1 { margin: 0 0 8px; font-size: clamp(30px, 6vw, 44px); }
-    header p { margin: 0; color: rgba(255, 255, 255, 0.82); font-size: 18px; }
-    main { max-width: 900px; margin: 0 auto; padding: 28px 18px 56px; }
-    article {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: clamp(22px, 5vw, 38px);
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 28px 24px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
     }
-    h2 { margin: 34px 0 12px; font-size: 22px; }
-    h3 { margin: 22px 0 8px; font-size: 17px; }
-    p { margin: 0 0 14px; }
-    ul { margin: 10px 0 18px 22px; padding: 0; }
-    li { margin: 8px 0; }
-    a { color: var(--accent); }
-    .date { color: var(--muted); }
-    .summary {
-      background: var(--accent-soft);
-      border: 1px solid #cfe1ff;
-      border-radius: 12px;
-      padding: 16px 18px;
-      margin: 20px 0 26px;
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 1.75rem;
+      line-height: 1.3;
     }
-    footer {
+
+    .meta {
+      margin: 0 0 24px;
       color: var(--muted);
-      border-top: 1px solid var(--line);
-      margin-top: 34px;
-      padding-top: 18px;
-      font-size: 14px;
+      font-size: 0.95rem;
+    }
+
+    h2 {
+      margin: 28px 0 10px;
+      font-size: 1.15rem;
+      color: #111827;
+    }
+
+    p, li {
+      margin: 0 0 12px;
+      font-size: 0.98rem;
+    }
+
+    ul {
+      margin: 0 0 12px;
+      padding-left: 1.25rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    code {
+      font-size: 0.92em;
+      word-break: break-all;
+    }
+
+    .highlight {
+      padding: 14px 16px;
+      border-radius: 12px;
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      color: #1e3a8a;
+      margin-bottom: 18px;
+    }
+
+    footer {
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>GlowCam</h1>
-    <p>Privacy Policy</p>
-  </header>
   <main>
-    <article>
-      <p class="date">Effective date: July 5, 2026</p>
-      <div class="summary">
-        <p><strong>Short version:</strong> GlowCam processes photos on your device.</p>
-        <p>We do not collect, upload, sell, share, or track personal data from the app. We do not use third-party advertising SDKs, tracking SDKs, or third-party analytics SDKs.</p>
+    <article class="card">
+      <h1>Lumen证件照管家 隐私政策</h1>
+      <p class="meta">生效日期：2026年10月10日 · 最后更新：2026年10月10日</p>
+
+      <div class="highlight">
+        Lumen证件照管家（以下简称“本应用”）以证件照制作为核心：常用尺寸、拍摄引导、背景更换与导出排版等功能默认在您的设备上完成本机处理。
+        我们不会将您的人像照片上传至开发者服务器，也不出售或共享您的个人信息用于广告追踪。
       </div>
-      <p>GlowCam is a screen fill-light and selfie app with beauty filters, cutout tools, photo editing, ID-style photo helpers, and social post layouts. This Privacy Policy explains how the app handles information for users in the United States, Europe, and other regions where the app is available.</p>
-      <h2>1. Information We Collect</h2>
-      <p><strong>We do not collect personal data from the app.</strong> Your photos, videos, cutout masks, face-area processing results, edit history, app preferences, and usage counters are processed and stored locally on your device unless you choose to export or share them yourself.</p>
-      <h2>2. Photos, Videos, and Editing Content</h2>
-      <p>When you choose a photo or video, GlowCam uses it only to provide the feature you requested, such as fill-light capture, beauty retouching, background removal, image resizing, ID/profile photo composition, preview generation, or export.</p>
-      <h2>3. Face Data and Biometric Information</h2>
-      <p>Some features may use Apple on-device frameworks to temporarily detect faces, face rectangles, subject areas, segmentation masks, or similar visual regions. These temporary results help with beauty retouching, fill-light recommendations, ID/profile photo composition, subject positioning, and preview quality.</p>
+
+      <h2>1. 适用范围</h2>
+      <p>
+        本政策适用于由开发者提供的 iOS / iPadOS 应用“Lumen证件照管家”
+        （英文显示名可为 Lumen；Bundle ID：<code>com.nickgao.chaomeien</code>）。
+        使用本应用即表示您已阅读并理解本政策。
+      </p>
+
+      <h2>2. 我们收集哪些信息</h2>
+      <p><strong>本应用不要求您注册账户，也不会主动收集可用于识别您身份的个人信息。</strong></p>
+      <p>为向您提供功能，本应用仅在您的设备上处理以下由您主动产生或选择的内容：</p>
       <ul>
-        <li>Face-related processing happens on device.</li>
-        <li>Face-related processing results are not uploaded to developer servers.</li>
-        <li>They are not used to identify you, sold, shared, or used for advertising.</li>
-        <li>They are discarded after the editing or preview session unless you choose to save the final edited image or video.</li>
+        <li>您通过相机拍摄的证件照人像、美颜自拍或补光拍摄内容；</li>
+        <li>您从系统相册主动选择导入的人像图片；</li>
+        <li>应用内生成的抠图结果、换底预览、导出成片、排版图与历史记录（如有）；</li>
+        <li>应用偏好设置、语言、主题、功能计数、购买状态缓存等本地数据。</li>
       </ul>
-      <h2>4. App Permissions</h2>
+      <p>
+        上述内容默认保存在您的设备本地，用于完成选规格、拍摄引导、背景更换、边缘处理、导出与分享等您主动发起的操作。
+        <strong>开发者不会将您的人像照片、抠图蒙版或编辑结果上传至开发者服务器。</strong>
+      </p>
+
+      <h2>3. 设备权限说明</h2>
+      <p>本应用可能在您使用时请求以下系统权限，且仅在相关功能需要时调用：</p>
       <ul>
-        <li><strong>Camera:</strong> used for live preview, taking photos, and recording videos.</li>
-        <li><strong>Microphone:</strong> used only when you record video with audio.</li>
-        <li><strong>Photos:</strong> used when you select media from your library or save edited results to your library.</li>
+        <li><strong>相机</strong>：用于证件照引导拍摄、美颜自拍与屏幕补光取景。</li>
+        <li><strong>相册</strong>：用于由您主动选择图片导入，或在您明确操作时将成片保存到相册。</li>
+        <li><strong>麦克风</strong>：仅在您录制带声音的视频时使用。</li>
       </ul>
-      <h2>5. Local Storage</h2>
-      <p>The app may store settings, preferences, feature counters, purchase state, and optional local editing history on your device using Apple-provided local storage.</p>
-      <h2>6. In-App Purchases</h2>
-      <p>GlowCam Pro is an optional one-time, non-consumable in-app purchase handled by Apple StoreKit. Apple processes payment, taxes, refunds, and transaction records.</p>
-      <h2>7. Third-Party SDKs, Advertising, and Tracking</h2>
-      <p>GlowCam does not use third-party advertising SDKs, third-party analytics SDKs, tracking SDKs, or third-party login systems.</p>
-      <h2>8. Contact</h2>
-      <p>For privacy questions or support, contact us at <a href="mailto:nickgao1986@users.noreply.github.com">nickgao1986@users.noreply.github.com</a>.</p>
+      <p>您可随时在系统“设置”中查看、开启或关闭上述权限。拒绝授权可能导致对应功能无法使用，但不影响其他本地功能。</p>
+
+      <h2>4. 人脸相关处理与本机图像处理</h2>
+      <p>
+        部分功能可能使用 Apple 设备本地框架（如 Vision）临时检测人脸区域、人像主体或分割蒙版，
+        以便提供取景对齐提示、证件照构图、美颜修图、抠图换底与预览质量优化。
+      </p>
+      <ul>
+        <li>相关处理在设备本地完成；</li>
+        <li>不会上传至开发者服务器；</li>
+        <li>不用于识别您的真实身份，也不用于广告或跨应用追踪；</li>
+        <li>预览会话结束后通常会丢弃临时检测结果；仅当您主动保存或导出最终图片 / 视频时，成片才会按您的选择保留在设备或相册中。</li>
+      </ul>
+      <p>
+        本应用<strong>仅辅助准备常见证件照规格与电子文件</strong>，不代替官方照相馆或受理机构服务，
+        也不保证成片必然通过任一机构审核。最终是否可用请以受理机构要求为准。
+      </p>
+
+      <h2>5. 应用内购买</h2>
+      <p>
+        本应用可提供由 Apple App Store 处理的一次性应用内购买（非消耗型项目），用于解锁 Lumen Pro 高级功能
+        （具体以应用内展示为准）。付款、税务与退款由 Apple 处理；开发者不接收、不存储您的银行卡或支付账户信息。
+        购买记录与权益恢复由 Apple ID 及 StoreKit 机制管理。
+      </p>
+
+      <h2>6. 数据存储与共享</h2>
+      <ul>
+        <li>您的照片、编辑结果和应用设置主要保存在设备本地应用沙盒或您主动选择的相册位置。</li>
+        <li>当您使用系统“分享”“保存到相册”等功能时，数据将按照您选择的第三方应用或系统服务的规则进行处理，开发者无法控制这些第三方如何处理数据。</li>
+        <li>本应用当前不包含广告 SDK、第三方统计分析 SDK、账号系统或开发者自有云同步服务。</li>
+        <li>本应用不进行跨应用追踪，也不向第三方出售您的个人信息。</li>
+      </ul>
+
+      <h2>7. 数据保留与删除</h2>
+      <p>
+        本地保存的历史成片、偏好设置等将保留在您的设备上，直至您在本应用内删除相关内容，
+        或通过系统方式清除应用数据。
+      </p>
+      <p>卸载本应用通常将删除保存在应用沙盒内的数据（系统备份策略除外）。</p>
+
+      <h2>8. 儿童隐私</h2>
+      <p>
+        本应用不面向儿童主动收集个人信息。若您为未成年人，请在监护人同意和指导下使用本应用。
+        请勿在未获得监护人同意的情况下使用本应用处理儿童人像或敏感资料。
+      </p>
+
+      <h2>9. 信息安全</h2>
+      <p>
+        我们采取合理措施，确保核心功能在设备本地运行，并依赖 iOS / iPadOS 系统提供的沙盒与安全机制保护您的数据。
+        但任何电子设备与存储方式都无法保证绝对安全，请您妥善保管设备，并谨慎分享导出的照片。
+      </p>
+
+      <h2>10. 政策更新</h2>
+      <p>
+        我们可能适时更新本隐私政策。更新后的版本将发布在本页面，并注明“最后更新”日期。
+        若更新涉及重大变更，我们将在应用内或通过其他合理方式提示您。
+        您在政策更新后继续使用本应用，即视为接受更新后的政策。
+      </p>
+
+      <h2>11. 联系我们</h2>
+      <p>如您对本隐私政策或数据处理有任何疑问、意见或投诉，请通过以下方式联系我们：</p>
+      <ul>
+        <li>电子邮箱：<a href="mailto:youjiancau@sina.com">youjiancau@sina.com</a></li>
+        <li>应用名称：Lumen证件照管家</li>
+        <li>Bundle ID：<code>com.nickgao.chaomeien</code></li>
+      </ul>
+
       <footer>
-        <p>Copyright 2026 GlowCam. All rights reserved.</p>
+        © 2026 Lumen证件照管家. 保留所有权利。
       </footer>
     </article>
   </main>
