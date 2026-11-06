@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="视频瘦身 - 使用条款">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>视频瘦身 - 使用条款</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            line-height: 1.8;
+            color: #1d1d1f;
+            background-color: #eef1f6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container { max-width: 980px; margin: 0 auto; padding: 0 22px; }
+
+        header {
+            background: linear-gradient(135deg, #318DFF 0%, #5E6CE2 100%);
+            color: white;
+            padding: 60px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.1)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+        }
+
+        .app-icon {
+            width: 120px; height: 120px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 26px;
+            margin: 0 auto 30px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 48px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 { font-size: 48px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 12px; }
+        .subtitle { font-size: 21px; opacity: 0.9; font-weight: 400; }
+
+        .terms-badge {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 8px 20px;
+            background: rgba(255,255,255,0.25);
+            border-radius: 24px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .content-wrapper {
+            background: white;
+            border-radius: 20px 20px 0 0;
+            margin-top: -40px;
+            position: relative;
+            box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.08);
+            padding-bottom: 60px;
+        }
+
+        .effective-date {
+            text-align: center;
+            padding: 40px 0 30px;
+            color: #86868b;
+            font-size: 15px;
+            border-bottom: 1px solid #e5e5e7;
+        }
+        .effective-date strong { color: #318DFF; font-weight: 600; }
+
+        .policy-content { padding: 50px 60px; }
+        .policy-content h2 {
+            font-size: 28px; font-weight: 700;
+            margin: 50px 0 24px; color: #1f2937; letter-spacing: -0.3px;
+        }
+        .policy-content h2:first-child { margin-top: 0; }
+        .policy-content h3 {
+            font-size: 20px; font-weight: 600;
+            margin: 28px 0 16px; color: #1f2937;
+        }
+        .policy-content p {
+            margin-bottom: 16px; color: #424245;
+            font-size: 17px; line-height: 1.8; text-align: justify;
+        }
+        .policy-content ul, .policy-content ol { margin: 16px 0 24px 24px; color: #424245; }
+        .policy-content li { margin-bottom: 12px; font-size: 17px; line-height: 1.8; }
+        .policy-content strong { color: #1f2937; font-weight: 600; }
+        .policy-content a { color: #318DFF; text-decoration: none; font-weight: 500; }
+        .policy-content a:hover { text-decoration: underline; }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #f0f6ff 0%, #eef0ff 100%);
+            border-left: 4px solid #318DFF;
+            padding: 24px; border-radius: 12px; margin: 28px 0;
+        }
+        .highlight-box p { margin-bottom: 0; }
+
+        .contact-card {
+            background: #f5f5f7; border-radius: 16px; padding: 28px;
+            margin: 28px 0; display: flex; align-items: center; gap: 20px;
+        }
+        .contact-card .icon {
+            width: 56px; height: 56px;
+            background: linear-gradient(135deg, #318DFF 0%, #5E6CE2 100%);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+        }
+        .contact-card .icon svg { width: 28px; height: 28px; fill: white; }
+        .contact-card .info { flex: 1; }
+        .contact-card .info p { margin: 0; font-size: 16px; color: #1f2937; }
+        .contact-card .info a { color: #318DFF; text-decoration: none; font-weight: 500; }
+
+        footer {
+            text-align: center; padding: 40px 0; color: #86868b;
+            font-size: 14px; border-top: 1px solid #e5e5e7; margin-top: 40px;
+        }
+
+        .back-to-top { text-align: center; padding: 30px 0; }
+        .back-to-top button {
+            background: white; border: 1px solid #d2d2d7; color: #318DFF;
+            padding: 12px 28px; border-radius: 20px; font-size: 15px;
+            font-weight: 500; cursor: pointer; transition: all 0.3s ease;
+        }
+        .back-to-top button:hover { background: #f5f5f7; border-color: #318DFF; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 32px; }
+            .subtitle { font-size: 17px; }
+            .app-icon { width: 90px; height: 90px; font-size: 36px; }
+            .policy-content { padding: 30px 24px; }
+            .policy-content h2 { font-size: 24px; margin: 36px 0 20px; }
+            .policy-content h3 { font-size: 18px; }
+            .policy-content p, .policy-content li { font-size: 16px; }
+            .contact-card { flex-direction: column; text-align: center; padding: 24px; }
+            header { padding: 40px 0 60px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="app-icon">🎬</div>
+            <h1>视频瘦身</h1>
+            <p class="subtitle">使用条款（Terms of Use）</p>
+            <span class="terms-badge">一次买断 · 长期可用 · 本机处理</span>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="effective-date">
+                生效日期：<strong>2026年11月6日</strong>
+            </div>
+
+            <article class="policy-content">
+                <h2>一、协议接受与适用范围</h2>
+                <p><strong>视频瘦身</strong>（英文名 VideoSlim，以下简称「本 App」）是一款在 iPhone 本机压缩相册视频、转换格式与整理存储的工具。请您在下载、安装、使用本 App 及购买专业版（Pro）前，仔细阅读并理解本使用条款（以下简称「本协议」）。</p>
+                <p>您一旦下载、安装、启动、使用本 App 或完成购买，即视为已阅读、理解并同意接受本协议全部内容。若不同意，请立即停止使用并卸载本 App。</p>
+
+                <h2>二、服务内容说明</h2>
+                <p>本 App 主要为您提供：</p>
+                <ul>
+                    <li><strong>视频压缩：</strong>对相册中的视频进行本机压缩，减小体积；</li>
+                    <li><strong>批量处理：</strong>支持多条视频连续压缩（免费用户有批次数量上限，以应用内展示为准）；</li>
+                    <li><strong>目标体积与画质：</strong>可按质量档位或目标大小进行压缩；部分高级选项需 Pro；</li>
+                    <li><strong>格式转换 / 裁剪等工具：</strong>如 MP4、MOV 转换、片段裁剪，以及 GIF / 音频相关工具（具体以应用内为准）；</li>
+                    <li><strong>历史与分享：</strong>本地记录压缩摘要，可通过系统分享面板导出结果；</li>
+                    <li><strong>专业版（Pro）：</strong>一次性买断解锁无限批量、自定义目标体积、更强压缩比例及部分进阶工具等，权益以应用内付费墙说明为准。</li>
+                </ul>
+                <p>媒体处理默认在您的设备本地完成。隐私处理方式请参阅
+                    <a href="https://nickgao1986.github.io/nickapp.github.io/videoslim/privacy.html">《视频瘦身隐私政策》</a>。
+                </p>
+
+                <h2>三、使用规则</h2>
+                <ol>
+                    <li>您应确保对所处理的视频 / 照片拥有合法权利，不得利用本 App 处理或传播违法违规、侵权内容；</li>
+                    <li>请按系统与应用提示合理授予相册权限；可随时在 iOS 设置中关闭；</li>
+                    <li>不得对本 App 进行恶意破解、篡改、反向工程或滥用漏洞；</li>
+                    <li>选择「替换 / 删除原片」前请确认压缩结果；因误删、覆盖产生的风险由您自行承担（系统「最近删除」规则以 iOS 为准）。</li>
+                </ol>
+
+                <h2>四、权限与本地处理</h2>
+                <ul>
+                    <li><strong>相册读取：</strong>用于选择待处理视频 / 照片；</li>
+                    <li><strong>相册写入：</strong>用于保存压缩或转换结果。</li>
+                </ul>
+                <div class="highlight-box">
+                    <p><strong>特别说明：</strong>您选择的媒体与压缩结果默认仅在本机处理，我们不会将视频内容上传至开发者服务器。</p>
+                </div>
+
+                <h2>五、专业版（Pro）一次性买断</h2>
+                <h3>1. 购买方式</h3>
+                <p>Pro 为 <strong>Apple 应用内购买（IAP）非消耗型商品（一次性买断）</strong>，不是自动续期订阅。费用在您确认购买时由 Apple 从与 Apple ID 关联的支付方式扣取；价格以应用内与 App Store 展示为准。</p>
+
+                <h3>2. 权益与恢复</h3>
+                <ul>
+                    <li>购买成功后，Pro 权益绑定您的 Apple ID；换机或重装后可在 App 内使用「恢复购买」找回；</li>
+                    <li>我们不收集银行卡等支付信息，交易与收据由 Apple 处理；</li>
+                    <li>除适用法律另有规定外，已成功扣款的费用一般不予退款，退款规则以 Apple 政策为准。</li>
+                </ul>
+
+                <h3>3. 非订阅说明</h3>
+                <p>本 App 当前 <strong>不提供自动续期订阅</strong>，因此不存在按周期自动扣款或「取消订阅」流程。若日后上线订阅产品，将另行更新本协议并在应用内公示。</p>
+
+                <h2>六、知识产权</h2>
+                <p>本 App 的软件代码、界面、图标、文案、商标等知识产权归开发者或合法权利人所有。未经授权，不得复制、传播、出售、出租、改编或用于其他商业用途。您对自行导入、导出的媒体内容仍享有原有权利。</p>
+
+                <h2>七、免责声明</h2>
+                <ol>
+                    <li>压缩体积与画质为近似效果，实际结果因片源、编码与设备性能而异；</li>
+                    <li>建议处理重要素材前自行备份；</li>
+                    <li>因设备故障、系统限制、Apple 服务异常、存储不足、权限关闭或不可抗力导致的功能中断、保存失败等，在法律允许范围内我们不承担责任；</li>
+                    <li>您通过系统分享跳转至第三方应用时，适用对方的条款与隐私政策。</li>
+                </ol>
+
+                <h2>八、协议更新</h2>
+                <p>我们可能根据产品功能、法律法规或运营需要更新本协议，并在本页面或应用内公布。若您在更新后继续使用本 App，即视为接受更新内容。</p>
+
+                <h2>九、适用法律与争议解决</h2>
+                <p>本协议的订立、执行与解释适用中华人民共和国法律。因本协议或本 App 使用产生的争议，双方应先友好协商；协商不成的，提交有管辖权的人民法院处理。</p>
+
+                <h2>十、联系我们</h2>
+                <p>对本协议、购买权益或使用问题有疑问，请联系：</p>
+
+                <div class="contact-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </div>
+                    <div class="info">
+                        <p>联系邮箱：<a href="mailto:nickgao1986@gmail.com">nickgao1986@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <p style="margin-top: 40px; padding: 20px; background: #f5f5f7; border-radius: 12px; font-size: 15px; color: #86868b;">
+                    本使用条款与
+                    <a href="https://nickgao1986.github.io/nickapp.github.io/videoslim/privacy.html">《视频瘦身隐私政策》</a>
+                    共同构成您使用本 App 及 Pro 服务的完整约定。
+                </p>
+            </article>
+
+            <div class="back-to-top">
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})">返回顶部</button>
+            </div>
+
+            <footer>
+                <p>&copy; 2026 视频瘦身（VideoSlim）保留所有权利</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
